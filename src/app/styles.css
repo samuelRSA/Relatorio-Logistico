@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  background: #07090d;
+  font-family: 'Manrope', ui-sans-serif, system-ui;
+}
+
+body {
+  min-width: 1024px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(101, 183, 255, 0.16), transparent 30rem),
+    radial-gradient(circle at 80% 10%, rgba(244, 184, 96, 0.12), transparent 28rem),
+    linear-gradient(135deg, #07090d 0%, #0d1118 52%, #111722 100%);
+  color: #e8edf5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1118;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263241;
+  border-radius: 999px;
+}
+
+.glass-panel {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(145deg, rgba(23, 32, 44, 0.9), rgba(13, 17, 24, 0.78));
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(22px);
+}

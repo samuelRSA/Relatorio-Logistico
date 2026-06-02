@@ -1,0 +1,4376 @@
+[
+    {
+        "id":  "inv-2",
+        "nf":  "3137",
+        "date":  "2026-04-02",
+        "customerId":  "cli-884896611",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - BARCELONA",
+        "city":  "Serra",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  2704,
+        "grossWeight":  62.95,
+        "netWeight":  57,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  0,
+                          "additionalValue":  4.8369863563701276,
+                          "accessoryExpenses":  4.8369863563701276
+                      },
+        "operational":  {
+                            "storage":  8.56545131900466,
+                            "handling":  10.701500000000001
+                        }
+    },
+    {
+        "id":  "inv-3",
+        "nf":  "3138",
+        "date":  "2026-04-02",
+        "customerId":  "cli-1408877638",
+        "customer":  "PHILIPE ALMEIDA DOS SANTOS",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "BONIFICAÇÃO",
+        "managementCategory":  "Incentivo",
+        "seller":  "INTERNO",
+        "revenue":  733.38,
+        "grossWeight":  96,
+        "netWeight":  90.4,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  0,
+                          "additionalValue":  7.3765002416446741,
+                          "accessoryExpenses":  7.3765002416446741
+                      },
+        "operational":  {
+                            "storage":  13.062483345900672,
+                            "handling":  16.32
+                        }
+    },
+    {
+        "id":  "inv-4",
+        "nf":  "20879",
+        "date":  "2026-04-02",
+        "customerId":  "cli-1314159862",
+        "customer":  "TELEMASSAS",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "TRANSFERENCIA",
+        "managementCategory":  "Abastecimento",
+        "seller":  "TRANSFERENCIA",
+        "revenue":  6549.12,
+        "grossWeight":  856.8,
+        "netWeight":  806.4,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  237.03629184376626,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-5",
+        "nf":  "3139",
+        "date":  "2026-04-02",
+        "customerId":  "cli-1582726840",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - GURIRI",
+        "city":  "SAO MATEUS",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  3983,
+        "grossWeight":  97.95,
+        "netWeight":  92,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  127.34,
+                          "additionalValue":  7.526335402803082,
+                          "accessoryExpenses":  7.526335402803082
+                      },
+        "operational":  {
+                            "storage":  13.32781503886428,
+                            "handling":  16.651500000000002
+                        }
+    },
+    {
+        "id":  "inv-6",
+        "nf":  "3141",
+        "date":  "2026-04-02",
+        "customerId":  "cli-973143856",
+        "customer":  "SUPERMERCADOS CASAGRANDE - PEDRO CANARIO",
+        "city":  "PEDRO CANARIO",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  3402,
+        "grossWeight":  86.3,
+        "netWeight":  80,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  112.19,
+                          "additionalValue":  6.6311663630618272,
+                          "accessoryExpenses":  6.6311663630618272
+                      },
+        "operational":  {
+                            "storage":  11.742628257825292,
+                            "handling":  14.671000000000001
+                        }
+    },
+    {
+        "id":  "inv-7",
+        "nf":  "3142",
+        "date":  "2026-04-02",
+        "customerId":  "cli-1415091787",
+        "customer":  "REALMAR DISTRIBUIDORA LTDA - MARIO DE VARGAS COUTINHO - CD-1",
+        "city":  "Serra",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "INTERNO",
+        "revenue":  25250.13,
+        "grossWeight":  589.05,
+        "netWeight":  554.4,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  765.77,
+                          "additionalValue":  45.261744451466619,
+                          "accessoryExpenses":  45.261744451466619
+                      },
+        "operational":  {
+                            "storage":  80.1505814052374,
+                            "handling":  100.1385
+                        }
+    },
+    {
+        "id":  "inv-8",
+        "nf":  "20880",
+        "date":  "2026-04-02",
+        "customerId":  "cli-1904372916",
+        "customer":  "SUPERMERCADOS BH - ROD. DO CAFÉ GETHER LOPES DE FARIAS - 504",
+        "city":  "COLATINA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  4252.59,
+        "grossWeight":  100.05,
+        "netWeight":  93.4,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  130.06,
+                          "additionalValue":  7.6876963455890595,
+                          "accessoryExpenses":  7.6876963455890595
+                      },
+        "operational":  {
+                            "storage":  13.613556862055857,
+                            "handling":  17.0085
+                        }
+    },
+    {
+        "id":  "inv-9",
+        "nf":  "20881",
+        "date":  "2026-04-02",
+        "customerId":  "cli-2063871907",
+        "customer":  "SUPERMERCADOS BH - AV. COPACABANA - 538",
+        "city":  "Serra",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  3918.15,
+        "grossWeight":  93,
+        "netWeight":  86,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  120.9,
+                          "additionalValue":  7.1459846090932784,
+                          "accessoryExpenses":  7.1459846090932784
+                      },
+        "operational":  {
+                            "storage":  12.654280741341276,
+                            "handling":  15.81
+                        }
+    },
+    {
+        "id":  "inv-10",
+        "nf":  "20882",
+        "date":  "2026-04-02",
+        "customerId":  "cli-273181996",
+        "customer":  "SUPERMERCADOS BH - R. RUY PINTO BANDEIRA - 519",
+        "city":  "VITORIA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  3905.6,
+        "grossWeight":  93,
+        "netWeight":  86,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  120.9,
+                          "additionalValue":  7.1459846090932784,
+                          "accessoryExpenses":  7.1459846090932784
+                      },
+        "operational":  {
+                            "storage":  12.654280741341276,
+                            "handling":  15.81
+                        }
+    },
+    {
+        "id":  "inv-11",
+        "nf":  "20883",
+        "date":  "2026-04-02",
+        "customerId":  "cli-1314159862",
+        "customer":  "TELEMASSAS",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "TRANSFERENCIA",
+        "managementCategory":  "Abastecimento",
+        "seller":  "TRANSFERENCIA",
+        "revenue":  20348.34,
+        "grossWeight":  2702.8,
+        "netWeight":  2455,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  747.73773295440185,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-12",
+        "nf":  "20884",
+        "date":  "2026-04-02",
+        "customerId":  "cli-1314159862",
+        "customer":  "TELEMASSAS",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "TRANSFERENCIA",
+        "managementCategory":  "Abastecimento",
+        "seller":  "TRANSFERENCIA",
+        "revenue":  3178,
+        "grossWeight":  416.5,
+        "netWeight":  392,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  115.22597520183082,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-13",
+        "nf":  "3143",
+        "date":  "2026-04-07",
+        "customerId":  "cli-988869532",
+        "customer":  "MULTIPLA DISTRIBUIDORA DE ALIMENTOS - MATRIZ",
+        "city":  "VIANA",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "INTERNO",
+        "revenue":  43619.2,
+        "grossWeight":  3929.5,
+        "netWeight":  3772,
+        "transport":  {
+                          "cte1":  859.84682713347729,
+                          "cte2":  0,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-14",
+        "nf":  "3144",
+        "date":  "2026-04-07",
+        "customerId":  "cli-988869532",
+        "customer":  "MULTIPLA DISTRIBUIDORA DE ALIMENTOS - MATRIZ",
+        "city":  "VIANA",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "INTERNO",
+        "revenue":  14628.5,
+        "grossWeight":  1097.5,
+        "netWeight":  1024,
+        "transport":  {
+                          "cte1":  240.15317286652024,
+                          "cte2":  0,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-15",
+        "nf":  "20886",
+        "date":  "2026-04-07",
+        "customerId":  "cli-1408877638",
+        "customer":  "PHILIPE ALMEIDA DOS SANTOS",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "BONIFICAÇÃO",
+        "managementCategory":  "Incentivo",
+        "seller":  "INTERNO",
+        "revenue":  211.22,
+        "grossWeight":  22.3,
+        "netWeight":  21.6,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  0,
+                          "additionalValue":  1.713499535298711,
+                          "accessoryExpenses":  1.713499535298711
+                      },
+        "operational":  {
+                            "storage":  3.0343060272248437,
+                            "handling":  3.7910000000000004
+                        }
+    },
+    {
+        "id":  "inv-16",
+        "nf":  "3145",
+        "date":  "2026-04-08",
+        "customerId":  "cli-1508780243",
+        "customer":  "ALIMENTOS TRIGOMAIS INDUSTRIA E COMERCIO LTDA",
+        "city":  "Serra",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "INTERNO",
+        "revenue":  3870.95,
+        "grossWeight":  292,
+        "netWeight":  271,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  0,
+                          "additionalValue":  22.436854901669218,
+                          "accessoryExpenses":  22.436854901669218
+                      },
+        "operational":  {
+                            "storage":  39.731720177114546,
+                            "handling":  49.64
+                        }
+    },
+    {
+        "id":  "inv-17",
+        "nf":  "3147",
+        "date":  "2026-04-08",
+        "customerId":  "cli-378321816",
+        "customer":  "PIZZARIA DO ZE - MATRIZ",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "BONIFICAÇÃO",
+        "managementCategory":  "Incentivo",
+        "seller":  "INTERNO",
+        "revenue":  213.02,
+        "grossWeight":  27.95,
+        "netWeight":  26.2,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  0,
+                          "additionalValue":  2.1476373099371733,
+                          "accessoryExpenses":  2.1476373099371733
+                      },
+        "operational":  {
+                            "storage":  3.8030875991450395,
+                            "handling":  4.7515
+                        }
+    },
+    {
+        "id":  "inv-18",
+        "nf":  "20887",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1314159862",
+        "customer":  "TELEMASSAS",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "TRANSFERENCIA",
+        "managementCategory":  "Abastecimento",
+        "seller":  "TRANSFERENCIA",
+        "revenue":  41184.84,
+        "grossWeight":  5415.9,
+        "netWeight":  5040,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  1026.3571367042823,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-19",
+        "nf":  "3151",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1146359175",
+        "customer":  "SUPERMERCADOS BH - AV. DOS EUCALIPTOS - 350",
+        "city":  "UBERLANDIA",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  3296.4,
+        "grossWeight":  89.25,
+        "netWeight":  84,
+        "transport":  {
+                          "cte1":  128.21617894237798,
+                          "cte2":  421.32,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  12.144027485642031,
+                            "handling":  15.172500000000001
+                        }
+    },
+    {
+        "id":  "inv-20",
+        "nf":  "3152",
+        "date":  "2026-04-10",
+        "customerId":  "cli-183199224",
+        "customer":  "SUPERMERCADOS BH - AV. PROFESSOR JOSE INACIO DE SOUZA - 303",
+        "city":  "UBERLANDIA",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  3302.1,
+        "grossWeight":  89.25,
+        "netWeight":  84,
+        "transport":  {
+                          "cte1":  128.21617894237798,
+                          "cte2":  421.36,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  12.144027485642031,
+                            "handling":  15.172500000000001
+                        }
+    },
+    {
+        "id":  "inv-21",
+        "nf":  "3153",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1575932559",
+        "customer":  "SUPERMERCADOS BH - AV. CORONEL CACILDO ARANTES - 279",
+        "city":  "Uberaba",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  4447.55,
+        "grossWeight":  113.05,
+        "netWeight":  106.4,
+        "transport":  {
+                          "cte1":  162.40715999367879,
+                          "cte2":  485.35,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  15.382434815146572,
+                            "handling":  19.218500000000002
+                        }
+    },
+    {
+        "id":  "inv-22",
+        "nf":  "3154",
+        "date":  "2026-04-10",
+        "customerId":  "cli-2033981493",
+        "customer":  "SUPERMERCADOS BH - JOSE DUARTE PAIVA",
+        "city":  "Sete Lagoas",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  3519.75,
+        "grossWeight":  89.25,
+        "netWeight":  84,
+        "transport":  {
+                          "cte1":  128.21617894237798,
+                          "cte2":  422.66,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  12.144027485642031,
+                            "handling":  15.172500000000001
+                        }
+    },
+    {
+        "id":  "inv-23",
+        "nf":  "3155",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1290819119",
+        "customer":  "SUPERMERCADOS BH - AV. MARABA - 274",
+        "city":  "PATOS DE MINAS",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  2636,
+        "grossWeight":  71.4,
+        "netWeight":  67.2,
+        "transport":  {
+                          "cte1":  102.5729431539024,
+                          "cte2":  417.36,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  9.7152219885136262,
+                            "handling":  12.138000000000002
+                        }
+    },
+    {
+        "id":  "inv-24",
+        "nf":  "3156",
+        "date":  "2026-04-10",
+        "customerId":  "cli-446994583",
+        "customer":  "SUPERMERCADOS BH - R. MAJOR GOTE - 275",
+        "city":  "PATOS DE MINAS",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  2197.6,
+        "grossWeight":  59.5,
+        "netWeight":  56,
+        "transport":  {
+                          "cte1":  85.477452628252,
+                          "cte2":  414.72,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  8.0960183237613546,
+                            "handling":  10.115
+                        }
+    },
+    {
+        "id":  "inv-25",
+        "nf":  "3157",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1092349350",
+        "customer":  "SUPERMERCADOS BH - AL. DOS PINHAIS - 297",
+        "city":  "UBERLANDIA",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  4173.2,
+        "grossWeight":  113.05,
+        "netWeight":  106.4,
+        "transport":  {
+                          "cte1":  162.40715999367879,
+                          "cte2":  483.71,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  15.382434815146572,
+                            "handling":  19.218500000000002
+                        }
+    },
+    {
+        "id":  "inv-26",
+        "nf":  "3158",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1465810413",
+        "customer":  "DMA DISTRIBUIDORA S/A - MG - MATRIZ",
+        "city":  "CONTAGEM",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  83620.8,
+        "grossWeight":  2510.6,
+        "netWeight":  2332.8,
+        "transport":  {
+                          "cte1":  3606.7175221594862,
+                          "cte2":  0,
+                          "additionalValue":  50.43,
+                          "accessoryExpenses":  50.43
+                      },
+        "operational":  {
+                            "storage":  341.61115300227317,
+                            "handling":  426.802
+                        }
+    },
+    {
+        "id":  "inv-27",
+        "nf":  "3159",
+        "date":  "2026-04-10",
+        "customerId":  "cli-159447756",
+        "customer":  "SUPERMERCADOS BH - AV. BRASIL - 360",
+        "city":  "PATOS DE MINAS",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  2636,
+        "grossWeight":  71.4,
+        "netWeight":  67.2,
+        "transport":  {
+                          "cte1":  102.5729431539024,
+                          "cte2":  417.36,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  9.7152219885136262,
+                            "handling":  12.138000000000002
+                        }
+    },
+    {
+        "id":  "inv-28",
+        "nf":  "3160",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1796632830",
+        "customer":  "SUPERMERCADOS BH - AV. PREFEITO ALBERTO MOURA - 283",
+        "city":  "Sete Lagoas",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  3519.75,
+        "grossWeight":  89.25,
+        "netWeight":  84,
+        "transport":  {
+                          "cte1":  128.21617894237798,
+                          "cte2":  422.66,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  12.144027485642031,
+                            "handling":  15.172500000000001
+                        }
+    },
+    {
+        "id":  "inv-29",
+        "nf":  "3161",
+        "date":  "2026-04-10",
+        "customerId":  "cli-53053461",
+        "customer":  "SUPERMERCADOS BH - AV. DR FIDELIS REIS - 345",
+        "city":  "Uberaba",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  4620,
+        "grossWeight":  124.95,
+        "netWeight":  117.6,
+        "transport":  {
+                          "cte1":  179.50265051932919,
+                          "cte2":  519.23,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  17.001638479898844,
+                            "handling":  21.241500000000002
+                        }
+    },
+    {
+        "id":  "inv-30",
+        "nf":  "3162",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1043777513",
+        "customer":  "SUPERMERCADOS BH - INHAUMA",
+        "city":  "Sete Lagoas",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  2206,
+        "grossWeight":  59.5,
+        "netWeight":  56,
+        "transport":  {
+                          "cte1":  85.477452628252,
+                          "cte2":  414.78,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  8.0960183237613546,
+                            "handling":  10.115
+                        }
+    },
+    {
+        "id":  "inv-31",
+        "nf":  "2422",
+        "date":  "2026-04-10",
+        "customerId":  "cli-687016979",
+        "customer":  "CARREFOUR COMERCIO E INDUSTRIA LTDA - SP",
+        "city":  "ITAPEVI",
+        "uf":  "SP",
+        "companyId":  4,
+        "company":  "Empresa 4",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "RICARDO FACIOLI",
+        "revenue":  118348.4,
+        "grossWeight":  3154.4,
+        "netWeight":  2863.2,
+        "transport":  {
+                          "cte1":  7200,
+                          "cte2":  0,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  429.21143194071959,
+                            "handling":  536.248
+                        }
+    },
+    {
+        "id":  "inv-32",
+        "nf":  "3163",
+        "date":  "2026-04-10",
+        "customerId":  "cli-2033959376",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - GUARAPARI",
+        "city":  "GUARAPARI",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  6715,
+        "grossWeight":  165.5,
+        "netWeight":  155,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  215.15,
+                          "additionalValue":  12.716779062418684,
+                          "accessoryExpenses":  12.716779062418684
+                      },
+        "operational":  {
+                            "storage":  22.519177018193346,
+                            "handling":  28.135
+                        }
+    },
+    {
+        "id":  "inv-33",
+        "nf":  "3164",
+        "date":  "2026-04-10",
+        "customerId":  "cli-99931240",
+        "customer":  "ITAPOA SUPERMERCADO LTDA. - DESEMBARGADOR DERMEVAL LYRIO - 15",
+        "city":  "VITORIA",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  7507.2,
+        "grossWeight":  182.5,
+        "netWeight":  172,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  237.25,
+                          "additionalValue":  14.023034313543262,
+                          "accessoryExpenses":  14.023034313543262
+                      },
+        "operational":  {
+                            "storage":  24.832325110696591,
+                            "handling":  31.025000000000002
+                        }
+    },
+    {
+        "id":  "inv-34",
+        "nf":  "3165",
+        "date":  "2026-04-10",
+        "customerId":  "cli-866373391",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - ALTO LAGE",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  12150,
+        "grossWeight":  297.5,
+        "netWeight":  280,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  386.75,
+                          "additionalValue":  22.859466894680111,
+                          "accessoryExpenses":  22.859466894680111
+                      },
+        "operational":  {
+                            "storage":  40.480091618806767,
+                            "handling":  50.575
+                        }
+    },
+    {
+        "id":  "inv-35",
+        "nf":  "3166",
+        "date":  "2026-04-10",
+        "customerId":  "cli-2117006314",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - BNH LINHARES",
+        "city":  "LINHARES",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  6400,
+        "grossWeight":  152.5,
+        "netWeight":  142,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  198.25,
+                          "additionalValue":  11.7178779880293,
+                          "accessoryExpenses":  11.7178779880293
+                      },
+        "operational":  {
+                            "storage":  20.750299065102631,
+                            "handling":  25.925
+                        }
+    },
+    {
+        "id":  "inv-36",
+        "nf":  "20888",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1374287627",
+        "customer":  "SUPERMERCADOS BH - AV. SANTA LEOPOLDINA - 511",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  6466.5,
+        "grossWeight":  152.5,
+        "netWeight":  142,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  198.25,
+                          "additionalValue":  11.7178779880293,
+                          "accessoryExpenses":  11.7178779880293
+                      },
+        "operational":  {
+                            "storage":  20.750299065102631,
+                            "handling":  25.925
+                        }
+    },
+    {
+        "id":  "inv-37",
+        "nf":  "20889",
+        "date":  "2026-04-10",
+        "customerId":  "cli-621804409",
+        "customer":  "SUPERMERCADOS BH - AV. ALICE COUTINHO SANTOS - 530",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  9610.4,
+        "grossWeight":  225,
+        "netWeight":  211,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  292.5,
+                          "additionalValue":  17.288672441354706,
+                          "accessoryExpenses":  17.288672441354706
+                      },
+        "operational":  {
+                            "storage":  30.6151953419547,
+                            "handling":  38.25
+                        }
+    },
+    {
+        "id":  "inv-38",
+        "nf":  "20890",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1829383285",
+        "customer":  "SUPERMERCADOS BH - AV. ELDES SCHERRER SOUZA - 510",
+        "city":  "Serra",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  1369.8,
+        "grossWeight":  33.5,
+        "netWeight":  30,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  43.55,
+                          "additionalValue":  2.574091230157256,
+                          "accessoryExpenses":  2.574091230157256
+                      },
+        "operational":  {
+                            "storage":  4.5582624175799218,
+                            "handling":  5.695
+                        }
+    },
+    {
+        "id":  "inv-39",
+        "nf":  "20891",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1729812260",
+        "customer":  "SUPERMERCADOS BH - AV. NOSSA SENHORA DA PENHA - 526",
+        "city":  "VITORIA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  4513.7,
+        "grossWeight":  106,
+        "netWeight":  99,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  137.8,
+                          "additionalValue":  8.1448856834826611,
+                          "accessoryExpenses":  8.1448856834826611
+                      },
+        "operational":  {
+                            "storage":  14.423158694431992,
+                            "handling":  18.02
+                        }
+    },
+    {
+        "id":  "inv-40",
+        "nf":  "20892",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1916665025",
+        "customer":  "SUPERMERCADOS PADOVA LTDA",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  3475.97,
+        "grossWeight":  77.05,
+        "netWeight":  71.8,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  100.16,
+                          "additionalValue":  5.9204098293616889,
+                          "accessoryExpenses":  5.9204098293616889
+                      },
+        "operational":  {
+                            "storage":  10.48400356043382,
+                            "handling":  13.0985
+                        }
+    },
+    {
+        "id":  "inv-41",
+        "nf":  "20893",
+        "date":  "2026-04-10",
+        "customerId":  "cli-222597461",
+        "customer":  "SUPERMERCADOS BH - R. AGENOR BARBATO - 515",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  3905.6,
+        "grossWeight":  93,
+        "netWeight":  86,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  120.9,
+                          "additionalValue":  7.1459846090932784,
+                          "accessoryExpenses":  7.1459846090932784
+                      },
+        "operational":  {
+                            "storage":  12.654280741341276,
+                            "handling":  15.81
+                        }
+    },
+    {
+        "id":  "inv-42",
+        "nf":  "20894",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1895518628",
+        "customer":  "SUPERMERCADOS BH - AV. WALDEMAR VERÇOSA PITANGA - 514",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  4174.24,
+        "grossWeight":  98.95,
+        "netWeight":  91.6,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  128.64,
+                          "additionalValue":  7.6031739469868809,
+                          "accessoryExpenses":  7.6031739469868809
+                      },
+        "operational":  {
+                            "storage":  13.463882573717411,
+                            "handling":  16.8215
+                        }
+    },
+    {
+        "id":  "inv-43",
+        "nf":  "20895",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1028825285",
+        "customer":  "SUPERMERCADOS BH - AV. HENRIQUE MOSCOSO - 539",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  2637.7,
+        "grossWeight":  63.25,
+        "netWeight":  58,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  82.22,
+                          "additionalValue":  4.8600379196252677,
+                          "accessoryExpenses":  4.8600379196252677
+                      },
+        "operational":  {
+                            "storage":  8.6062715794605982,
+                            "handling":  10.752500000000001
+                        }
+    },
+    {
+        "id":  "inv-44",
+        "nf":  "20896",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1477851338",
+        "customer":  "LR DISTRIBUIDORA DE LATICINIOS LTDA - MATRIZ",
+        "city":  "Venda Nova do Imigrante",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "INTERNO",
+        "revenue":  1736.5,
+        "grossWeight":  123,
+        "netWeight":  116,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  159.9,
+                          "additionalValue":  9.45114093460724,
+                          "accessoryExpenses":  9.45114093460724
+                      },
+        "operational":  {
+                            "storage":  16.736306786935234,
+                            "handling":  20.91
+                        }
+    },
+    {
+        "id":  "inv-45",
+        "nf":  "20897",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1314159862",
+        "customer":  "TELEMASSAS",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "TRANSFERENCIA",
+        "managementCategory":  "Abastecimento",
+        "seller":  "TRANSFERENCIA",
+        "revenue":  401.28,
+        "grossWeight":  53.6,
+        "netWeight":  48,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  10.157636316650887,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-46",
+        "nf":  "20898",
+        "date":  "2026-04-10",
+        "customerId":  "cli-1314159862",
+        "customer":  "TELEMASSAS",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "TRANSFERENCIA",
+        "managementCategory":  "Abastecimento",
+        "seller":  "TRANSFERENCIA",
+        "revenue":  2508,
+        "grossWeight":  335,
+        "netWeight":  300,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  63.485226979068038,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-47",
+        "nf":  "3169",
+        "date":  "2026-04-14",
+        "customerId":  "cli-840276509",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - TEIXEIRA DE FREITAS I",
+        "city":  "TEIXEIRA DE FREITAS",
+        "uf":  "BA",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  6701.4,
+        "grossWeight":  148.75,
+        "netWeight":  140,
+        "transport":  {
+                          "cte1":  469.098,
+                          "cte2":  193.375,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  20.240045809403384,
+                            "handling":  25.2875
+                        }
+    },
+    {
+        "id":  "inv-48",
+        "nf":  "3170",
+        "date":  "2026-04-14",
+        "customerId":  "cli-146635135",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - NOVA VICOSA",
+        "city":  "NOVA VICOSA",
+        "uf":  "BA",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  2624.4,
+        "grossWeight":  59.5,
+        "netWeight":  56,
+        "transport":  {
+                          "cte1":  183.70800000000003,
+                          "cte2":  77.350000000000009,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  8.0960183237613546,
+                            "handling":  10.115
+                        }
+    },
+    {
+        "id":  "inv-49",
+        "nf":  "3174",
+        "date":  "2026-04-17",
+        "customerId":  "cli-44064572",
+        "customer":  "SUPERMERCADO GRASSI LTDA - MATRIZ",
+        "city":  "LINHARES",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  5685.62,
+        "grossWeight":  145.8,
+        "netWeight":  136,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  189.54,
+                          "additionalValue":  11.203059741997849,
+                          "accessoryExpenses":  11.203059741997849
+                      },
+        "operational":  {
+                            "storage":  19.838646581586648,
+                            "handling":  24.786000000000005
+                        }
+    },
+    {
+        "id":  "inv-50",
+        "nf":  "3175",
+        "date":  "2026-04-17",
+        "customerId":  "cli-456624994",
+        "customer":  "ITAPOA SUPERMERCADO LTDA. - JOSÉ BARCELLOS DE MATTOS - 19",
+        "city":  "GUARAPARI",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VENDEDOR",
+        "revenue":  10141.61,
+        "grossWeight":  222.15,
+        "netWeight":  209.2,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  288.8,
+                          "additionalValue":  17.06968259043088,
+                          "accessoryExpenses":  17.06968259043088
+                      },
+        "operational":  {
+                            "storage":  30.227402867623276,
+                            "handling":  37.7655
+                        }
+    },
+    {
+        "id":  "inv-51",
+        "nf":  "3176",
+        "date":  "2026-04-17",
+        "customerId":  "cli-2045407618",
+        "customer":  "ITAPOA SUPERMERCADO LTDA. - DEOLINDO PERIM - 04",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VENDEDOR",
+        "revenue":  5574.3,
+        "grossWeight":  119,
+        "netWeight":  112,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  154.7,
+                          "additionalValue":  9.1437867578720446,
+                          "accessoryExpenses":  9.1437867578720446
+                      },
+        "operational":  {
+                            "storage":  16.192036647522709,
+                            "handling":  20.23
+                        }
+    },
+    {
+        "id":  "inv-52",
+        "nf":  "20899",
+        "date":  "2026-04-17",
+        "customerId":  "cli-1314159862",
+        "customer":  "TELEMASSAS",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "TRANSFERENCIA",
+        "managementCategory":  "Abastecimento",
+        "seller":  "TRANSFERENCIA",
+        "revenue":  39142.8,
+        "grossWeight":  5146.2,
+        "netWeight":  4797.6,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  1100,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-53",
+        "nf":  "20900",
+        "date":  "2026-04-17",
+        "customerId":  "cli-1729812260",
+        "customer":  "SUPERMERCADOS BH - AV. NOSSA SENHORA DA PENHA - 526",
+        "city":  "VITORIA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  4007.5,
+        "grossWeight":  96.75,
+        "netWeight":  88,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  125.78,
+                          "additionalValue":  7.4341291497825237,
+                          "accessoryExpenses":  7.4341291497825237
+                      },
+        "operational":  {
+                            "storage":  13.164533997040522,
+                            "handling":  16.4475
+                        }
+    },
+    {
+        "id":  "inv-54",
+        "nf":  "20901",
+        "date":  "2026-04-17",
+        "customerId":  "cli-2063871907",
+        "customer":  "SUPERMERCADOS BH - AV. COPACABANA - 538",
+        "city":  "Serra",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  2650.25,
+        "grossWeight":  63.25,
+        "netWeight":  58,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  82.22,
+                          "additionalValue":  4.8600379196252677,
+                          "accessoryExpenses":  4.8600379196252677
+                      },
+        "operational":  {
+                            "storage":  8.6062715794605982,
+                            "handling":  10.752500000000001
+                        }
+    },
+    {
+        "id":  "inv-55",
+        "nf":  "20902",
+        "date":  "2026-04-17",
+        "customerId":  "cli-1183916598",
+        "customer":  "SUPERMERCADOS BH - SHOPPING PRAIA DA COSTA - 540",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VENDEDOR",
+        "revenue":  1876.96,
+        "grossWeight":  45.4,
+        "netWeight":  41.2,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  59.02,
+                          "additionalValue":  3.4884699059444606,
+                          "accessoryExpenses":  3.4884699059444606
+                      },
+        "operational":  {
+                            "storage":  6.1774660823321925,
+                            "handling":  7.718
+                        }
+    },
+    {
+        "id":  "inv-56",
+        "nf":  "20903",
+        "date":  "2026-04-17",
+        "customerId":  "cli-650853443",
+        "customer":  "SUPERMERCADOS BH - ROD. SAFRA - 505",
+        "city":  "MARATAIZES",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  6466.5,
+        "grossWeight":  152.5,
+        "netWeight":  142,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  198.25,
+                          "additionalValue":  11.7178779880293,
+                          "accessoryExpenses":  11.7178779880293
+                      },
+        "operational":  {
+                            "storage":  20.750299065102631,
+                            "handling":  25.925
+                        }
+    },
+    {
+        "id":  "inv-57",
+        "nf":  "20904",
+        "date":  "2026-04-17",
+        "customerId":  "cli-899500062",
+        "customer":  "SUPERMERCADOS BH - AV. ELDES SCHERRER SOUZA - 508",
+        "city":  "Serra",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  2650.25,
+        "grossWeight":  63.25,
+        "netWeight":  58,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  82.22,
+                          "additionalValue":  4.8600379196252677,
+                          "accessoryExpenses":  4.8600379196252677
+                      },
+        "operational":  {
+                            "storage":  8.6062715794605982,
+                            "handling":  10.752500000000001
+                        }
+    },
+    {
+        "id":  "inv-58",
+        "nf":  "20905",
+        "date":  "2026-04-17",
+        "customerId":  "cli-656572085",
+        "customer":  "SUPERMERCADOS BH - ROD. DO SOL - 545",
+        "city":  "ANCHIETA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  3879.9,
+        "grossWeight":  91.5,
+        "netWeight":  85.2,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  118.95,
+                          "additionalValue":  7.03072679281758,
+                          "accessoryExpenses":  7.03072679281758
+                      },
+        "operational":  {
+                            "storage":  12.450179439061579,
+                            "handling":  15.555000000000001
+                        }
+    },
+    {
+        "id":  "inv-59",
+        "nf":  "20906",
+        "date":  "2026-04-17",
+        "customerId":  "cli-694771405",
+        "customer":  "SUPERMERCADOS BH - R. EUGÊNIO NETTO - 522",
+        "city":  "VITORIA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  2637.7,
+        "grossWeight":  63.25,
+        "netWeight":  58,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  82.22,
+                          "additionalValue":  4.8600379196252677,
+                          "accessoryExpenses":  4.8600379196252677
+                      },
+        "operational":  {
+                            "storage":  8.6062715794605982,
+                            "handling":  10.752500000000001
+                        }
+    },
+    {
+        "id":  "inv-60",
+        "nf":  "20907",
+        "date":  "2026-04-17",
+        "customerId":  "cli-222597461",
+        "customer":  "SUPERMERCADOS BH - R. AGENOR BARBATO - 515",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VENDEDOR",
+        "revenue":  1369.8,
+        "grossWeight":  33.5,
+        "netWeight":  30,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  43.55,
+                          "additionalValue":  2.574091230157256,
+                          "accessoryExpenses":  2.574091230157256
+                      },
+        "operational":  {
+                            "storage":  4.5582624175799218,
+                            "handling":  5.695
+                        }
+    },
+    {
+        "id":  "inv-61",
+        "nf":  "20908",
+        "date":  "2026-04-17",
+        "customerId":  "cli-918528114",
+        "customer":  "SUPERMERCADOS BH - JOSÉ MARIA VIVÁCQUA SANTOS - 521",
+        "city":  "VITORIA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  4007.5,
+        "grossWeight":  96.75,
+        "netWeight":  88,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  125.78,
+                          "additionalValue":  7.4341291497825237,
+                          "accessoryExpenses":  7.4341291497825237
+                      },
+        "operational":  {
+                            "storage":  13.164533997040522,
+                            "handling":  16.4475
+                        }
+    },
+    {
+        "id":  "inv-62",
+        "nf":  "20909",
+        "date":  "2026-04-17",
+        "customerId":  "cli-1895518628",
+        "customer":  "SUPERMERCADOS BH - AV. WALDEMAR VERÇOSA PITANGA - 514",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VENDEDOR",
+        "revenue":  3233.25,
+        "grossWeight":  76.25,
+        "netWeight":  71,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  99.12,
+                          "additionalValue":  5.85893899401465,
+                          "accessoryExpenses":  5.85893899401465
+                      },
+        "operational":  {
+                            "storage":  10.375149532551315,
+                            "handling":  12.9625
+                        }
+    },
+    {
+        "id":  "inv-63",
+        "nf":  "20910",
+        "date":  "2026-04-17",
+        "customerId":  "cli-720773697",
+        "customer":  "SUPERMERCADOS BH - AV. MARIO GURGEL - 531",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VENDEDOR",
+        "revenue":  18258.6,
+        "grossWeight":  431.5,
+        "netWeight":  400,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  560.95,
+                          "additionalValue":  33.155831815309135,
+                          "accessoryExpenses":  33.155831815309135
+                      },
+        "operational":  {
+                            "storage":  58.713141289126455,
+                            "handling":  73.355
+                        }
+    },
+    {
+        "id":  "inv-64",
+        "nf":  "20911",
+        "date":  "2026-04-17",
+        "customerId":  "cli-1166895585",
+        "customer":  "SUPERMERCADOS BH - PRAÇA REGINA FRIGERI FURNO - 524",
+        "city":  "VITORIA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  3930.7,
+        "grossWeight":  93,
+        "netWeight":  86,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  120.9,
+                          "additionalValue":  7.1459846090932784,
+                          "accessoryExpenses":  7.1459846090932784
+                      },
+        "operational":  {
+                            "storage":  12.654280741341276,
+                            "handling":  15.81
+                        }
+    },
+    {
+        "id":  "inv-65",
+        "nf":  "20912",
+        "date":  "2026-04-17",
+        "customerId":  "cli-761658980",
+        "customer":  "SUPERMERCADOS BH COMERCIO DE ALIMENTOS S/A - SAO DIOGO II",
+        "city":  "Serra",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  3946.93,
+        "grossWeight":  94.15,
+        "netWeight":  88.2,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  122.4,
+                          "additionalValue":  7.2343489349046477,
+                          "accessoryExpenses":  7.2343489349046477
+                      },
+        "operational":  {
+                            "storage":  12.810758406422378,
+                            "handling":  16.0055
+                        }
+    },
+    {
+        "id":  "inv-66",
+        "nf":  "20913",
+        "date":  "2026-04-17",
+        "customerId":  "cli-1000282301",
+        "customer":  "SUPERMERCADOS BH - AV. INDUSTRIAL - 543",
+        "city":  "Serra",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  6466.5,
+        "grossWeight":  152.5,
+        "netWeight":  142,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  198.25,
+                          "additionalValue":  11.7178779880293,
+                          "accessoryExpenses":  11.7178779880293
+                      },
+        "operational":  {
+                            "storage":  20.750299065102631,
+                            "handling":  25.925
+                        }
+    },
+    {
+        "id":  "inv-67",
+        "nf":  "3177",
+        "date":  "2026-04-20",
+        "customerId":  "cli-866373391",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - ALTO LAGE",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  5425,
+        "grossWeight":  148.75,
+        "netWeight":  140,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  193.375,
+                          "additionalValue":  11.429733447340055,
+                          "accessoryExpenses":  11.429733447340055
+                      },
+        "operational":  {
+                            "storage":  20.240045809403384,
+                            "handling":  25.2875
+                        }
+    },
+    {
+        "id":  "inv-68",
+        "nf":  "20915",
+        "date":  "2026-04-22",
+        "customerId":  "cli-1408877638",
+        "customer":  "PHILIPE ALMEIDA DOS SANTOS",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "BONIFICAÇÃO",
+        "managementCategory":  "Incentivo",
+        "seller":  "INTERNO",
+        "revenue":  194.2,
+        "grossWeight":  61.75,
+        "netWeight":  60,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  80.275,
+                          "additionalValue":  4.7447801033495693,
+                          "accessoryExpenses":  4.7447801033495693
+                      },
+        "operational":  {
+                            "storage":  8.4021702771809,
+                            "handling":  10.4975
+                        }
+    },
+    {
+        "id":  "inv-69",
+        "nf":  "3179",
+        "date":  "2026-04-22",
+        "customerId":  "cli-988869532",
+        "customer":  "MULTIPLA DISTRIBUIDORA DE ALIMENTOS - MATRIZ",
+        "city":  "VIANA",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "INTERNO",
+        "revenue":  60280,
+        "grossWeight":  5480.5,
+        "netWeight":  5288,
+        "transport":  {
+                          "cte1":  1055.5108115206187,
+                          "cte2":  0,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-70",
+        "nf":  "3180",
+        "date":  "2026-04-22",
+        "customerId":  "cli-988869532",
+        "customer":  "MULTIPLA DISTRIBUIDORA DE ALIMENTOS - MATRIZ",
+        "city":  "VIANA",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "INTERNO",
+        "revenue":  3032.7,
+        "grossWeight":  231,
+        "netWeight":  210,
+        "transport":  {
+                          "cte1":  44.489188479383806,
+                          "cte2":  0,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-71",
+        "nf":  "20918",
+        "date":  "2026-04-23",
+        "customerId":  "cli-1314159862",
+        "customer":  "TELEMASSAS",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "TRANSFERENCIA",
+        "managementCategory":  "Abastecimento",
+        "seller":  "TRANSFERENCIA",
+        "revenue":  41779.07,
+        "grossWeight":  5487.35,
+        "netWeight":  5135.6,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  1100,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-72",
+        "nf":  "20919",
+        "date":  "2026-04-23",
+        "customerId":  "cli-507820050",
+        "customer":  "SUPERMERCADOS BH COMERCIO DE ALIMENTOS S/A - VILA CAPIXABA",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  3946.93,
+        "grossWeight":  94.15,
+        "netWeight":  88.2,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  122.39500000000001,
+                          "additionalValue":  7.2343489349046477,
+                          "accessoryExpenses":  7.2343489349046477
+                      },
+        "operational":  {
+                            "storage":  12.810758406422378,
+                            "handling":  16.0055
+                        }
+    },
+    {
+        "id":  "inv-73",
+        "nf":  "3183",
+        "date":  "2026-04-24",
+        "customerId":  "cli-456624994",
+        "customer":  "ITAPOA SUPERMERCADO LTDA. - JOSÉ BARCELLOS DE MATTOS - 19",
+        "city":  "GUARAPARI",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  11848.1,
+        "grossWeight":  271.75,
+        "netWeight":  256,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  353.27500000000003,
+                          "additionalValue":  20.880874381947294,
+                          "accessoryExpenses":  20.880874381947294
+                      },
+        "operational":  {
+                            "storage":  36.976352596338621,
+                            "handling":  46.197500000000005
+                        }
+    },
+    {
+        "id":  "inv-74",
+        "nf":  "3184",
+        "date":  "2026-04-24",
+        "customerId":  "cli-1673976575",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - CONCEICAO DA BARRA",
+        "city":  "CONCEICAO DA BARRA",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  7800,
+        "grossWeight":  195.25,
+        "netWeight":  183,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  253.82500000000002,
+                          "additionalValue":  15.002725751886695,
+                          "accessoryExpenses":  15.002725751886695
+                      },
+        "operational":  {
+                            "storage":  26.567186180074025,
+                            "handling":  33.1925
+                        }
+    },
+    {
+        "id":  "inv-75",
+        "nf":  "3185",
+        "date":  "2026-04-24",
+        "customerId":  "cli-497033692",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - SÃO MATEUS NOVO",
+        "city":  "SAO MATEUS",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  10010,
+        "grossWeight":  247.5,
+        "netWeight":  230,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  321.75,
+                          "additionalValue":  19.017539685490178,
+                          "accessoryExpenses":  19.017539685490178
+                      },
+        "operational":  {
+                            "storage":  33.676714876150172,
+                            "handling":  42.075
+                        }
+    },
+    {
+        "id":  "inv-76",
+        "nf":  "3186",
+        "date":  "2026-04-24",
+        "customerId":  "cli-1765874819",
+        "customer":  "REDE MARTINS FACIL LTDA - LINHARES",
+        "city":  "LINHARES",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  4931.5,
+        "grossWeight":  119,
+        "netWeight":  112,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  154.70000000000002,
+                          "additionalValue":  9.1437867578720446,
+                          "accessoryExpenses":  9.1437867578720446
+                      },
+        "operational":  {
+                            "storage":  16.192036647522709,
+                            "handling":  20.23
+                        }
+    },
+    {
+        "id":  "inv-77",
+        "nf":  "3187",
+        "date":  "2026-04-24",
+        "customerId":  "cli-1411440576",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - SAO MATEUS VELHO",
+        "city":  "SAO MATEUS",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  6794,
+        "grossWeight":  165.2,
+        "netWeight":  154,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  214.76,
+                          "additionalValue":  12.693727499163543,
+                          "accessoryExpenses":  12.693727499163543
+                      },
+        "operational":  {
+                            "storage":  22.478356757737405,
+                            "handling":  28.084
+                        }
+    },
+    {
+        "id":  "inv-78",
+        "nf":  "3188",
+        "date":  "2026-04-24",
+        "customerId":  "cli-1112149206",
+        "customer":  "ITAPOA SUPERMERCADO LTDA. - AYRTON SENNA DA SILVA - 14",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  5633.1,
+        "grossWeight":  152.75,
+        "netWeight":  144,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  198.57500000000002,
+                          "additionalValue":  11.737087624075251,
+                          "accessoryExpenses":  11.737087624075251
+                      },
+        "operational":  {
+                            "storage":  20.784315948815912,
+                            "handling":  25.9675
+                        }
+    },
+    {
+        "id":  "inv-79",
+        "nf":  "3189",
+        "date":  "2026-04-24",
+        "customerId":  "cli-1192766700",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - JACARAIPE",
+        "city":  "Serra",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  9000,
+        "grossWeight":  242,
+        "netWeight":  228,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  314.6,
+                          "additionalValue":  18.594927692479285,
+                          "accessoryExpenses":  18.594927692479285
+                      },
+        "operational":  {
+                            "storage":  32.928343434457943,
+                            "handling":  41.14
+                        }
+    },
+    {
+        "id":  "inv-80",
+        "nf":  "3190",
+        "date":  "2026-04-24",
+        "customerId":  "cli-866373391",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - ALTO LAGE",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  2690,
+        "grossWeight":  59.5,
+        "netWeight":  56,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  77.350000000000009,
+                          "additionalValue":  4.5718933789360223,
+                          "accessoryExpenses":  4.5718933789360223
+                      },
+        "operational":  {
+                            "storage":  8.0960183237613546,
+                            "handling":  10.115
+                        }
+    },
+    {
+        "id":  "inv-81",
+        "nf":  "3191",
+        "date":  "2026-04-24",
+        "customerId":  "cli-884896611",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - BARCELONA",
+        "city":  "Serra",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  3907,
+        "grossWeight":  99.35,
+        "netWeight":  92,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  129.155,
+                          "additionalValue":  7.6339093646604,
+                          "accessoryExpenses":  7.6339093646604
+                      },
+        "operational":  {
+                            "storage":  13.518309587658663,
+                            "handling":  16.8895
+                        }
+    },
+    {
+        "id":  "inv-82",
+        "nf":  "3192",
+        "date":  "2026-04-24",
+        "customerId":  "cli-723196792",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - RIO MARINHO",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  3970,
+        "grossWeight":  93,
+        "netWeight":  86,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  120.9,
+                          "additionalValue":  7.1459846090932784,
+                          "accessoryExpenses":  7.1459846090932784
+                      },
+        "operational":  {
+                            "storage":  12.654280741341276,
+                            "handling":  15.81
+                        }
+    },
+    {
+        "id":  "inv-83",
+        "nf":  "20920",
+        "date":  "2026-04-24",
+        "customerId":  "cli-1456783008",
+        "customer":  "SUPERMERCADOS BH - AV. PREFEITO SAMUEL BATISTA CRUZ - 535",
+        "city":  "LINHARES",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  3468.96,
+        "grossWeight":  81.45,
+        "netWeight":  76.2,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  105.885,
+                          "additionalValue":  6.2584994237704041,
+                          "accessoryExpenses":  6.2584994237704041
+                      },
+        "operational":  {
+                            "storage":  11.082700713787602,
+                            "handling":  13.8465
+                        }
+    },
+    {
+        "id":  "inv-84",
+        "nf":  "20921",
+        "date":  "2026-04-24",
+        "customerId":  "cli-1374287627",
+        "customer":  "SUPERMERCADOS BH - AV. SANTA LEOPOLDINA - 511",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  5186.05,
+        "grossWeight":  122.75,
+        "netWeight":  114,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  159.57500000000002,
+                          "additionalValue":  9.43193129856129,
+                          "accessoryExpenses":  9.43193129856129
+                      },
+        "operational":  {
+                            "storage":  16.702289903221953,
+                            "handling":  20.867500000000003
+                        }
+    },
+    {
+        "id":  "inv-85",
+        "nf":  "20922",
+        "date":  "2026-04-24",
+        "customerId":  "cli-1829383285",
+        "customer":  "SUPERMERCADOS BH - AV. ELDES SCHERRER SOUZA - 510",
+        "city":  "Serra",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  3918.15,
+        "grossWeight":  93,
+        "netWeight":  86,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  120.9,
+                          "additionalValue":  7.1459846090932784,
+                          "accessoryExpenses":  7.1459846090932784
+                      },
+        "operational":  {
+                            "storage":  12.654280741341276,
+                            "handling":  15.81
+                        }
+    },
+    {
+        "id":  "inv-86",
+        "nf":  "20923",
+        "date":  "2026-04-24",
+        "customerId":  "cli-1729812260",
+        "customer":  "SUPERMERCADOS BH - AV. NOSSA SENHORA DA PENHA - 526",
+        "city":  "VITORIA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  4513.7,
+        "grossWeight":  106,
+        "netWeight":  99,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  137.8,
+                          "additionalValue":  8.1448856834826611,
+                          "accessoryExpenses":  8.1448856834826611
+                      },
+        "operational":  {
+                            "storage":  14.423158694431992,
+                            "handling":  18.02
+                        }
+    },
+    {
+        "id":  "inv-87",
+        "nf":  "20924",
+        "date":  "2026-04-24",
+        "customerId":  "cli-671218348",
+        "customer":  "SUPERMERCADOS BH COMERCIO DE ALIMENTOS S/A - ITACIBA",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  4638.13,
+        "grossWeight":  109.35,
+        "netWeight":  102,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  142.155,
+                          "additionalValue":  8.4022948064983858,
+                          "accessoryExpenses":  8.4022948064983858
+                      },
+        "operational":  {
+                            "storage":  14.878984936189983,
+                            "handling":  18.5895
+                        }
+    },
+    {
+        "id":  "inv-88",
+        "nf":  "20925",
+        "date":  "2026-04-24",
+        "customerId":  "cli-1313736825",
+        "customer":  "SUPERMERCADOS BH - AV. GOVERNADOR JONES DOS SANTOS NEVES - 532",
+        "city":  "GUARAPARI",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  4762.26,
+        "grossWeight":  111.95,
+        "netWeight":  104.6,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  145.535,
+                          "additionalValue":  8.6020750213762636,
+                          "accessoryExpenses":  8.6020750213762636
+                      },
+        "operational":  {
+                            "storage":  15.232760526808129,
+                            "handling":  19.0315
+                        }
+    },
+    {
+        "id":  "inv-89",
+        "nf":  "20926",
+        "date":  "2026-04-24",
+        "customerId":  "cli-1055764588",
+        "customer":  "SUPERMERCADOS BH - AV. JOÃO SANTOS FILHO - 520",
+        "city":  "VITORIA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  3918.15,
+        "grossWeight":  93,
+        "netWeight":  86,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  120.9,
+                          "additionalValue":  7.1459846090932784,
+                          "accessoryExpenses":  7.1459846090932784
+                      },
+        "operational":  {
+                            "storage":  12.654280741341276,
+                            "handling":  15.81
+                        }
+    },
+    {
+        "id":  "inv-90",
+        "nf":  "20927",
+        "date":  "2026-04-24",
+        "customerId":  "cli-273181996",
+        "customer":  "SUPERMERCADOS BH - R. RUY PINTO BANDEIRA - 519",
+        "city":  "VITORIA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  3930.7,
+        "grossWeight":  93,
+        "netWeight":  86,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  120.9,
+                          "additionalValue":  7.1459846090932784,
+                          "accessoryExpenses":  7.1459846090932784
+                      },
+        "operational":  {
+                            "storage":  12.654280741341276,
+                            "handling":  15.81
+                        }
+    },
+    {
+        "id":  "inv-91",
+        "nf":  "20928",
+        "date":  "2026-04-24",
+        "customerId":  "cli-1233227464",
+        "customer":  "SUPERMERCADOS BH - AV. MARECHAL CAMPOS - 527",
+        "city":  "VITORIA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  3930.7,
+        "grossWeight":  93,
+        "netWeight":  86,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  120.9,
+                          "additionalValue":  7.1459846090932784,
+                          "accessoryExpenses":  7.1459846090932784
+                      },
+        "operational":  {
+                            "storage":  12.654280741341276,
+                            "handling":  15.81
+                        }
+    },
+    {
+        "id":  "inv-92",
+        "nf":  "20929",
+        "date":  "2026-04-24",
+        "customerId":  "cli-899500065",
+        "customer":  "SUPERMERCADOS BH - AV. ELDES SCHERRER SOUZA - 507",
+        "city":  "Serra",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  5870.95,
+        "grossWeight":  139.5,
+        "netWeight":  129,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  181.35,
+                          "additionalValue":  10.718976913639917,
+                          "accessoryExpenses":  10.718976913639917
+                      },
+        "operational":  {
+                            "storage":  18.981421112011915,
+                            "handling":  23.715000000000003
+                        }
+    },
+    {
+        "id":  "inv-93",
+        "nf":  "20930",
+        "date":  "2026-04-24",
+        "customerId":  "cli-288241794",
+        "customer":  "SUPERMERCADOS BH - AV. ANCHIETA - 533",
+        "city":  "GUARAPARI",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  6466.5,
+        "grossWeight":  152.5,
+        "netWeight":  142,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  198.25,
+                          "additionalValue":  11.7178779880293,
+                          "accessoryExpenses":  11.7178779880293
+                      },
+        "operational":  {
+                            "storage":  20.750299065102631,
+                            "handling":  25.925
+                        }
+    },
+    {
+        "id":  "inv-94",
+        "nf":  "20931",
+        "date":  "2026-04-24",
+        "customerId":  "cli-889970254",
+        "customer":  "SUPERMERCADOS BH - AV. ABIDO SAADI - 506",
+        "city":  "Serra",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  1369.8,
+        "grossWeight":  33.5,
+        "netWeight":  30,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  43.550000000000004,
+                          "additionalValue":  2.574091230157256,
+                          "accessoryExpenses":  2.574091230157256
+                      },
+        "operational":  {
+                            "storage":  4.5582624175799218,
+                            "handling":  5.695
+                        }
+    },
+    {
+        "id":  "inv-95",
+        "nf":  "20932",
+        "date":  "2026-04-24",
+        "customerId":  "cli-1923100948",
+        "customer":  "SUPERMERCADOS BH - ROD. GOVERNADOR MÁRIO COVAS - 544",
+        "city":  "Serra",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  2447.11,
+        "grossWeight":  57.65,
+        "netWeight":  53.8,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  74.945000000000007,
+                          "additionalValue":  4.4297420721959941,
+                          "accessoryExpenses":  4.4297420721959941
+                      },
+        "operational":  {
+                            "storage":  7.84429338428306,
+                            "handling":  9.8005000000000013
+                        }
+    },
+    {
+        "id":  "inv-96",
+        "nf":  "3193",
+        "date":  "2026-04-24",
+        "customerId":  "cli-840276509",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - TEIXEIRA DE FREITAS I",
+        "city":  "TEIXEIRA DE FREITAS",
+        "uf":  "BA",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  13122,
+        "grossWeight":  297.5,
+        "netWeight":  280,
+        "transport":  {
+                          "cte1":  918.54000000000008,
+                          "cte2":  386.75,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  40.480091618806767,
+                            "handling":  50.575
+                        }
+    },
+    {
+        "id":  "inv-97",
+        "nf":  "3194",
+        "date":  "2026-04-27",
+        "customerId":  "cli-1415091787",
+        "customer":  "REALMAR DISTRIBUIDORA LTDA - MARIO DE VARGAS COUTINHO - CD-1",
+        "city":  "Serra",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "INTERNO",
+        "revenue":  90586.8,
+        "grossWeight":  2142,
+        "netWeight":  2016,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  2784.6,
+                          "additionalValue":  164.58816164169681,
+                          "accessoryExpenses":  164.58816164169681
+                      },
+        "operational":  {
+                            "storage":  291.45665965540877,
+                            "handling":  364.14000000000004
+                        }
+    },
+    {
+        "id":  "inv-98",
+        "nf":  "20934",
+        "date":  "2026-04-27",
+        "customerId":  "cli-170949677",
+        "customer":  "TUBARAO MARINE SERVICES LTDA",
+        "city":  "VITORIA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VENDEDOR",
+        "revenue":  48.59,
+        "grossWeight":  6.35,
+        "netWeight":  6,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  8.254999999999999,
+                          "additionalValue":  0.48792475556712167,
+                          "accessoryExpenses":  0.48792475556712167
+                      },
+        "operational":  {
+                            "storage":  0.86402884631738819,
+                            "handling":  1.0795000000000001
+                        }
+    },
+    {
+        "id":  "inv-99",
+        "nf":  "20936",
+        "date":  "2026-04-28",
+        "customerId":  "cli-1314159862",
+        "customer":  "TELEMASSAS",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "TRANSFERENCIA",
+        "managementCategory":  "Abastecimento",
+        "seller":  "TRANSFERENCIA",
+        "revenue":  32918.64,
+        "grossWeight":  4338.8,
+        "netWeight":  4022.4,
+        "transport":  {
+                          "cte1":  1100,
+                          "cte2":  0,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-100",
+        "nf":  "3195",
+        "date":  "2026-04-29",
+        "customerId":  "cli-988869532",
+        "customer":  "MULTIPLA DISTRIBUIDORA DE ALIMENTOS - MATRIZ",
+        "city":  "VIANA",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "INTERNO",
+        "revenue":  41540.8,
+        "grossWeight":  3769.5,
+        "netWeight":  3626,
+        "transport":  {
+                          "cte1":  1059.6445362737456,
+                          "cte2":  0,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-101",
+        "nf":  "3196",
+        "date":  "2026-04-29",
+        "customerId":  "cli-988869532",
+        "customer":  "MULTIPLA DISTRIBUIDORA DE ALIMENTOS - MATRIZ",
+        "city":  "VIANA",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "INTERNO",
+        "revenue":  6832.1,
+        "grossWeight":  505.75,
+        "netWeight":  476,
+        "transport":  {
+                          "cte1":  142.17143499680245,
+                          "cte2":  0,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-102",
+        "nf":  "20940",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1314159862",
+        "customer":  "TELEMASSAS",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "TRANSFERENCIA",
+        "managementCategory":  "Abastecimento",
+        "seller":  "TRANSFERENCIA",
+        "revenue":  21472.8,
+        "grossWeight":  2839.4,
+        "netWeight":  2611.2,
+        "transport":  {
+                          "cte1":  798.18402872945308,
+                          "cte2":  0,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-103",
+        "nf":  "2423",
+        "date":  "2026-04-30",
+        "customerId":  "cli-687016979",
+        "customer":  "CARREFOUR COMERCIO E INDUSTRIA LTDA - SP",
+        "city":  "ITAPEVI",
+        "uf":  "SP",
+        "companyId":  4,
+        "company":  "Empresa 4",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "RICARDO FACIOLI",
+        "revenue":  192268.8,
+        "grossWeight":  5210.4,
+        "netWeight":  4723.2,
+        "transport":  {
+                          "cte1":  7900,
+                          "cte2":  0,
+                          "additionalValue":  432.6,
+                          "accessoryExpenses":  432.6
+                      },
+        "operational":  {
+                            "storage":  708.96628359875888,
+                            "handling":  885.768
+                        }
+    },
+    {
+        "id":  "inv-104",
+        "nf":  "20941",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1314159862",
+        "customer":  "TELEMASSAS",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "TRANSFERENCIA",
+        "managementCategory":  "Abastecimento",
+        "seller":  "TRANSFERENCIA",
+        "revenue":  7328.03,
+        "grossWeight":  958.85,
+        "netWeight":  906,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  326.53323426519341,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-105",
+        "nf":  "3198",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1694694404",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - ARACRUZ",
+        "city":  "ARACRUZ",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  21480,
+        "grossWeight":  543,
+        "netWeight":  508,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  705.9,
+                          "additionalValue":  41.723329491802687,
+                          "accessoryExpenses":  41.723329491802687
+                      },
+        "operational":  {
+                            "storage":  73.884671425250673,
+                            "handling":  92.31
+                        }
+    },
+    {
+        "id":  "inv-106",
+        "nf":  "3199",
+        "date":  "2026-04-30",
+        "customerId":  "cli-2030899502",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - ARAÇA",
+        "city":  "LINHARES",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  10316,
+        "grossWeight":  260.75,
+        "netWeight":  245,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  338.975,
+                          "additionalValue":  20.035650395925508,
+                          "accessoryExpenses":  20.035650395925508
+                      },
+        "operational":  {
+                            "storage":  35.479609712954172,
+                            "handling":  44.3275
+                        }
+    },
+    {
+        "id":  "inv-107",
+        "nf":  "3200",
+        "date":  "2026-04-30",
+        "customerId":  "cli-77646423",
+        "customer":  "WMB SUPERMERCADOS DO BRASIL LTDA -  ES",
+        "city":  "VITORIA",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  4635,
+        "grossWeight":  190.5,
+        "netWeight":  180,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  247.65,
+                          "additionalValue":  14.637742667013651,
+                          "accessoryExpenses":  14.637742667013651
+                      },
+        "operational":  {
+                            "storage":  25.920865389521644,
+                            "handling":  32.385000000000005
+                        }
+    },
+    {
+        "id":  "inv-108",
+        "nf":  "3201",
+        "date":  "2026-04-30",
+        "customerId":  "cli-190946087",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - COLATINA",
+        "city":  "COLATINA",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  4120,
+        "grossWeight":  100.05,
+        "netWeight":  93.4,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  130.065,
+                          "additionalValue":  7.6876963455890595,
+                          "accessoryExpenses":  7.6876963455890595
+                      },
+        "operational":  {
+                            "storage":  13.613556862055857,
+                            "handling":  17.0085
+                        }
+    },
+    {
+        "id":  "inv-109",
+        "nf":  "3202",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1928015529",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - COQUEIRAL",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VENDEDOR",
+        "revenue":  6550,
+        "grossWeight":  171.25,
+        "netWeight":  159,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  222.625,
+                          "additionalValue":  13.158600691475526,
+                          "accessoryExpenses":  13.158600691475526
+                      },
+        "operational":  {
+                            "storage":  23.301565343598856,
+                            "handling":  29.1125
+                        }
+    },
+    {
+        "id":  "inv-110",
+        "nf":  "3203",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1218353356",
+        "customer":  "ITAPOA SUPERMERCADO LTDA. - LUCIANO DAS NEVES - 12",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  3433.25,
+        "grossWeight":  91.25,
+        "netWeight":  86,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  118.625,
+                          "additionalValue":  7.0115171567716308,
+                          "accessoryExpenses":  7.0115171567716308
+                      },
+        "operational":  {
+                            "storage":  12.416162555348295,
+                            "handling":  15.512500000000001
+                        }
+    },
+    {
+        "id":  "inv-111",
+        "nf":  "3204",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1999816547",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - CACHOEIRO",
+        "city":  "CACHOEIRO DE ITAPEMIRIM",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VENDEDOR",
+        "revenue":  5370,
+        "grossWeight":  135.75,
+        "netWeight":  127,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  176.475,
+                          "additionalValue":  10.430832372950672,
+                          "accessoryExpenses":  10.430832372950672
+                      },
+        "operational":  {
+                            "storage":  18.471167856312668,
+                            "handling":  23.0775
+                        }
+    },
+    {
+        "id":  "inv-112",
+        "nf":  "3205",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1310276024",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - GAIVOTAS",
+        "city":  "LINHARES",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  4545,
+        "grossWeight":  106,
+        "netWeight":  99,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  137.8,
+                          "additionalValue":  8.1448856834826611,
+                          "accessoryExpenses":  8.1448856834826611
+                      },
+        "operational":  {
+                            "storage":  14.423158694431992,
+                            "handling":  18.02
+                        }
+    },
+    {
+        "id":  "inv-113",
+        "nf":  "20942",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1904372916",
+        "customer":  "SUPERMERCADOS BH - ROD. DO CAFÉ GETHER LOPES DE FARIAS - 504",
+        "city":  "COLATINA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  4014.37,
+        "grossWeight":  94.85,
+        "netWeight":  88.2,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  123.30499999999999,
+                          "additionalValue":  7.2881359158333057,
+                          "accessoryExpenses":  7.2881359158333057
+                      },
+        "operational":  {
+                            "storage":  12.90600568081957,
+                            "handling":  16.1245
+                        }
+    },
+    {
+        "id":  "inv-114",
+        "nf":  "20943",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1729812260",
+        "customer":  "SUPERMERCADOS BH - AV. NOSSA SENHORA DA PENHA - 526",
+        "city":  "VITORIA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  6479.05,
+        "grossWeight":  152.5,
+        "netWeight":  142,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  198.25,
+                          "additionalValue":  11.7178779880293,
+                          "accessoryExpenses":  11.7178779880293
+                      },
+        "operational":  {
+                            "storage":  20.750299065102631,
+                            "handling":  25.925
+                        }
+    },
+    {
+        "id":  "inv-115",
+        "nf":  "20944",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1728101392",
+        "customer":  "SUPERMERCADOS BH - R. THIERS VELLOSO - 525",
+        "city":  "VITORIA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  1952.8,
+        "grossWeight":  46.5,
+        "netWeight":  43,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  60.45,
+                          "additionalValue":  3.5729923045466392,
+                          "accessoryExpenses":  3.5729923045466392
+                      },
+        "operational":  {
+                            "storage":  6.3271403706706382,
+                            "handling":  7.905
+                        }
+    },
+    {
+        "id":  "inv-116",
+        "nf":  "20945",
+        "date":  "2026-04-30",
+        "customerId":  "cli-656572085",
+        "customer":  "SUPERMERCADOS BH - ROD. DO SOL - 545",
+        "city":  "ANCHIETA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VENDEDOR",
+        "revenue":  6466.5,
+        "grossWeight":  152.5,
+        "netWeight":  142,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  198.25,
+                          "additionalValue":  11.7178779880293,
+                          "accessoryExpenses":  11.7178779880293
+                      },
+        "operational":  {
+                            "storage":  20.750299065102631,
+                            "handling":  25.925
+                        }
+    },
+    {
+        "id":  "inv-117",
+        "nf":  "20946",
+        "date":  "2026-04-30",
+        "customerId":  "cli-440965822",
+        "customer":  "SUPERMERCADOS BH - AV. JERONIMO MONTEIRO - 512",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VENDEDOR",
+        "revenue":  2464.98,
+        "grossWeight":  58.4,
+        "netWeight":  54.2,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  75.92,
+                          "additionalValue":  4.4873709803338437,
+                          "accessoryExpenses":  4.4873709803338437
+                      },
+        "operational":  {
+                            "storage":  7.9463440354229089,
+                            "handling":  9.928
+                        }
+    },
+    {
+        "id":  "inv-118",
+        "nf":  "20947",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1028825285",
+        "customer":  "SUPERMERCADOS BH - AV. HENRIQUE MOSCOSO - 539",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  1775.06,
+        "grossWeight":  41.65,
+        "netWeight":  39.2,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  54.145,
+                          "additionalValue":  3.2003253652552153,
+                          "accessoryExpenses":  3.2003253652552153
+                      },
+        "operational":  {
+                            "storage":  5.667212826632948,
+                            "handling":  7.0805000000000007
+                        }
+    },
+    {
+        "id":  "inv-119",
+        "nf":  "20948",
+        "date":  "2026-04-30",
+        "customerId":  "cli-720773697",
+        "customer":  "SUPERMERCADOS BH - AV. MARIO GURGEL - 531",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  10397.2,
+        "grossWeight":  245.5,
+        "netWeight":  228,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  319.15000000000003,
+                          "additionalValue":  18.86386259712258,
+                          "accessoryExpenses":  18.86386259712258
+                      },
+        "operational":  {
+                            "storage":  33.404579806443905,
+                            "handling":  41.735000000000007
+                        }
+    },
+    {
+        "id":  "inv-120",
+        "nf":  "20949",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1805811467",
+        "customer":  "SUPERMERCADOS BH - R. CARLOS ROMERO MARANGONI - 523",
+        "city":  "VITORIA",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "WASHINGTON DE JESUS",
+        "revenue":  2637.7,
+        "grossWeight":  63.25,
+        "netWeight":  58,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  82.225000000000009,
+                          "additionalValue":  4.8600379196252677,
+                          "accessoryExpenses":  4.8600379196252677
+                      },
+        "operational":  {
+                            "storage":  8.6062715794605982,
+                            "handling":  10.752500000000001
+                        }
+    },
+    {
+        "id":  "inv-121",
+        "nf":  "20950",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1773740057",
+        "customer":  "SUPERMERCADOS BH - ROD. MARIO GURGEL - 528",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VENDEDOR",
+        "revenue":  1952.8,
+        "grossWeight":  46.5,
+        "netWeight":  43,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  60.45,
+                          "additionalValue":  3.5729923045466392,
+                          "accessoryExpenses":  3.5729923045466392
+                      },
+        "operational":  {
+                            "storage":  6.3271403706706382,
+                            "handling":  7.905
+                        }
+    },
+    {
+        "id":  "inv-122",
+        "nf":  "20951",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1375129078",
+        "customer":  "SUPERMERCADOS BH - AV. VITÓRIA RÉGIA - 518",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VENDEDOR",
+        "revenue":  2472.51,
+        "grossWeight":  58.4,
+        "netWeight":  54.2,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  75.92,
+                          "additionalValue":  4.4873709803338437,
+                          "accessoryExpenses":  4.4873709803338437
+                      },
+        "operational":  {
+                            "storage":  7.9463440354229089,
+                            "handling":  9.928
+                        }
+    },
+    {
+        "id":  "inv-123",
+        "nf":  "20952",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1028825285",
+        "customer":  "SUPERMERCADOS BH - AV. HENRIQUE MOSCOSO - 539",
+        "city":  "Vila Velha",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VICTOR ALVEZ DE MELO JUNIOR",
+        "revenue":  1775.06,
+        "grossWeight":  41.65,
+        "netWeight":  39.2,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  54.145,
+                          "additionalValue":  3.2003253652552153,
+                          "accessoryExpenses":  3.2003253652552153
+                      },
+        "operational":  {
+                            "storage":  5.667212826632948,
+                            "handling":  7.0805000000000007
+                        }
+    },
+    {
+        "id":  "inv-124",
+        "nf":  "3207",
+        "date":  "2026-04-30",
+        "customerId":  "cli-843403109",
+        "customer":  "ITAPOA SUPERMERCADO LTDA. - MARIO GURGEL - 17",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "VENDEDOR",
+        "revenue":  4058,
+        "grossWeight":  93,
+        "netWeight":  86,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  120.9,
+                          "additionalValue":  7.1459846090932784,
+                          "accessoryExpenses":  7.1459846090932784
+                      },
+        "operational":  {
+                            "storage":  12.654280741341276,
+                            "handling":  15.81
+                        }
+    },
+    {
+        "id":  "inv-125",
+        "nf":  "3208",
+        "date":  "2026-04-30",
+        "customerId":  "cli-146635135",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - NOVA VICOSA",
+        "city":  "NOVA VICOSA",
+        "uf":  "BA",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "ANDERSON FILIPE JORGE",
+        "revenue":  6080.4,
+        "grossWeight":  135.75,
+        "netWeight":  127,
+        "transport":  {
+                          "cte1":  425.628,
+                          "cte2":  176.475,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  18.471167856312668,
+                            "handling":  23.0775
+                        }
+    },
+    {
+        "id":  "inv-126",
+        "nf":  "20954",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1314159862",
+        "customer":  "TELEMASSAS",
+        "city":  "Cariacica",
+        "uf":  "ES",
+        "companyId":  1,
+        "company":  "Matriz Telemassas",
+        "operationType":  "TRANSFERENCIA",
+        "managementCategory":  "Abastecimento",
+        "seller":  "TRANSFERENCIA",
+        "revenue":  17340,
+        "grossWeight":  2271.25,
+        "netWeight":  2140,
+        "transport":  {
+                          "cte1":  0,
+                          "cte2":  773.46676573480784,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  0,
+                            "handling":  0
+                        }
+    },
+    {
+        "id":  "inv-127",
+        "nf":  "2424",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1971515120",
+        "customer":  "CARREFOUR COMERCIO E INDUSTRIA - CAMPO GRANDE",
+        "city":  "RIO DE JANEIRO",
+        "uf":  "RJ",
+        "companyId":  4,
+        "company":  "Empresa 4",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  3033.5,
+        "grossWeight":  83.75,
+        "netWeight":  75,
+        "transport":  {
+                          "cte1":  132.39584381242574,
+                          "cte2":  175.55,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  11.395656043949804,
+                            "handling":  14.2375
+                        }
+    },
+    {
+        "id":  "inv-128",
+        "nf":  "2425",
+        "date":  "2026-04-30",
+        "customerId":  "cli-776816699",
+        "customer":  "CARREFOUR COMERCIO E INDUSTRIA LTDA - BRIGADEIRO LIMA E SILVA",
+        "city":  "DUQUE DE CAXIAS",
+        "uf":  "RJ",
+        "companyId":  4,
+        "company":  "Empresa 4",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  3033.5,
+        "grossWeight":  83.75,
+        "netWeight":  75,
+        "transport":  {
+                          "cte1":  132.39584381242574,
+                          "cte2":  213.81,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  11.395656043949804,
+                            "handling":  14.2375
+                        }
+    },
+    {
+        "id":  "inv-129",
+        "nf":  "2426",
+        "date":  "2026-04-30",
+        "customerId":  "cli-420811911",
+        "customer":  "CARREFOUR COMERCIO E INDUSTRIA LTDA - SULACAP",
+        "city":  "RIO DE JANEIRO",
+        "uf":  "RJ",
+        "companyId":  4,
+        "company":  "Empresa 4",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  3771.32,
+        "grossWeight":  103.95,
+        "netWeight":  95.2,
+        "transport":  {
+                          "cte1":  164.32893091703471,
+                          "cte2":  187.54,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  14.144220247983071,
+                            "handling":  17.6715
+                        }
+    },
+    {
+        "id":  "inv-130",
+        "nf":  "2427",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1181626714",
+        "customer":  "CARREFOUR COMERCIO E INDUSTRIA - ALCANTARA",
+        "city":  "SAO GONCALO",
+        "uf":  "RJ",
+        "companyId":  4,
+        "company":  "Empresa 4",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  4854,
+        "grossWeight":  128.5,
+        "netWeight":  118,
+        "transport":  {
+                          "cte1":  203.13869767040845,
+                          "cte2":  283.27,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  17.484678228627462,
+                            "handling":  21.845000000000002
+                        }
+    },
+    {
+        "id":  "inv-131",
+        "nf":  "2428",
+        "date":  "2026-04-30",
+        "customerId":  "cli-446843552",
+        "customer":  "CARREFOUR COMERCIO E INDUSTRIA - MACAE",
+        "city":  "MACAE",
+        "uf":  "RJ",
+        "companyId":  4,
+        "company":  "Empresa 4",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  3033.5,
+        "grossWeight":  83.75,
+        "netWeight":  75,
+        "transport":  {
+                          "cte1":  132.39584381242574,
+                          "cte2":  333.68,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  11.395656043949804,
+                            "handling":  14.2375
+                        }
+    },
+    {
+        "id":  "inv-132",
+        "nf":  "2429",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1177315101",
+        "customer":  "CARREFOUR COMERCIO E INDUSTRIA - NORTE SHOPPING",
+        "city":  "RIO DE JANEIRO",
+        "uf":  "RJ",
+        "companyId":  4,
+        "company":  "Empresa 4",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  7281.8,
+        "grossWeight":  207.65,
+        "netWeight":  191.2,
+        "transport":  {
+                          "cte1":  328.26265036000245,
+                          "cte2":  368.82,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  28.254423612252861,
+                            "handling":  35.300500000000007
+                        }
+    },
+    {
+        "id":  "inv-133",
+        "nf":  "2430",
+        "date":  "2026-04-30",
+        "customerId":  "cli-636130898",
+        "customer":  "CARREFOUR COMERCIO E INDUSTRIA LTDA-WASHINGTON LUIZ",
+        "city":  "DUQUE DE CAXIAS",
+        "uf":  "RJ",
+        "companyId":  4,
+        "company":  "Empresa 4",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  3528.56,
+        "grossWeight":  98.35,
+        "netWeight":  89.6,
+        "transport":  {
+                          "cte1":  155.47619389793519,
+                          "cte2":  218.88,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  13.382242052805532,
+                            "handling":  16.7195
+                        }
+    },
+    {
+        "id":  "inv-134",
+        "nf":  "2431",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1240675870",
+        "customer":  "CARREFOUR COMERCIO E INDUSTRIA - PARQUE SANTO AMARO",
+        "city":  "CAMPOS DOS GOYTACAZES",
+        "uf":  "RJ",
+        "companyId":  4,
+        "company":  "Empresa 4",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  4126.8,
+        "grossWeight":  122.75,
+        "netWeight":  114,
+        "transport":  {
+                          "cte1":  194.04883376686877,
+                          "cte2":  344.88,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  16.702289903221953,
+                            "handling":  20.867500000000003
+                        }
+    },
+    {
+        "id":  "inv-135",
+        "nf":  "2432",
+        "date":  "2026-04-30",
+        "customerId":  "cli-987234263",
+        "customer":  "CARREFOUR COMERCIO E INDUSTRIA - RIO BARRA",
+        "city":  "RIO DE JANEIRO",
+        "uf":  "RJ",
+        "companyId":  4,
+        "company":  "Empresa 4",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  4564.62,
+        "grossWeight":  116.95,
+        "netWeight":  108.2,
+        "transport":  {
+                          "cte1":  184.87992756851571,
+                          "cte2":  213.24,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  15.913098201073788,
+                            "handling":  19.881500000000003
+                        }
+    },
+    {
+        "id":  "inv-136",
+        "nf":  "3210",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1799396361",
+        "customer":  "GERMANS DISTRIBUIDORA DE COMESTIVEIS LTDA - CD",
+        "city":  "RIO DE JANEIRO",
+        "uf":  "RJ",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  15979.6,
+        "grossWeight":  416.5,
+        "netWeight":  392,
+        "transport":  {
+                          "cte1":  658.42231579552617,
+                          "cte2":  745.954121457489,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  56.67212826632948,
+                            "handling":  70.805
+                        }
+    },
+    {
+        "id":  "inv-137",
+        "nf":  "3211",
+        "date":  "2026-04-30",
+        "customerId":  "cli-107926896",
+        "customer":  "CIA BRASILEIRA DE DISTRIBUICAO",
+        "city":  "DUQUE DE CAXIAS",
+        "uf":  "RJ",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  28417.4,
+        "grossWeight":  952,
+        "netWeight":  896,
+        "transport":  {
+                          "cte1":  1504.9652932469171,
+                          "cte2":  0,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  129.53629318018167,
+                            "handling":  161.84
+                        }
+    },
+    {
+        "id":  "inv-138",
+        "nf":  "3212",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1885943592",
+        "customer":  "WMB SUPERMERCADOS DO BRASIL LTDA - B. DA TIJUCA",
+        "city":  "RIO DE JANEIRO",
+        "uf":  "RJ",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  3669.2,
+        "grossWeight":  127,
+        "netWeight":  120,
+        "transport":  {
+                          "cte1":  200.76742882600681,
+                          "cte2":  220.4,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  17.280576926347763,
+                            "handling":  21.59
+                        }
+    },
+    {
+        "id":  "inv-139",
+        "nf":  "3213",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1981263697",
+        "customer":  "WMB SUPERMERCADOS DO BRASIL LTDA - CACHAMBI",
+        "city":  "RIO DE JANEIRO",
+        "uf":  "RJ",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  9173,
+        "grossWeight":  317.5,
+        "netWeight":  300,
+        "transport":  {
+                          "cte1":  501.918572065017,
+                          "cte2":  545.48,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  43.201442315869407,
+                            "handling":  53.975
+                        }
+    },
+    {
+        "id":  "inv-140",
+        "nf":  "3214",
+        "date":  "2026-04-30",
+        "customerId":  "cli-265779762",
+        "customer":  "MERCADO FÊNIX DO RIO LTDA",
+        "city":  "RIO DE JANEIRO",
+        "uf":  "RJ",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  3536.25,
+        "grossWeight":  89.25,
+        "netWeight":  84,
+        "transport":  {
+                          "cte1":  141.09049624189848,
+                          "cte2":  218.96,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  12.144027485642031,
+                            "handling":  15.172500000000001
+                        }
+    },
+    {
+        "id":  "inv-141",
+        "nf":  "3215",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1621775333",
+        "customer":  "WMB SUPERMERCADOS DO BRASIL LTDA - NITEROI",
+        "city":  "NITEROI",
+        "uf":  "RJ",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  5503.8,
+        "grossWeight":  190.5,
+        "netWeight":  180,
+        "transport":  {
+                          "cte1":  301.1511432390102,
+                          "cte2":  400.42,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  25.920865389521644,
+                            "handling":  32.385000000000005
+                        }
+    },
+    {
+        "id":  "inv-142",
+        "nf":  "3216",
+        "date":  "2026-04-30",
+        "customerId":  "cli-562326843",
+        "customer":  "CASAS GUANABARA COMESTIVEIS LTDA - MATRIZ",
+        "city":  "RIO DE JANEIRO",
+        "uf":  "RJ",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  170726.4,
+        "grossWeight":  5140.8,
+        "netWeight":  4838.4,
+        "transport":  {
+                          "cte1":  3840,
+                          "cte2":  0,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  699.495983172981,
+                            "handling":  873.93600000000015
+                        }
+    },
+    {
+        "id":  "inv-143",
+        "nf":  "3217",
+        "date":  "2026-04-30",
+        "customerId":  "cli-562326843",
+        "customer":  "CASAS GUANABARA COMESTIVEIS LTDA - MATRIZ",
+        "city":  "RIO DE JANEIRO",
+        "uf":  "RJ",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  199094.4,
+        "grossWeight":  5569.2,
+        "netWeight":  5241.6,
+        "transport":  {
+                          "cte1":  4160.0000000000009,
+                          "cte2":  0,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  757.78731510406271,
+                            "handling":  946.764
+                        }
+    },
+    {
+        "id":  "inv-144",
+        "nf":  "3218",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1799396361",
+        "customer":  "GERMANS DISTRIBUIDORA DE COMESTIVEIS LTDA - CD",
+        "city":  "RIO DE JANEIRO",
+        "uf":  "RJ",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "LUCILENE SANTOS",
+        "revenue":  13696.8,
+        "grossWeight":  357,
+        "netWeight":  336,
+        "transport":  {
+                          "cte1":  564.36198496759391,
+                          "cte2":  639.38924696356207,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  48.576109942568124,
+                            "handling":  60.690000000000005
+                        }
+    },
+    {
+        "id":  "inv-145",
+        "nf":  "3219",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1575932559",
+        "customer":  "SUPERMERCADOS BH - AV. CORONEL CACILDO ARANTES - 279",
+        "city":  "Uberaba",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  4680.92,
+        "grossWeight":  119,
+        "netWeight":  112,
+        "transport":  {
+                          "cte1":  149.86084350246196,
+                          "cte2":  503.18,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  16.192036647522709,
+                            "handling":  20.23
+                        }
+    },
+    {
+        "id":  "inv-146",
+        "nf":  "3220",
+        "date":  "2026-04-30",
+        "customerId":  "cli-981843136",
+        "customer":  "SUPERMERCADOS BH - BETHANIA",
+        "city":  "Ipatinga",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  3513.67,
+        "grossWeight":  89.25,
+        "netWeight":  84,
+        "transport":  {
+                          "cte1":  112.39563262684648,
+                          "cte2":  422.62,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  12.144027485642031,
+                            "handling":  15.172500000000001
+                        }
+    },
+    {
+        "id":  "inv-147",
+        "nf":  "3221",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1904195399",
+        "customer":  "SUPERMERCADOS BH - AV ANSELMO ALVES DOS SANTOS - 294",
+        "city":  "UBERLANDIA",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  3501.75,
+        "grossWeight":  89.25,
+        "netWeight":  84,
+        "transport":  {
+                          "cte1":  112.39563262684648,
+                          "cte2":  422.55,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  12.144027485642031,
+                            "handling":  15.172500000000001
+                        }
+    },
+    {
+        "id":  "inv-148",
+        "nf":  "3222",
+        "date":  "2026-04-30",
+        "customerId":  "cli-815963034",
+        "customer":  "SUPERMERCADOS BH - AV. IPANEMA - 38",
+        "city":  "Montes Claros",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  2343.44,
+        "grossWeight":  59.5,
+        "netWeight":  56,
+        "transport":  {
+                          "cte1":  74.93042175123098,
+                          "cte2":  415.6,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  8.0960183237613546,
+                            "handling":  10.115
+                        }
+    },
+    {
+        "id":  "inv-149",
+        "nf":  "3223",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1584024304",
+        "customer":  "SUPERMERCADOS BH - R. CRUZEIRO DOS PEIXOTOS - 351",
+        "city":  "UBERLANDIA",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  3501.75,
+        "grossWeight":  89.25,
+        "netWeight":  84,
+        "transport":  {
+                          "cte1":  112.39563262684648,
+                          "cte2":  422.55,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  12.144027485642031,
+                            "handling":  15.172500000000001
+                        }
+    },
+    {
+        "id":  "inv-150",
+        "nf":  "3224",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1508826399",
+        "customer":  "SUPERMERCADOS BH - JUSCELINO KUBITSCHEK",
+        "city":  "CURVELO",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  2340.46,
+        "grossWeight":  59.5,
+        "netWeight":  56,
+        "transport":  {
+                          "cte1":  74.93042175123098,
+                          "cte2":  415.58,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  8.0960183237613546,
+                            "handling":  10.115
+                        }
+    },
+    {
+        "id":  "inv-151",
+        "nf":  "3225",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1483847255",
+        "customer":  "SUPERMERCADOS BH - AV CAIO MARTINS",
+        "city":  "Matozinhos",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  2349.4,
+        "grossWeight":  59.5,
+        "netWeight":  56,
+        "transport":  {
+                          "cte1":  74.93042175123098,
+                          "cte2":  415.64,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  8.0960183237613546,
+                            "handling":  10.115
+                        }
+    },
+    {
+        "id":  "inv-152",
+        "nf":  "3226",
+        "date":  "2026-04-30",
+        "customerId":  "cli-2048358998",
+        "customer":  "SUPERMERCADOS BH - R. ORLANDO AGUIAR DA SILVA - 357",
+        "city":  "UBERLANDIA",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  3501.75,
+        "grossWeight":  89.25,
+        "netWeight":  84,
+        "transport":  {
+                          "cte1":  112.39563262684648,
+                          "cte2":  422.55,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  12.144027485642031,
+                            "handling":  15.172500000000001
+                        }
+    },
+    {
+        "id":  "inv-153",
+        "nf":  "3227",
+        "date":  "2026-04-30",
+        "customerId":  "cli-307070058",
+        "customer":  "SUPERMERCADOS BH - AV. STA BEATRIZ SILVA - 347",
+        "city":  "Uberaba",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  3504.75,
+        "grossWeight":  89.25,
+        "netWeight":  84,
+        "transport":  {
+                          "cte1":  112.39563262684648,
+                          "cte2":  422.57,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  12.144027485642031,
+                            "handling":  15.172500000000001
+                        }
+    },
+    {
+        "id":  "inv-154",
+        "nf":  "3228",
+        "date":  "2026-04-30",
+        "customerId":  "cli-897183309",
+        "customer":  "SUPERMERCADOS BH - AV. TONICO REIS - 284",
+        "city":  "Sete Lagoas",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  3522.61,
+        "grossWeight":  89.25,
+        "netWeight":  84,
+        "transport":  {
+                          "cte1":  112.39563262684648,
+                          "cte2":  422.68,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  12.144027485642031,
+                            "handling":  15.172500000000001
+                        }
+    },
+    {
+        "id":  "inv-155",
+        "nf":  "3229",
+        "date":  "2026-04-30",
+        "customerId":  "cli-942897114",
+        "customer":  "SUPERMERCADOS BH - TIMOTEO CENTRO",
+        "city":  "TIMOTEO",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  3513.67,
+        "grossWeight":  89.25,
+        "netWeight":  84,
+        "transport":  {
+                          "cte1":  112.39563262684648,
+                          "cte2":  422.62,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  12.144027485642031,
+                            "handling":  15.172500000000001
+                        }
+    },
+    {
+        "id":  "inv-156",
+        "nf":  "3237",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1465810413",
+        "customer":  "DMA DISTRIBUIDORA S/A - MG - MATRIZ",
+        "city":  "CONTAGEM",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  79840.8,
+        "grossWeight":  2383.6,
+        "netWeight":  2212.8,
+        "transport":  {
+                          "cte1":  3001.7504753988937,
+                          "cte2":  0,
+                          "additionalValue":  48.8,
+                          "accessoryExpenses":  48.8
+                      },
+        "operational":  {
+                            "storage":  324.33057607592542,
+                            "handling":  405.212
+                        }
+    },
+    {
+        "id":  "inv-157",
+        "nf":  "3230",
+        "date":  "2026-04-30",
+        "customerId":  "cli-589179777",
+        "customer":  "SUPERMERCADOS BH - AV. FLORIANO PEIXOTO - 353",
+        "city":  "UBERLANDIA",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  5141.86,
+        "grossWeight":  130.9,
+        "netWeight":  123.2,
+        "transport":  {
+                          "cte1":  164.84692785270818,
+                          "cte2":  538.78,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  17.811240312274979,
+                            "handling":  22.253000000000004
+                        }
+    },
+    {
+        "id":  "inv-158",
+        "nf":  "3231",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1310951572",
+        "customer":  "SUPERMERCADOS BH - R. DOM JOAO PIMENTA - 60",
+        "city":  "Montes Claros",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  2807.36,
+        "grossWeight":  71.4,
+        "netWeight":  67.2,
+        "transport":  {
+                          "cte1":  89.9165061014772,
+                          "cte2":  418.38,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  9.7152219885136262,
+                            "handling":  12.138000000000002
+                        }
+    },
+    {
+        "id":  "inv-159",
+        "nf":  "3232",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1006645751",
+        "customer":  "SUPERMERCADOS BH- AV. DEPUTADO PLINIO RIBEIRO - 145",
+        "city":  "Montes Claros",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  2109.99,
+        "grossWeight":  53.55,
+        "netWeight":  50.4,
+        "transport":  {
+                          "cte1":  67.437379576107887,
+                          "cte2":  414.2,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  7.2864164913852179,
+                            "handling":  9.1035
+                        }
+    },
+    {
+        "id":  "inv-160",
+        "nf":  "3233",
+        "date":  "2026-04-30",
+        "customerId":  "cli-212161576",
+        "customer":  "SUPERMERCADOS BH - CORONEL JOSE JULIO MASCARENHAS",
+        "city":  "CURVELO",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  3504.73,
+        "grossWeight":  89.25,
+        "netWeight":  84,
+        "transport":  {
+                          "cte1":  112.39563262684648,
+                          "cte2":  422.57,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  12.144027485642031,
+                            "handling":  15.172500000000001
+                        }
+    },
+    {
+        "id":  "inv-161",
+        "nf":  "3234",
+        "date":  "2026-04-30",
+        "customerId":  "cli-1299078254",
+        "customer":  "SUPERMERCADOS BH - AV. EDUARDO FELICE - 354",
+        "city":  "UBERLANDIA",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  3516.65,
+        "grossWeight":  89.25,
+        "netWeight":  84,
+        "transport":  {
+                          "cte1":  112.39563262684648,
+                          "cte2":  422.64,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  12.144027485642031,
+                            "handling":  15.172500000000001
+                        }
+    },
+    {
+        "id":  "inv-162",
+        "nf":  "3235",
+        "date":  "2026-04-30",
+        "customerId":  "cli-509160989",
+        "customer":  "SUPERMERCADOS BH - AV. FRANCISCO GAETANI - 222",
+        "city":  "Montes Claros",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  2807.36,
+        "grossWeight":  71.4,
+        "netWeight":  67.2,
+        "transport":  {
+                          "cte1":  89.9165061014772,
+                          "cte2":  418.38,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  9.7152219885136262,
+                            "handling":  12.138000000000002
+                        }
+    },
+    {
+        "id":  "inv-163",
+        "nf":  "3236",
+        "date":  "2026-04-30",
+        "customerId":  "cli-966557101",
+        "customer":  "WMB SUPERMERCADOS DO BRASIL LTDA - MG",
+        "city":  "Belo Horizonte",
+        "uf":  "MG",
+        "companyId":  2,
+        "company":  "Filial Telemassas",
+        "operationType":  "VENDA",
+        "managementCategory":  "Comercial",
+        "seller":  "CATIA MARTINS",
+        "revenue":  4526,
+        "grossWeight":  158.75,
+        "netWeight":  150,
+        "transport":  {
+                          "cte1":  199.91940257156168,
+                          "cte2":  403.27,
+                          "additionalValue":  0,
+                          "accessoryExpenses":  0
+                      },
+        "operational":  {
+                            "storage":  21.600721157934704,
+                            "handling":  26.9875
+                        }
+    }
+]
