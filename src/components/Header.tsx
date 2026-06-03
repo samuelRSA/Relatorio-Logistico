@@ -1,6 +1,6 @@
 import { Activity, Database, Moon } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
-import { useGlobalFilterStore } from '@/store/globalFilterStore';
+import { useDashboardData } from '@/context/useDashboardData';
 import type { NavigationItem, PageId } from '@/types/navigation';
 import { formatCurrency, formatPercent } from '@/utils/formatters';
 
@@ -10,8 +10,8 @@ interface HeaderProps {
 }
 
 export function Header({ activePage, navigation }: HeaderProps) {
-  const indicators = useGlobalFilterStore((state) => state.indicators);
-  const filteredCount = useGlobalFilterStore((state) => state.filteredInvoices.length);
+  const { indicators, filteredInvoices } = useDashboardData();
+  const filteredCount = filteredInvoices.length;
   const current = navigation.find((item) => item.id === activePage);
 
   return (

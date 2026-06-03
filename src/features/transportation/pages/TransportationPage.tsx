@@ -4,14 +4,13 @@ import { ChartCard } from '@/components/ChartCard';
 import { EChart } from '@/components/EChart';
 import { KpiCard } from '@/components/KpiCard';
 import { EmptyState } from '@/components/Skeleton';
-import { useGlobalFilterStore } from '@/store/globalFilterStore';
+import { useDashboardData } from '@/context/useDashboardData';
 import { cityCostHeatmap, groupSum } from '@/utils/aggregations';
 import { formatCurrency, formatPercent } from '@/utils/formatters';
 import { heatmapCityCostOption, routeRankingOption, weightFreightScatterOption } from '@/features/transportation/charts/transportationChartOptions';
 
 export default function TransportationPage() {
-  const invoices = useGlobalFilterStore((state) => state.filteredInvoices);
-  const indicators = useGlobalFilterStore((state) => state.indicators);
+  const { filteredInvoices: invoices, indicators } = useDashboardData();
   const routeData = useMemo(
     () => groupSum(invoices, (invoice) => `${invoice.uf} > ${invoice.city}`, (invoice) => invoice.transportCost).slice(0, 10),
     [invoices],

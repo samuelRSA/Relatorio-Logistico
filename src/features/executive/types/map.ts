@@ -12,5 +12,5 @@ export interface BrazilUfMapMetric {
 export interface BrazilMapDatum extends BrazilUfMapMetric {
   name: string;
   value: number;
-  selected: boolean;
+  selected?: boolean;
 }

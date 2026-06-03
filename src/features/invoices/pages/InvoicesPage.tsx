@@ -15,6 +15,7 @@ import {
 import { useVirtualizer } from '@tanstack/react-virtual';
 import { ChevronDown, ChevronRight, Search } from 'lucide-react';
 import { EmptyState } from '@/components/Skeleton';
+import { useDashboardData } from '@/context/useDashboardData';
 import { useGlobalFilterStore } from '@/store/globalFilterStore';
 import type { EnrichedInvoice } from '@/types/logistics';
 import { formatCurrency, formatDecimal, formatPercent } from '@/utils/formatters';
@@ -22,7 +23,7 @@ import { formatCurrency, formatDecimal, formatPercent } from '@/utils/formatters
 const columnHelper = createColumnHelper<EnrichedInvoice>();
 
 export default function InvoicesPage() {
-  const invoices = useGlobalFilterStore((state) => state.filteredInvoices);
+  const { filteredInvoices: invoices } = useDashboardData();
   const setSelectedInvoice = useGlobalFilterStore((state) => state.setSelectedInvoice);
   const [sorting, setSorting] = useState<SortingState>([]);
   const [globalFilter, setGlobalFilter] = useState('');
@@ -54,9 +55,9 @@ export default function InvoicesPage() {
       columnHelper.accessor('company', { header: 'Empresa' }),
       columnHelper.accessor('operationType', { header: 'Tipo Operação' }),
       columnHelper.accessor('managementCategory', { header: 'Categoria Gerencial' }),
-      columnHelper.accessor('revenue', { header: 'Receita', cell: (info) => formatCurrency(info.getValue()) }),
-      columnHelper.accessor('grossWeight', { header: 'Peso Bruto', cell: (info) => `${formatDecimal(info.getValue(), 0)} kg` }),
-      columnHelper.accessor('netWeight', { header: 'Peso Líquido', cell: (info) => `${formatDecimal(info.getValue(), 0)} kg` }),
+      columnHelper.accessor('revenue', { header: 'Receita Reconhecida', cell: (info) => formatCurrency(info.getValue()) }),
+      columnHelper.accessor('grossWeight', { header: 'Peso Bruto', cell: (info) => `${formatDecimal(info.getValue())} kg` }),
+      columnHelper.accessor('netWeight', { header: 'Peso Líquido', cell: (info) => `${formatDecimal(info.getValue())} kg` }),
       columnHelper.accessor('grossFreightPerKg', { header: 'Frete/Kg Bruto', cell: (info) => formatCurrency(info.getValue()) }),
       columnHelper.accessor('netFreightPerKg', { header: 'Frete/Kg Líquido', cell: (info) => formatCurrency(info.getValue()) }),
       columnHelper.accessor('transportCost', { header: 'Custo Transporte', cell: (info) => formatCurrency(info.getValue()) }),
@@ -148,12 +149,13 @@ export default function InvoicesPage() {
                       ))}
                     </div>
                     {row.getIsExpanded() ? (
-                      <div className="grid grid-cols-5 gap-3 bg-white/[0.025] px-14 py-4 text-xs text-slate-400">
+                      <div className="grid grid-cols-6 gap-3 bg-white/[0.025] px-14 py-4 text-xs text-slate-400">
                         <MiniMetric label="CTE1" value={formatCurrency(row.original.transport.cte1)} />
                         <MiniMetric label="CTE2" value={formatCurrency(row.original.transport.cte2)} />
                         <MiniMetric label="Adicional" value={formatCurrency(row.original.transport.additionalValue)} />
                         <MiniMetric label="Armazenagem" value={formatCurrency(row.original.operational.storage)} />
                         <MiniMetric label="Movimentação" value={formatCurrency(row.original.operational.handling)} />
+                        <MiniMetric label="TransferÃªncia" value={formatCurrency(row.original.operational.transfer)} />
                       </div>
                     ) : null}
                   </div>

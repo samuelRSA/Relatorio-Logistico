@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
@@ -11,9 +12,24 @@ interface KpiCardProps {
   onClick?: () => void;
   trendLabel?: string;
   tooltip?: string;
+  totalLabel?: string;
+  sparklineValues?: number[];
 }
 
-export function KpiCard({ title, value, helper, accent, icon: Icon, onClick, trendLabel, tooltip }: KpiCardProps) {
+function KpiCardComponent({
+  title,
+  value,
+  helper,
+  accent,
+  icon: Icon,
+  onClick,
+  trendLabel,
+  tooltip,
+  totalLabel,
+  sparklineValues,
+}: KpiCardProps) {
+  const hasSparkline = (sparklineValues?.length ?? 0) > 1;
+
   return (
     <motion.button
       type="button"
@@ -35,6 +51,11 @@ export function KpiCard({ title, value, helper, accent, icon: Icon, onClick, tre
       <div className="mt-4 h-1.5 overflow-hidden rounded-full bg-white/5">
         <div className="h-full w-2/3 rounded-full bg-gradient-to-r from-signal-blue to-signal-amber transition group-hover:w-5/6" />
       </div>
+      {hasSparkline ? (
+        <div className="mt-3">
+          <MiniSparkline values={sparklineValues ?? []} />
+        </div>
+      ) : null}
       <div className="mt-3 flex items-center justify-between gap-3">
         <p className="min-w-0 text-xs text-slate-400">{helper}</p>
         {trendLabel ? (
@@ -49,6 +70,39 @@ export function KpiCard({ title, value, helper, accent, icon: Icon, onClick, tre
           <ArrowUpRight className="h-3.5 w-3.5" />
         </span>
       ) : null}
+      {totalLabel ? <p className="mt-2 text-[11px] uppercase tracking-[0.14em] text-slate-500">{totalLabel}</p> : null}
     </motion.button>
+  );
+}
+
+export const KpiCard = memo(KpiCardComponent);
+
+function MiniSparkline({ values }: { values: number[] }) {
+  if (values.length < 2) {
+    return null;
+  }
+
+  const max = Math.max(...values);
+  const min = Math.min(...values);
+  const span = max - min || 1;
+  const points = values
+    .map((value, index) => {
+      const x = (index / (values.length - 1)) * 100;
+      const y = 100 - ((value - min) / span) * 100;
+      return `${x.toFixed(2)},${y.toFixed(2)}`;
+    })
+    .join(' ');
+
+  return (
+    <svg viewBox="0 0 100 100" className="h-8 w-full">
+      <polyline
+        fill="none"
+        stroke="rgba(101,183,255,0.95)"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        points={points}
+      />
+    </svg>
   );
 }

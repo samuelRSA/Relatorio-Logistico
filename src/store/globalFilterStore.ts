@@ -2,30 +2,16 @@ import { create } from 'zustand';
 import { createJSONStorage, persist, subscribeWithSelector } from 'zustand/middleware';
 import { logisticsService } from '@/services/logisticsService';
 import { mapFilterOptions } from '@/services/mappers/filterMapper';
-import type {
-  EnrichedInvoice,
-  FilterOptions,
-  FilterState,
-  LogisticsIndicators,
-} from '@/types/logistics';
-import { aggregateIndicators } from '@/utils/aggregations';
-import { applyFilters, defaultFilters, filterCacheKey } from '@/utils/filtering';
+import type { EnrichedInvoice, FilterOptions, FilterState } from '@/types/logistics';
+import { defaultFilters } from '@/utils/filtering';
 
 type ArrayFilterKey = Exclude<keyof FilterState, 'period'>;
 type ArrayFilterValue<K extends ArrayFilterKey> = FilterState[K][number];
 
-interface AggregationCacheEntry {
-  filteredInvoices: EnrichedInvoice[];
-  indicators: LogisticsIndicators;
-}
-
 interface GlobalFilterStore {
   invoices: EnrichedInvoice[];
-  filteredInvoices: EnrichedInvoice[];
   filterOptions: FilterOptions;
   filters: FilterState;
-  indicators: LogisticsIndicators;
-  aggregationCache: Record<string, AggregationCacheEntry>;
   selectedInvoice: EnrichedInvoice | null;
   drilldownContext: string | null;
   isDrawerOpen: boolean;
@@ -33,13 +19,13 @@ interface GlobalFilterStore {
   loadData: () => Promise<void>;
   setFilter: <K extends keyof FilterState>(key: K, value: FilterState[K]) => void;
   toggleArrayFilter: <K extends ArrayFilterKey>(key: K, value: ArrayFilterValue<K>) => void;
+  clearFilter: <K extends keyof FilterState>(key: K) => void;
+  clearAllFilters: () => void;
   resetFilters: () => void;
   setSelectedInvoice: (invoice: EnrichedInvoice | null) => void;
   openDrilldown: (context: string) => void;
   closeDrawer: () => void;
 }
-
-const emptyIndicators = aggregateIndicators([]);
 const emptyOptions: FilterOptions = {
   companies: [],
   ufs: [],
@@ -50,45 +36,34 @@ const emptyOptions: FilterOptions = {
   sellers: [],
 };
 
-const deriveState = (
-  invoices: EnrichedInvoice[],
-  filters: FilterState,
-  cache: Record<string, AggregationCacheEntry>,
-) => {
-  const key = filterCacheKey(filters);
-  const cached = cache[key];
+const areArraysEqual = <T,>(left: T[], right: T[]): boolean =>
+  left.length === right.length && left.every((value, index) => Object.is(value, right[index]));
 
-  if (cached) {
-    return {
-      filteredInvoices: cached.filteredInvoices,
-      indicators: cached.indicators,
-      aggregationCache: cache,
-    };
-  }
+const normalizeArray = <T extends string | number>(values: T[]): T[] =>
+  Array.from(new Set(values)).sort((left, right) => String(left).localeCompare(String(right), 'pt-BR'));
 
-  const filteredInvoices = applyFilters(invoices, filters);
-  const indicators = aggregateIndicators(filteredInvoices);
+const normalizeFilterValue = <K extends keyof FilterState>(value: FilterState[K]): FilterState[K] =>
+  Array.isArray(value) ? (normalizeArray(value as unknown as (string | number)[]) as FilterState[K]) : value;
 
-  return {
-    filteredInvoices,
-    indicators,
-    aggregationCache: {
-      ...cache,
-      [key]: { filteredInvoices, indicators },
-    },
-  };
-};
+const areFiltersEqual = (left: FilterState, right: FilterState): boolean =>
+  left.period.start === right.period.start &&
+  left.period.end === right.period.end &&
+  areArraysEqual(left.companyIds, right.companyIds) &&
+  areArraysEqual(left.ufs, right.ufs) &&
+  areArraysEqual(left.cities, right.cities) &&
+  areArraysEqual(left.customers, right.customers) &&
+  areArraysEqual(left.operationTypes, right.operationTypes) &&
+  areArraysEqual(left.managementCategories, right.managementCategories) &&
+  areArraysEqual(left.sellers, right.sellers);
+
 
 export const useGlobalFilterStore = create<GlobalFilterStore>()(
   subscribeWithSelector(
     persist(
       (set, get) => ({
         invoices: [],
-        filteredInvoices: [],
         filterOptions: emptyOptions,
         filters: defaultFilters,
-        indicators: emptyIndicators,
-        aggregationCache: {},
         selectedInvoice: null,
         drilldownContext: null,
         isDrawerOpen: false,
@@ -97,39 +72,91 @@ export const useGlobalFilterStore = create<GlobalFilterStore>()(
           set({ isLoading: true });
           const invoices = await logisticsService.getInvoices();
           const filterOptions = mapFilterOptions(invoices);
-          const derived = deriveState(invoices, get().filters, {});
           set({
             invoices,
             filterOptions,
-            ...derived,
             isLoading: false,
           });
         },
         setFilter(key, value) {
-          const filters = { ...get().filters, [key]: value };
-          const derived = deriveState(get().invoices, filters, get().aggregationCache);
-          set({ filters, ...derived });
+          const current = get().filters;
+          const normalizedValue = normalizeFilterValue(value);
+          if (Object.is(current[key], normalizedValue)) {
+            return;
+          }
+
+          const filters = { ...current, [key]: normalizedValue };
+          if (areFiltersEqual(current, filters)) {
+            return;
+          }
+
+          set({ filters });
         },
         toggleArrayFilter(key, value) {
           const current = get().filters[key] as ArrayFilterValue<typeof key>[];
 
-          const next = current.includes(value)
-            ? current.filter((item) => item !== value)
-            : [...current, value];
+          const next = current.includes(value) ? current.filter((item) => item !== value) : [...current, value];
 
-          get().setFilter(key, next as FilterState[typeof key]);
+          get().setFilter(key, normalizeArray(next) as FilterState[typeof key]);
+        },
+        clearFilter(key) {
+          const current = get().filters;
+
+          if (key === 'period') {
+            if (current.period.start === defaultFilters.period.start && current.period.end === defaultFilters.period.end) {
+              return;
+            }
+
+            set({
+              filters: {
+                ...current,
+                period: defaultFilters.period,
+              },
+            });
+            return;
+          }
+
+          if ((current[key] as string[]).length === 0) {
+            return;
+          }
+
+          set({
+            filters: {
+              ...current,
+              [key]: [],
+            },
+          });
+        },
+        clearAllFilters() {
+          const current = get().filters;
+          if (areFiltersEqual(current, defaultFilters)) {
+            return;
+          }
+
+          set({ filters: defaultFilters });
         },
         resetFilters() {
-          const derived = deriveState(get().invoices, defaultFilters, get().aggregationCache);
-          set({ filters: defaultFilters, ...derived });
+          get().clearAllFilters();
         },
         setSelectedInvoice(invoice) {
+          if (get().selectedInvoice?.id === invoice?.id && get().isDrawerOpen === Boolean(invoice)) {
+            return;
+          }
+
           set({ selectedInvoice: invoice, isDrawerOpen: Boolean(invoice), drilldownContext: null });
         },
         openDrilldown(context) {
+          if (get().drilldownContext === context && get().isDrawerOpen) {
+            return;
+          }
+
           set({ drilldownContext: context, selectedInvoice: null, isDrawerOpen: true });
         },
         closeDrawer() {
+          if (!get().isDrawerOpen && !get().selectedInvoice && !get().drilldownContext) {
+            return;
+          }
+
           set({ isDrawerOpen: false, selectedInvoice: null, drilldownContext: null });
         },
       }),
@@ -141,8 +168,5 @@ export const useGlobalFilterStore = create<GlobalFilterStore>()(
     ),
   ),
 );
-
-export const selectFilteredInvoices = (state: GlobalFilterStore) => state.filteredInvoices;
-export const selectIndicators = (state: GlobalFilterStore) => state.indicators;
 export const selectFilters = (state: GlobalFilterStore) => state.filters;
 export const selectFilterOptions = (state: GlobalFilterStore) => state.filterOptions;

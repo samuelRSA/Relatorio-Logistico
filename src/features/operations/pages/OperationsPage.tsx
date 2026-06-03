@@ -4,6 +4,7 @@ import { ChartCard } from '@/components/ChartCard';
 import { EChart } from '@/components/EChart';
 import { KpiCard } from '@/components/KpiCard';
 import { EmptyState } from '@/components/Skeleton';
+import { useDashboardData } from '@/context/useDashboardData';
 import { useGlobalFilterStore } from '@/store/globalFilterStore';
 import { groupSum } from '@/utils/aggregations';
 import { formatCurrency } from '@/utils/formatters';
@@ -14,11 +15,11 @@ import {
 } from '@/features/operations/charts/operationsChartOptions';
 
 export default function OperationsPage() {
-  const invoices = useGlobalFilterStore((state) => state.filteredInvoices);
-  const indicators = useGlobalFilterStore((state) => state.indicators);
+  const { filteredInvoices: invoices, indicators } = useDashboardData();
   const openDrilldown = useGlobalFilterStore((state) => state.openDrilldown);
   const storage = invoices.reduce((sum, invoice) => sum + invoice.operational.storage, 0);
   const handling = invoices.reduce((sum, invoice) => sum + invoice.operational.handling, 0);
+  const transfer = invoices.reduce((sum, invoice) => sum + invoice.operational.transfer, 0);
   const monthly = useMemo(() => {
     const grouped = invoices.reduce<Record<string, number>>((acc, invoice) => {
       const month = invoice.date.slice(0, 7);
@@ -94,19 +95,19 @@ export default function OperationsPage() {
           <KpiCard
             title="Custo Logístico Total/Kg"
             value={formatCurrency(indicators.totalLogisticsCostPerKg)}
-            helper="Transporte + operacional / peso bruto"
+            helper="Custo logístico total / peso bruto"
             accent="bg-signal-coral/20"
             icon={Truck}
             trendLabel="Filtro atual"
-            tooltip="Calculado por (Custo Transporte + Custo Operacional) / Peso Bruto, com divisão por zero retornando 0."
+            tooltip="Calculado por Custo Logístico Total / Peso Bruto, com divisão por zero retornando 0."
             onClick={() => openDrilldown('total-logistics-cost-per-kg')}
           />
         </div>
       </section>
 
       <section className="grid grid-cols-2 gap-5">
-        <ChartCard title="Composição Operacional" description="Armazenagem versus movimentação">
-          <EChart option={operationalCompositionOption(storage, handling)} />
+        <ChartCard title="Composição Operacional" description="Armazenagem, movimentação e transferência">
+          <EChart option={operationalCompositionOption(storage, handling, transfer)} />
         </ChartCard>
         <ChartCard title="Evolução Operacional" description="Evolução mensal do custo logístico operacional">
           <EChart option={operationalEvolutionOption(monthly)} />

@@ -1,19 +1,31 @@
-export const formatCurrency = (value: number): string =>
-  new Intl.NumberFormat('pt-BR', {
-    style: 'currency',
-    currency: 'BRL',
-    maximumFractionDigits: 0,
-  }).format(value);
+const normalizeNumber = (value: number | null | undefined): number => {
+  if (typeof value !== 'number') return 0;
+  if (!Number.isFinite(value)) return 0;
+  return value;
+};
 
-export const formatDecimal = (value: number, digits = 2): string =>
-  new Intl.NumberFormat('pt-BR', {
-    minimumFractionDigits: digits,
-    maximumFractionDigits: digits,
-  }).format(value);
+const hasDecimalPlaces = (value: number): boolean => !Number.isInteger(value);
 
-export const formatPercent = (value: number): string =>
+const createNumberFormatter = (value: number, currency = false): Intl.NumberFormat =>
   new Intl.NumberFormat('pt-BR', {
-    style: 'percent',
-    minimumFractionDigits: 1,
-    maximumFractionDigits: 1,
-  }).format(value);
+    ...(currency ? { style: 'currency', currency: 'BRL' } : {}),
+    minimumFractionDigits: hasDecimalPlaces(value) ? 2 : 0,
+    maximumFractionDigits: 2,
+  });
+
+export const formatCurrency = (value: number | null | undefined): string => {
+  const normalizedValue = normalizeNumber(value);
+  return createNumberFormatter(normalizedValue, true).format(normalizedValue);
+};
+
+export const formatDecimal = (value: number | null | undefined): string => {
+  const normalizedValue = normalizeNumber(value);
+  return createNumberFormatter(normalizedValue).format(normalizedValue);
+};
+
+export const formatPercent = (value: number | null | undefined): string => {
+  const normalizedValue = normalizeNumber(value);
+  const percentValue = normalizedValue <= 1 && normalizedValue >= -1 ? normalizedValue * 100 : normalizedValue;
+
+  return `${createNumberFormatter(percentValue).format(percentValue)}%`;
+};

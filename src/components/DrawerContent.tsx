@@ -1,4 +1,5 @@
 import { ChartCard } from '@/components/ChartCard';
+import { useDashboardData } from '@/context/useDashboardData';
 import { useGlobalFilterStore } from '@/store/globalFilterStore';
 import type { EnrichedInvoice, RankingItem } from '@/types/logistics';
 import { groupSum, topCustomersByLogisticsIndex } from '@/utils/aggregations';
@@ -17,16 +18,13 @@ interface OperationalMetricConfig {
   mode?: DrawerMode;
 }
 
-const freightBase = (invoice: EnrichedInvoice): number =>
-  invoice.transport.cte1 + invoice.transport.cte2 + invoice.transport.additionalValue;
-
 const metricConfigs: Record<string, OperationalMetricConfig> = {
   'gross-freight-per-kg': {
     title: 'Frete/Kg Bruto',
     formula: '(Vlr CTE1 + Vlr CTE2 + Valor Adicional) / Peso Bruto',
     value: (invoices) =>
       safeDivide(
-        invoices.reduce((sum, item) => sum + freightBase(item), 0),
+        invoices.reduce((sum, item) => sum + item.transportCost, 0),
         invoices.reduce((sum, item) => sum + item.grossWeight, 0),
       ),
     composition: (invoices) => buildFreightComposition(invoices, 'gross'),
@@ -37,7 +35,7 @@ const metricConfigs: Record<string, OperationalMetricConfig> = {
     formula: '(Vlr CTE1 + Vlr CTE2 + Valor Adicional) / Peso Líquido',
     value: (invoices) =>
       safeDivide(
-        invoices.reduce((sum, item) => sum + freightBase(item), 0),
+        invoices.reduce((sum, item) => sum + item.transportCost, 0),
         invoices.reduce((sum, item) => sum + item.netWeight, 0),
       ),
     composition: (invoices) => buildFreightComposition(invoices, 'net'),
@@ -87,6 +85,18 @@ const metricConfigs: Record<string, OperationalMetricConfig> = {
         value: invoices.reduce((sum, item) => sum + item.operationalCost, 0),
       },
       {
+        label: 'Armazenagem',
+        value: invoices.reduce((sum, item) => sum + item.operational.storage, 0),
+      },
+      {
+        label: 'Movimentação',
+        value: invoices.reduce((sum, item) => sum + item.operational.handling, 0),
+      },
+      {
+        label: 'Transferência',
+        value: invoices.reduce((sum, item) => sum + item.operational.transfer, 0),
+      },
+      {
         label: 'Peso Bruto',
         value: invoices.reduce((sum, item) => sum + item.grossWeight, 0),
         mode: 'decimal',
@@ -99,7 +109,7 @@ const metricConfigs: Record<string, OperationalMetricConfig> = {
 export function DrawerContent() {
   const invoice = useGlobalFilterStore((state) => state.selectedInvoice);
   const context = useGlobalFilterStore((state) => state.drilldownContext);
-  const invoices = useGlobalFilterStore((state) => state.filteredInvoices);
+  const { filteredInvoices: invoices } = useDashboardData();
 
   if (invoice) {
     return (
@@ -107,12 +117,16 @@ export function DrawerContent() {
         <DetailRow label="NF" value={invoice.nf} />
         <DetailRow label="Cliente" value={invoice.customer} />
         <DetailRow label="Cidade/UF" value={`${invoice.city}/${invoice.uf}`} />
-        <DetailRow label="Receita" value={formatCurrency(invoice.revenue)} />
+        <DetailRow label="Receita Reconhecida" value={formatCurrency(invoice.revenue)} />
+        {invoice.originalRevenue !== invoice.revenue ? (
+          <DetailRow label="Receita Original" value={formatCurrency(invoice.originalRevenue)} />
+        ) : null}
         <DetailRow label="CTE1" value={formatCurrency(invoice.transport.cte1)} />
         <DetailRow label="CTE2" value={formatCurrency(invoice.transport.cte2)} />
         <DetailRow label="Valor adicional" value={formatCurrency(invoice.transport.additionalValue)} />
         <DetailRow label="Armazenagem" value={formatCurrency(invoice.operational.storage)} />
         <DetailRow label="Movimentação" value={formatCurrency(invoice.operational.handling)} />
+        <DetailRow label="TransferÃªncia" value={formatCurrency(invoice.operational.transfer)} />
         <DetailRow label="Frete/Kg bruto" value={formatCurrency(invoice.grossFreightPerKg)} />
         <DetailRow label="Frete/Kg líquido" value={formatCurrency(invoice.netFreightPerKg)} />
         <DetailRow label="Custo logístico total/Kg" value={formatCurrency(invoice.totalLogisticsCostPerKg)} />
@@ -176,10 +190,13 @@ function OperationalIndicatorDrawer({
   const monthly = monthlyOperationalEvolution(invoices, config.value);
   const clientRanking = groupSum(invoices, (item) => item.customer, config.rankingValue).slice(0, 5);
   const ufRanking = groupSum(invoices, (item) => item.uf, config.rankingValue).slice(0, 5);
+  const relatedRecords = [...invoices]
+    .sort((a, b) => config.rankingValue(b) - config.rankingValue(a))
+    .slice(0, 6);
 
   return (
     <div className="space-y-5">
-      <ChartCard title={config.title} description="Memória de cálculo">
+      <ChartCard title={config.title} description="Memória de cálculo: custo logístico total dividido pelo peso bruto">
         <DetailRow label="Valor principal" value={formatValue(value, config.mode ?? 'currency')} />
         <DetailRow label="Fórmula" value={config.formula} />
       </ChartCard>
@@ -194,6 +211,21 @@ function OperationalIndicatorDrawer({
       <Ranking title="Evolução do período" rows={monthly} mode={config.mode ?? 'currency'} />
       <Ranking title="Ranking relacionado por cliente" rows={clientRanking} mode={config.mode ?? 'currency'} />
       <Ranking title="Detalhamento operacional por UF" rows={ufRanking} mode={config.mode ?? 'currency'} />
+      <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-4">
+        <h3 className="font-display text-lg font-semibold text-white">Registros relacionados</h3>
+        <div className="mt-4 space-y-2">
+          {relatedRecords.map((invoice) => (
+            <div key={invoice.id} className="rounded-2xl border border-white/10 bg-black/10 px-3 py-2">
+              <div className="flex items-center justify-between gap-3">
+                <span className="text-sm font-semibold text-white">{invoice.nf}</span>
+                <span className="text-xs text-slate-500">{invoice.city}/{invoice.uf}</span>
+              </div>
+              <div className="mt-1 text-xs text-slate-400">{invoice.customer}</div>
+              <div className="mt-1 text-sm font-semibold text-slate-200">{formatValue(config.rankingValue(invoice), config.mode ?? 'currency')}</div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

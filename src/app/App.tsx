@@ -1,8 +1,9 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { MainLayout } from '@/layouts/MainLayout';
+import { MainLayout } from '../layouts/MainLayout';
 import { Drawer } from '@/components/Drawer';
 import { DrawerContent } from '@/components/DrawerContent';
+import { DashboardDataProvider } from '@/context/DashboardDataProvider';
 import { PageSkeleton } from '@/components/Skeleton';
 import { navigationItems } from '@/shared/navigation';
 import { useGlobalFilterStore } from '@/store/globalFilterStore';
@@ -34,23 +35,25 @@ export function App() {
   }, [loadData]);
 
   return (
-    <MainLayout activePage={activePage} navigation={navigationItems} onNavigate={setActivePage}>
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={activePage}
-          initial={{ opacity: 0, y: 18 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.28, ease: 'easeOut' }}
-        >
-          <Suspense fallback={<PageSkeleton />}>
-            <ActivePage />
-          </Suspense>
-        </motion.div>
-      </AnimatePresence>
-      <Drawer isOpen={isDrawerOpen} onClose={closeDrawer} title="Drill-down logístico">
-        <DrawerContent />
-      </Drawer>
-    </MainLayout>
+    <DashboardDataProvider>
+      <MainLayout activePage={activePage} navigation={navigationItems} onNavigate={setActivePage}>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activePage}
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.28, ease: 'easeOut' }}
+          >
+            <Suspense fallback={<PageSkeleton />}>
+              <ActivePage />
+            </Suspense>
+          </motion.div>
+        </AnimatePresence>
+        <Drawer isOpen={isDrawerOpen} onClose={closeDrawer} title="Drill-down logístico">
+          <DrawerContent />
+        </Drawer>
+      </MainLayout>
+    </DashboardDataProvider>
   );
 }

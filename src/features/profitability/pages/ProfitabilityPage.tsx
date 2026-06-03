@@ -2,12 +2,12 @@ import { useMemo } from 'react';
 import { ChartCard } from '@/components/ChartCard';
 import { EChart } from '@/components/EChart';
 import { EmptyState } from '@/components/Skeleton';
-import { useGlobalFilterStore } from '@/store/globalFilterStore';
+import { useDashboardData } from '@/context/useDashboardData';
 import { groupSum, quadrantPoints } from '@/utils/aggregations';
 import { paretoCustomersOption, profitabilityQuadrantOption } from '@/features/profitability/charts/profitabilityChartOptions';
 
 export default function ProfitabilityPage() {
-  const invoices = useGlobalFilterStore((state) => state.filteredInvoices);
+  const { filteredInvoices: invoices } = useDashboardData();
   const paretoData = useMemo(
     () => groupSum(invoices, (invoice) => invoice.customer, (invoice) => invoice.logisticsResult),
     [invoices],

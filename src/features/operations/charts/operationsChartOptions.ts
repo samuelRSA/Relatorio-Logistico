@@ -4,7 +4,7 @@ import { formatCurrency } from '@/utils/formatters';
 
 const textColor = '#cbd5e1';
 
-export const operationalCompositionOption = (storage: number, handling: number): EChartsOption => ({
+export const operationalCompositionOption = (storage: number, handling: number, transfer: number): EChartsOption => ({
   backgroundColor: 'transparent',
   tooltip: { trigger: 'item' },
   legend: { bottom: 0, textStyle: { color: textColor } },
@@ -15,6 +15,7 @@ export const operationalCompositionOption = (storage: number, handling: number):
       data: [
         { name: 'Armazenagem', value: storage, itemStyle: { color: '#65b7ff' } },
         { name: 'Movimentação', value: handling, itemStyle: { color: '#f4b860' } },
+        { name: 'Transferência', value: transfer, itemStyle: { color: '#6ee7b7' } },
       ],
       label: { color: textColor, formatter: (params: { value?: unknown }) => formatCurrency(Number(params.value)) },
     },

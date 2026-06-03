@@ -19,12 +19,17 @@ export interface TransportCost {
   cte1: number;
   cte2: number;
   additionalValue: number;
-  accessoryExpenses: number;
+  /**
+   * Legacy mirror of `additionalValue` kept for compatibility with older raw files.
+   * Do not use this field in calculations.
+   */
+  accessoryExpenses?: number;
 }
 
 export interface OperationalCost {
   storage: number;
   handling: number;
+  transfer: number;
 }
 
 export interface Invoice {
@@ -48,6 +53,8 @@ export interface Invoice {
 }
 
 export interface LogisticsIndicators {
+  originalRevenue: number;
+  recognizedRevenue: number;
   revenue: number;
   transportCost: number;
   operationalCost: number;

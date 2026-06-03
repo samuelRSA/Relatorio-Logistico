@@ -1,4 +1,4 @@
-[
+﻿[
     {
         "id":  "inv-2",
         "nf":  "3137",
@@ -23,7 +23,8 @@
                       },
         "operational":  {
                             "storage":  8.56545131900466,
-                            "handling":  10.701500000000001
+                            "handling":  10.701500000000001,
+                            "transfer":  7.8788635432294152
                         }
     },
     {
@@ -36,7 +37,7 @@
         "uf":  "ES",
         "companyId":  2,
         "company":  "Filial Telemassas",
-        "operationType":  "BONIFICAÇÃO",
+        "operationType":  "BONIFICAÃ‡ÃƒO",
         "managementCategory":  "Incentivo",
         "seller":  "INTERNO",
         "revenue":  733.38,
@@ -50,7 +51,8 @@
                       },
         "operational":  {
                             "storage":  13.062483345900672,
-                            "handling":  16.32
+                            "handling":  16.32,
+                            "transfer":  12.015423354249783
                         }
     },
     {
@@ -77,7 +79,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  0
                         }
     },
     {
@@ -104,7 +107,8 @@
                       },
         "operational":  {
                             "storage":  13.32781503886428,
-                            "handling":  16.651500000000002
+                            "handling":  16.651500000000002,
+                            "transfer":  12.259486641132982
                         }
     },
     {
@@ -131,7 +135,8 @@
                       },
         "operational":  {
                             "storage":  11.742628257825292,
-                            "handling":  14.671000000000001
+                            "handling":  14.671000000000001,
+                            "transfer":  10.801364952830795
                         }
     },
     {
@@ -158,7 +163,8 @@
                       },
         "operational":  {
                             "storage":  80.1505814052374,
-                            "handling":  100.1385
+                            "handling":  100.1385,
+                            "transfer":  73.725886737717019
                         }
     },
     {
@@ -166,7 +172,7 @@
         "nf":  "20880",
         "date":  "2026-04-02",
         "customerId":  "cli-1904372916",
-        "customer":  "SUPERMERCADOS BH - ROD. DO CAFÉ GETHER LOPES DE FARIAS - 504",
+        "customer":  "SUPERMERCADOS BH - ROD. DO CAFÃ‰ GETHER LOPES DE FARIAS - 504",
         "city":  "COLATINA",
         "uf":  "ES",
         "companyId":  1,
@@ -185,7 +191,8 @@
                       },
         "operational":  {
                             "storage":  13.613556862055857,
-                            "handling":  17.0085
+                            "handling":  17.0085,
+                            "transfer":  12.522324027007194
                         }
     },
     {
@@ -212,7 +219,8 @@
                       },
         "operational":  {
                             "storage":  12.654280741341276,
-                            "handling":  15.81
+                            "handling":  15.81,
+                            "transfer":  11.639941374429478
                         }
     },
     {
@@ -239,7 +247,8 @@
                       },
         "operational":  {
                             "storage":  12.654280741341276,
-                            "handling":  15.81
+                            "handling":  15.81,
+                            "transfer":  11.639941374429478
                         }
     },
     {
@@ -266,7 +275,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  0
                         }
     },
     {
@@ -293,7 +303,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  0
                         }
     },
     {
@@ -320,7 +331,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  491.8188132346304
                         }
     },
     {
@@ -347,7 +359,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  137.36382428426185
                         }
     },
     {
@@ -360,7 +373,7 @@
         "uf":  "ES",
         "companyId":  1,
         "company":  "Matriz Telemassas",
-        "operationType":  "BONIFICAÇÃO",
+        "operationType":  "BONIFICAÃ‡ÃƒO",
         "managementCategory":  "Incentivo",
         "seller":  "INTERNO",
         "revenue":  211.22,
@@ -374,7 +387,8 @@
                       },
         "operational":  {
                             "storage":  3.0343060272248437,
-                            "handling":  3.7910000000000004
+                            "handling":  3.7910000000000004,
+                            "transfer":  2.7910827166642727
                         }
     },
     {
@@ -401,7 +415,8 @@
                       },
         "operational":  {
                             "storage":  39.731720177114546,
-                            "handling":  49.64
+                            "handling":  49.64,
+                            "transfer":  36.546912702509758
                         }
     },
     {
@@ -414,7 +429,7 @@
         "uf":  "ES",
         "companyId":  2,
         "company":  "Filial Telemassas",
-        "operationType":  "BONIFICAÇÃO",
+        "operationType":  "BONIFICAÃ‡ÃƒO",
         "managementCategory":  "Incentivo",
         "seller":  "INTERNO",
         "revenue":  213.02,
@@ -428,7 +443,8 @@
                       },
         "operational":  {
                             "storage":  3.8030875991450395,
-                            "handling":  4.7515
+                            "handling":  4.7515,
+                            "transfer":  3.4982404453258482
                         }
     },
     {
@@ -455,7 +471,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  0
                         }
     },
     {
@@ -482,7 +499,8 @@
                       },
         "operational":  {
                             "storage":  12.144027485642031,
-                            "handling":  15.172500000000001
+                            "handling":  15.172500000000001,
+                            "transfer":  11.170588899654096
                         }
     },
     {
@@ -509,7 +527,8 @@
                       },
         "operational":  {
                             "storage":  12.144027485642031,
-                            "handling":  15.172500000000001
+                            "handling":  15.172500000000001,
+                            "transfer":  11.170588899654096
                         }
     },
     {
@@ -536,7 +555,8 @@
                       },
         "operational":  {
                             "storage":  15.382434815146572,
-                            "handling":  19.218500000000002
+                            "handling":  19.218500000000002,
+                            "transfer":  14.14941260622852
                         }
     },
     {
@@ -563,7 +583,8 @@
                       },
         "operational":  {
                             "storage":  12.144027485642031,
-                            "handling":  15.172500000000001
+                            "handling":  15.172500000000001,
+                            "transfer":  11.170588899654096
                         }
     },
     {
@@ -590,7 +611,8 @@
                       },
         "operational":  {
                             "storage":  9.7152219885136262,
-                            "handling":  12.138000000000002
+                            "handling":  12.138000000000002,
+                            "transfer":  8.9364711197232776
                         }
     },
     {
@@ -617,7 +639,8 @@
                       },
         "operational":  {
                             "storage":  8.0960183237613546,
-                            "handling":  10.115
+                            "handling":  10.115,
+                            "transfer":  7.4470592664360629
                         }
     },
     {
@@ -644,7 +667,8 @@
                       },
         "operational":  {
                             "storage":  15.382434815146572,
-                            "handling":  19.218500000000002
+                            "handling":  19.218500000000002,
+                            "transfer":  14.14941260622852
                         }
     },
     {
@@ -671,7 +695,8 @@
                       },
         "operational":  {
                             "storage":  341.61115300227317,
-                            "handling":  426.802
+                            "handling":  426.802,
+                            "transfer":  314.22835284561984
                         }
     },
     {
@@ -698,7 +723,8 @@
                       },
         "operational":  {
                             "storage":  9.7152219885136262,
-                            "handling":  12.138000000000002
+                            "handling":  12.138000000000002,
+                            "transfer":  8.9364711197232776
                         }
     },
     {
@@ -725,7 +751,8 @@
                       },
         "operational":  {
                             "storage":  12.144027485642031,
-                            "handling":  15.172500000000001
+                            "handling":  15.172500000000001,
+                            "transfer":  11.170588899654096
                         }
     },
     {
@@ -752,7 +779,8 @@
                       },
         "operational":  {
                             "storage":  17.001638479898844,
-                            "handling":  21.241500000000002
+                            "handling":  21.241500000000002,
+                            "transfer":  15.638824459515734
                         }
     },
     {
@@ -779,7 +807,8 @@
                       },
         "operational":  {
                             "storage":  8.0960183237613546,
-                            "handling":  10.115
+                            "handling":  10.115,
+                            "transfer":  7.4470592664360629
                         }
     },
     {
@@ -806,7 +835,8 @@
                       },
         "operational":  {
                             "storage":  429.21143194071959,
-                            "handling":  536.248
+                            "handling":  536.248,
+                            "transfer":  394.80678571505746
                         }
     },
     {
@@ -833,7 +863,8 @@
                       },
         "operational":  {
                             "storage":  22.519177018193346,
-                            "handling":  28.135
+                            "handling":  28.135,
+                            "transfer":  20.714089220086866
                         }
     },
     {
@@ -860,7 +891,8 @@
                       },
         "operational":  {
                             "storage":  24.832325110696591,
-                            "handling":  31.025000000000002
+                            "handling":  31.025000000000002,
+                            "transfer":  22.8418204390686
                         }
     },
     {
@@ -887,7 +919,8 @@
                       },
         "operational":  {
                             "storage":  40.480091618806767,
-                            "handling":  50.575
+                            "handling":  50.575,
+                            "transfer":  37.235296332180319
                         }
     },
     {
@@ -914,7 +947,8 @@
                       },
         "operational":  {
                             "storage":  20.750299065102631,
-                            "handling":  25.925
+                            "handling":  25.925,
+                            "transfer":  19.08700064086554
                         }
     },
     {
@@ -941,7 +975,8 @@
                       },
         "operational":  {
                             "storage":  20.750299065102631,
-                            "handling":  25.925
+                            "handling":  25.925,
+                            "transfer":  19.08700064086554
                         }
     },
     {
@@ -968,7 +1003,8 @@
                       },
         "operational":  {
                             "storage":  30.6151953419547,
-                            "handling":  38.25
+                            "handling":  38.25,
+                            "transfer":  28.161148486522929
                         }
     },
     {
@@ -995,7 +1031,8 @@
                       },
         "operational":  {
                             "storage":  4.5582624175799218,
-                            "handling":  5.695
+                            "handling":  5.695,
+                            "transfer":  4.1928821079934133
                         }
     },
     {
@@ -1022,7 +1059,8 @@
                       },
         "operational":  {
                             "storage":  14.423158694431992,
-                            "handling":  18.02
+                            "handling":  18.02,
+                            "transfer":  13.267029953650802
                         }
     },
     {
@@ -1049,7 +1087,8 @@
                       },
         "operational":  {
                             "storage":  10.48400356043382,
-                            "handling":  13.0985
+                            "handling":  13.0985,
+                            "transfer":  9.6436288483848518
                         }
     },
     {
@@ -1076,7 +1115,8 @@
                       },
         "operational":  {
                             "storage":  12.654280741341276,
-                            "handling":  15.81
+                            "handling":  15.81,
+                            "transfer":  11.639941374429478
                         }
     },
     {
@@ -1084,7 +1124,7 @@
         "nf":  "20894",
         "date":  "2026-04-10",
         "customerId":  "cli-1895518628",
-        "customer":  "SUPERMERCADOS BH - AV. WALDEMAR VERÇOSA PITANGA - 514",
+        "customer":  "SUPERMERCADOS BH - AV. WALDEMAR VERÃ‡OSA PITANGA - 514",
         "city":  "Vila Velha",
         "uf":  "ES",
         "companyId":  1,
@@ -1103,7 +1143,8 @@
                       },
         "operational":  {
                             "storage":  13.463882573717411,
-                            "handling":  16.8215
+                            "handling":  16.8215,
+                            "transfer":  12.384647301073084
                         }
     },
     {
@@ -1130,7 +1171,8 @@
                       },
         "operational":  {
                             "storage":  8.6062715794605982,
-                            "handling":  10.752500000000001
+                            "handling":  10.752500000000001,
+                            "transfer":  7.9164117412114452
                         }
     },
     {
@@ -1157,7 +1199,8 @@
                       },
         "operational":  {
                             "storage":  16.736306786935234,
-                            "handling":  20.91
+                            "handling":  20.91,
+                            "transfer":  15.394761172632535
                         }
     },
     {
@@ -1184,7 +1227,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  0
                         }
     },
     {
@@ -1211,7 +1255,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  0
                         }
     },
     {
@@ -1238,7 +1283,8 @@
                       },
         "operational":  {
                             "storage":  20.240045809403384,
-                            "handling":  25.2875
+                            "handling":  25.2875,
+                            "transfer":  18.617648166090159
                         }
     },
     {
@@ -1265,7 +1311,8 @@
                       },
         "operational":  {
                             "storage":  8.0960183237613546,
-                            "handling":  10.115
+                            "handling":  10.115,
+                            "transfer":  7.4470592664360629
                         }
     },
     {
@@ -1292,7 +1339,8 @@
                       },
         "operational":  {
                             "storage":  19.838646581586648,
-                            "handling":  24.786000000000005
+                            "handling":  24.786000000000005,
+                            "transfer":  18.248424219266859
                         }
     },
     {
@@ -1300,7 +1348,7 @@
         "nf":  "3175",
         "date":  "2026-04-17",
         "customerId":  "cli-456624994",
-        "customer":  "ITAPOA SUPERMERCADO LTDA. - JOSÉ BARCELLOS DE MATTOS - 19",
+        "customer":  "ITAPOA SUPERMERCADO LTDA. - JOSÃ‰ BARCELLOS DE MATTOS - 19",
         "city":  "GUARAPARI",
         "uf":  "ES",
         "companyId":  2,
@@ -1319,7 +1367,8 @@
                       },
         "operational":  {
                             "storage":  30.227402867623276,
-                            "handling":  37.7655
+                            "handling":  37.7655,
+                            "transfer":  27.804440605693635
                         }
     },
     {
@@ -1346,7 +1395,8 @@
                       },
         "operational":  {
                             "storage":  16.192036647522709,
-                            "handling":  20.23
+                            "handling":  20.23,
+                            "transfer":  14.894118532872126
                         }
     },
     {
@@ -1373,7 +1423,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  0
                         }
     },
     {
@@ -1400,7 +1451,8 @@
                       },
         "operational":  {
                             "storage":  13.164533997040522,
-                            "handling":  16.4475
+                            "handling":  16.4475,
+                            "transfer":  12.10929384920486
                         }
     },
     {
@@ -1427,7 +1479,8 @@
                       },
         "operational":  {
                             "storage":  8.6062715794605982,
-                            "handling":  10.752500000000001
+                            "handling":  10.752500000000001,
+                            "transfer":  7.9164117412114452
                         }
     },
     {
@@ -1454,7 +1507,8 @@
                       },
         "operational":  {
                             "storage":  6.1774660823321925,
-                            "handling":  7.718
+                            "handling":  7.718,
+                            "transfer":  5.6822939612806254
                         }
     },
     {
@@ -1481,7 +1535,8 @@
                       },
         "operational":  {
                             "storage":  20.750299065102631,
-                            "handling":  25.925
+                            "handling":  25.925,
+                            "transfer":  19.08700064086554
                         }
     },
     {
@@ -1508,7 +1563,8 @@
                       },
         "operational":  {
                             "storage":  8.6062715794605982,
-                            "handling":  10.752500000000001
+                            "handling":  10.752500000000001,
+                            "transfer":  7.9164117412114452
                         }
     },
     {
@@ -1535,7 +1591,8 @@
                       },
         "operational":  {
                             "storage":  12.450179439061579,
-                            "handling":  15.555000000000001
+                            "handling":  15.555000000000001,
+                            "transfer":  11.452200384519324
                         }
     },
     {
@@ -1543,7 +1600,7 @@
         "nf":  "20906",
         "date":  "2026-04-17",
         "customerId":  "cli-694771405",
-        "customer":  "SUPERMERCADOS BH - R. EUGÊNIO NETTO - 522",
+        "customer":  "SUPERMERCADOS BH - R. EUGÃŠNIO NETTO - 522",
         "city":  "VITORIA",
         "uf":  "ES",
         "companyId":  1,
@@ -1562,7 +1619,8 @@
                       },
         "operational":  {
                             "storage":  8.6062715794605982,
-                            "handling":  10.752500000000001
+                            "handling":  10.752500000000001,
+                            "transfer":  7.9164117412114452
                         }
     },
     {
@@ -1589,7 +1647,8 @@
                       },
         "operational":  {
                             "storage":  4.5582624175799218,
-                            "handling":  5.695
+                            "handling":  5.695,
+                            "transfer":  4.1928821079934133
                         }
     },
     {
@@ -1597,7 +1656,7 @@
         "nf":  "20908",
         "date":  "2026-04-17",
         "customerId":  "cli-918528114",
-        "customer":  "SUPERMERCADOS BH - JOSÉ MARIA VIVÁCQUA SANTOS - 521",
+        "customer":  "SUPERMERCADOS BH - JOSÃ‰ MARIA VIVÃCQUA SANTOS - 521",
         "city":  "VITORIA",
         "uf":  "ES",
         "companyId":  1,
@@ -1616,7 +1675,8 @@
                       },
         "operational":  {
                             "storage":  13.164533997040522,
-                            "handling":  16.4475
+                            "handling":  16.4475,
+                            "transfer":  12.10929384920486
                         }
     },
     {
@@ -1624,7 +1684,7 @@
         "nf":  "20909",
         "date":  "2026-04-17",
         "customerId":  "cli-1895518628",
-        "customer":  "SUPERMERCADOS BH - AV. WALDEMAR VERÇOSA PITANGA - 514",
+        "customer":  "SUPERMERCADOS BH - AV. WALDEMAR VERÃ‡OSA PITANGA - 514",
         "city":  "Vila Velha",
         "uf":  "ES",
         "companyId":  1,
@@ -1643,7 +1703,8 @@
                       },
         "operational":  {
                             "storage":  10.375149532551315,
-                            "handling":  12.9625
+                            "handling":  12.9625,
+                            "transfer":  9.54350032043277
                         }
     },
     {
@@ -1670,7 +1731,8 @@
                       },
         "operational":  {
                             "storage":  58.713141289126455,
-                            "handling":  73.355
+                            "handling":  73.355,
+                            "transfer":  54.006824764153968
                         }
     },
     {
@@ -1678,7 +1740,7 @@
         "nf":  "20911",
         "date":  "2026-04-17",
         "customerId":  "cli-1166895585",
-        "customer":  "SUPERMERCADOS BH - PRAÇA REGINA FRIGERI FURNO - 524",
+        "customer":  "SUPERMERCADOS BH - PRAÃ‡A REGINA FRIGERI FURNO - 524",
         "city":  "VITORIA",
         "uf":  "ES",
         "companyId":  1,
@@ -1697,7 +1759,8 @@
                       },
         "operational":  {
                             "storage":  12.654280741341276,
-                            "handling":  15.81
+                            "handling":  15.81,
+                            "transfer":  11.639941374429478
                         }
     },
     {
@@ -1724,7 +1787,8 @@
                       },
         "operational":  {
                             "storage":  12.810758406422378,
-                            "handling":  16.0055
+                            "handling":  16.0055,
+                            "transfer":  11.783876133360595
                         }
     },
     {
@@ -1751,7 +1815,8 @@
                       },
         "operational":  {
                             "storage":  20.750299065102631,
-                            "handling":  25.925
+                            "handling":  25.925,
+                            "transfer":  19.08700064086554
                         }
     },
     {
@@ -1778,7 +1843,8 @@
                       },
         "operational":  {
                             "storage":  20.240045809403384,
-                            "handling":  25.2875
+                            "handling":  25.2875,
+                            "transfer":  18.617648166090159
                         }
     },
     {
@@ -1791,7 +1857,7 @@
         "uf":  "ES",
         "companyId":  1,
         "company":  "Matriz Telemassas",
-        "operationType":  "BONIFICAÇÃO",
+        "operationType":  "BONIFICAÃ‡ÃƒO",
         "managementCategory":  "Incentivo",
         "seller":  "INTERNO",
         "revenue":  194.2,
@@ -1805,7 +1871,8 @@
                       },
         "operational":  {
                             "storage":  8.4021702771809,
-                            "handling":  10.4975
+                            "handling":  10.4975,
+                            "transfer":  7.7286707513012924
                         }
     },
     {
@@ -1832,7 +1899,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  685.94299680172844
                         }
     },
     {
@@ -1859,7 +1927,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  28.91211244616354
                         }
     },
     {
@@ -1886,7 +1955,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  0
                         }
     },
     {
@@ -1913,7 +1983,8 @@
                       },
         "operational":  {
                             "storage":  12.810758406422378,
-                            "handling":  16.0055
+                            "handling":  16.0055,
+                            "transfer":  11.783876133360595
                         }
     },
     {
@@ -1921,7 +1992,7 @@
         "nf":  "3183",
         "date":  "2026-04-24",
         "customerId":  "cli-456624994",
-        "customer":  "ITAPOA SUPERMERCADO LTDA. - JOSÉ BARCELLOS DE MATTOS - 19",
+        "customer":  "ITAPOA SUPERMERCADO LTDA. - JOSÃ‰ BARCELLOS DE MATTOS - 19",
         "city":  "GUARAPARI",
         "uf":  "ES",
         "companyId":  2,
@@ -1940,7 +2011,8 @@
                       },
         "operational":  {
                             "storage":  36.976352596338621,
-                            "handling":  46.197500000000005
+                            "handling":  46.197500000000005,
+                            "transfer":  34.012409338722691
                         }
     },
     {
@@ -1967,7 +2039,8 @@
                       },
         "operational":  {
                             "storage":  26.567186180074025,
-                            "handling":  33.1925
+                            "handling":  33.1925,
+                            "transfer":  24.437618853304897
                         }
     },
     {
@@ -1975,7 +2048,7 @@
         "nf":  "3185",
         "date":  "2026-04-24",
         "customerId":  "cli-497033692",
-        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - SÃO MATEUS NOVO",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - SÃƒO MATEUS NOVO",
         "city":  "SAO MATEUS",
         "uf":  "ES",
         "companyId":  2,
@@ -1994,7 +2067,8 @@
                       },
         "operational":  {
                             "storage":  33.676714876150172,
-                            "handling":  42.075
+                            "handling":  42.075,
+                            "transfer":  30.97726333517522
                         }
     },
     {
@@ -2021,7 +2095,8 @@
                       },
         "operational":  {
                             "storage":  16.192036647522709,
-                            "handling":  20.23
+                            "handling":  20.23,
+                            "transfer":  14.894118532872126
                         }
     },
     {
@@ -2048,7 +2123,8 @@
                       },
         "operational":  {
                             "storage":  22.478356757737405,
-                            "handling":  28.084
+                            "handling":  28.084,
+                            "transfer":  20.676541022104836
                         }
     },
     {
@@ -2075,7 +2151,8 @@
                       },
         "operational":  {
                             "storage":  20.784315948815912,
-                            "handling":  25.9675
+                            "handling":  25.9675,
+                            "transfer":  19.118290805850567
                         }
     },
     {
@@ -2102,7 +2179,8 @@
                       },
         "operational":  {
                             "storage":  32.928343434457943,
-                            "handling":  41.14
+                            "handling":  41.14,
+                            "transfer":  30.288879705504662
                         }
     },
     {
@@ -2129,7 +2207,8 @@
                       },
         "operational":  {
                             "storage":  8.0960183237613546,
-                            "handling":  10.115
+                            "handling":  10.115,
+                            "transfer":  7.4470592664360629
                         }
     },
     {
@@ -2156,7 +2235,8 @@
                       },
         "operational":  {
                             "storage":  13.518309587658663,
-                            "handling":  16.8895
+                            "handling":  16.8895,
+                            "transfer":  12.434711565049124
                         }
     },
     {
@@ -2183,7 +2263,8 @@
                       },
         "operational":  {
                             "storage":  12.654280741341276,
-                            "handling":  15.81
+                            "handling":  15.81,
+                            "transfer":  11.639941374429478
                         }
     },
     {
@@ -2210,7 +2291,8 @@
                       },
         "operational":  {
                             "storage":  11.082700713787602,
-                            "handling":  13.8465
+                            "handling":  13.8465,
+                            "transfer":  10.194335752121301
                         }
     },
     {
@@ -2237,7 +2319,8 @@
                       },
         "operational":  {
                             "storage":  16.702289903221953,
-                            "handling":  20.867500000000003
+                            "handling":  20.867500000000003,
+                            "transfer":  15.363471007647508
                         }
     },
     {
@@ -2264,7 +2347,8 @@
                       },
         "operational":  {
                             "storage":  12.654280741341276,
-                            "handling":  15.81
+                            "handling":  15.81,
+                            "transfer":  11.639941374429478
                         }
     },
     {
@@ -2291,7 +2375,8 @@
                       },
         "operational":  {
                             "storage":  14.423158694431992,
-                            "handling":  18.02
+                            "handling":  18.02,
+                            "transfer":  13.267029953650802
                         }
     },
     {
@@ -2318,7 +2403,8 @@
                       },
         "operational":  {
                             "storage":  14.878984936189983,
-                            "handling":  18.5895
+                            "handling":  18.5895,
+                            "transfer":  13.686318164450142
                         }
     },
     {
@@ -2345,7 +2431,8 @@
                       },
         "operational":  {
                             "storage":  15.232760526808129,
-                            "handling":  19.0315
+                            "handling":  19.0315,
+                            "transfer":  14.011735880294408
                         }
     },
     {
@@ -2353,7 +2440,7 @@
         "nf":  "20926",
         "date":  "2026-04-24",
         "customerId":  "cli-1055764588",
-        "customer":  "SUPERMERCADOS BH - AV. JOÃO SANTOS FILHO - 520",
+        "customer":  "SUPERMERCADOS BH - AV. JOÃƒO SANTOS FILHO - 520",
         "city":  "VITORIA",
         "uf":  "ES",
         "companyId":  1,
@@ -2372,7 +2459,8 @@
                       },
         "operational":  {
                             "storage":  12.654280741341276,
-                            "handling":  15.81
+                            "handling":  15.81,
+                            "transfer":  11.639941374429478
                         }
     },
     {
@@ -2399,7 +2487,8 @@
                       },
         "operational":  {
                             "storage":  12.654280741341276,
-                            "handling":  15.81
+                            "handling":  15.81,
+                            "transfer":  11.639941374429478
                         }
     },
     {
@@ -2426,7 +2515,8 @@
                       },
         "operational":  {
                             "storage":  12.654280741341276,
-                            "handling":  15.81
+                            "handling":  15.81,
+                            "transfer":  11.639941374429478
                         }
     },
     {
@@ -2453,7 +2543,8 @@
                       },
         "operational":  {
                             "storage":  18.981421112011915,
-                            "handling":  23.715000000000003
+                            "handling":  23.715000000000003,
+                            "transfer":  17.459912061644214
                         }
     },
     {
@@ -2480,7 +2571,8 @@
                       },
         "operational":  {
                             "storage":  20.750299065102631,
-                            "handling":  25.925
+                            "handling":  25.925,
+                            "transfer":  19.08700064086554
                         }
     },
     {
@@ -2507,7 +2599,8 @@
                       },
         "operational":  {
                             "storage":  4.5582624175799218,
-                            "handling":  5.695
+                            "handling":  5.695,
+                            "transfer":  4.1928821079934133
                         }
     },
     {
@@ -2515,7 +2608,7 @@
         "nf":  "20932",
         "date":  "2026-04-24",
         "customerId":  "cli-1923100948",
-        "customer":  "SUPERMERCADOS BH - ROD. GOVERNADOR MÁRIO COVAS - 544",
+        "customer":  "SUPERMERCADOS BH - ROD. GOVERNADOR MÃRIO COVAS - 544",
         "city":  "Serra",
         "uf":  "ES",
         "companyId":  1,
@@ -2534,7 +2627,8 @@
                       },
         "operational":  {
                             "storage":  7.84429338428306,
-                            "handling":  9.8005000000000013
+                            "handling":  9.8005000000000013,
+                            "transfer":  7.2155120455468751
                         }
     },
     {
@@ -2561,7 +2655,8 @@
                       },
         "operational":  {
                             "storage":  40.480091618806767,
-                            "handling":  50.575
+                            "handling":  50.575,
+                            "transfer":  37.235296332180319
                         }
     },
     {
@@ -2588,7 +2683,8 @@
                       },
         "operational":  {
                             "storage":  291.45665965540877,
-                            "handling":  364.14000000000004
+                            "handling":  364.14000000000004,
+                            "transfer":  268.09413359169827
                         }
     },
     {
@@ -2615,7 +2711,8 @@
                       },
         "operational":  {
                             "storage":  0.86402884631738819,
-                            "handling":  1.0795000000000001
+                            "handling":  1.0795000000000001,
+                            "transfer":  0.794770190619647
                         }
     },
     {
@@ -2642,7 +2739,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  0
                         }
     },
     {
@@ -2669,7 +2767,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  471.7931076442141
                         }
     },
     {
@@ -2696,7 +2795,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  63.300003764706538
                         }
     },
     {
@@ -2723,7 +2823,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  0
                         }
     },
     {
@@ -2750,7 +2851,8 @@
                       },
         "operational":  {
                             "storage":  708.96628359875888,
-                            "handling":  885.768
+                            "handling":  885.768,
+                            "transfer":  652.13710255190688
                         }
     },
     {
@@ -2777,7 +2879,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  0
                         }
     },
     {
@@ -2804,7 +2907,8 @@
                       },
         "operational":  {
                             "storage":  73.884671425250673,
-                            "handling":  92.31
+                            "handling":  92.31,
+                            "transfer":  67.962238347475335
                         }
     },
     {
@@ -2812,7 +2916,7 @@
         "nf":  "3199",
         "date":  "2026-04-30",
         "customerId":  "cli-2030899502",
-        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - ARAÇA",
+        "customer":  "SUPERMERCADOS CASAGRANDE LTDA - ARAÃ‡A",
         "city":  "LINHARES",
         "uf":  "ES",
         "companyId":  2,
@@ -2831,7 +2935,8 @@
                       },
         "operational":  {
                             "storage":  35.479609712954172,
-                            "handling":  44.3275
+                            "handling":  44.3275,
+                            "transfer":  32.635642079381569
                         }
     },
     {
@@ -2858,7 +2963,8 @@
                       },
         "operational":  {
                             "storage":  25.920865389521644,
-                            "handling":  32.385000000000005
+                            "handling":  32.385000000000005,
+                            "transfer":  23.843105718589413
                         }
     },
     {
@@ -2885,7 +2991,8 @@
                       },
         "operational":  {
                             "storage":  13.613556862055857,
-                            "handling":  17.0085
+                            "handling":  17.0085,
+                            "transfer":  12.522324027007194
                         }
     },
     {
@@ -2912,7 +3019,8 @@
                       },
         "operational":  {
                             "storage":  23.301565343598856,
-                            "handling":  29.1125
+                            "handling":  29.1125,
+                            "transfer":  21.43376301474245
                         }
     },
     {
@@ -2939,7 +3047,8 @@
                       },
         "operational":  {
                             "storage":  12.416162555348295,
-                            "handling":  15.512500000000001
+                            "handling":  15.512500000000001,
+                            "transfer":  11.4209102195343
                         }
     },
     {
@@ -2966,7 +3075,8 @@
                       },
         "operational":  {
                             "storage":  18.471167856312668,
-                            "handling":  23.0775
+                            "handling":  23.0775,
+                            "transfer":  16.990559586868834
                         }
     },
     {
@@ -2993,7 +3103,8 @@
                       },
         "operational":  {
                             "storage":  14.423158694431992,
-                            "handling":  18.02
+                            "handling":  18.02,
+                            "transfer":  13.267029953650802
                         }
     },
     {
@@ -3001,7 +3112,7 @@
         "nf":  "20942",
         "date":  "2026-04-30",
         "customerId":  "cli-1904372916",
-        "customer":  "SUPERMERCADOS BH - ROD. DO CAFÉ GETHER LOPES DE FARIAS - 504",
+        "customer":  "SUPERMERCADOS BH - ROD. DO CAFÃ‰ GETHER LOPES DE FARIAS - 504",
         "city":  "COLATINA",
         "uf":  "ES",
         "companyId":  1,
@@ -3020,7 +3131,8 @@
                       },
         "operational":  {
                             "storage":  12.90600568081957,
-                            "handling":  16.1245
+                            "handling":  16.1245,
+                            "transfer":  11.871488595318665
                         }
     },
     {
@@ -3047,7 +3159,8 @@
                       },
         "operational":  {
                             "storage":  20.750299065102631,
-                            "handling":  25.925
+                            "handling":  25.925,
+                            "transfer":  19.08700064086554
                         }
     },
     {
@@ -3074,7 +3187,8 @@
                       },
         "operational":  {
                             "storage":  6.3271403706706382,
-                            "handling":  7.905
+                            "handling":  7.905,
+                            "transfer":  5.819970687214739
                         }
     },
     {
@@ -3101,7 +3215,8 @@
                       },
         "operational":  {
                             "storage":  20.750299065102631,
-                            "handling":  25.925
+                            "handling":  25.925,
+                            "transfer":  19.08700064086554
                         }
     },
     {
@@ -3128,7 +3243,8 @@
                       },
         "operational":  {
                             "storage":  7.9463440354229089,
-                            "handling":  9.928
+                            "handling":  9.928,
+                            "transfer":  7.309382540501951
                         }
     },
     {
@@ -3155,7 +3271,8 @@
                       },
         "operational":  {
                             "storage":  5.667212826632948,
-                            "handling":  7.0805000000000007
+                            "handling":  7.0805000000000007,
+                            "transfer":  5.2129414865052448
                         }
     },
     {
@@ -3182,7 +3299,8 @@
                       },
         "operational":  {
                             "storage":  33.404579806443905,
-                            "handling":  41.735000000000007
+                            "handling":  41.735000000000007,
+                            "transfer":  30.726942015295016
                         }
     },
     {
@@ -3209,7 +3327,8 @@
                       },
         "operational":  {
                             "storage":  8.6062715794605982,
-                            "handling":  10.752500000000001
+                            "handling":  10.752500000000001,
+                            "transfer":  7.9164117412114452
                         }
     },
     {
@@ -3236,7 +3355,8 @@
                       },
         "operational":  {
                             "storage":  6.3271403706706382,
-                            "handling":  7.905
+                            "handling":  7.905,
+                            "transfer":  5.819970687214739
                         }
     },
     {
@@ -3244,7 +3364,7 @@
         "nf":  "20951",
         "date":  "2026-04-30",
         "customerId":  "cli-1375129078",
-        "customer":  "SUPERMERCADOS BH - AV. VITÓRIA RÉGIA - 518",
+        "customer":  "SUPERMERCADOS BH - AV. VITÃ“RIA RÃ‰GIA - 518",
         "city":  "Vila Velha",
         "uf":  "ES",
         "companyId":  1,
@@ -3263,7 +3383,8 @@
                       },
         "operational":  {
                             "storage":  7.9463440354229089,
-                            "handling":  9.928
+                            "handling":  9.928,
+                            "transfer":  7.309382540501951
                         }
     },
     {
@@ -3290,7 +3411,8 @@
                       },
         "operational":  {
                             "storage":  5.667212826632948,
-                            "handling":  7.0805000000000007
+                            "handling":  7.0805000000000007,
+                            "transfer":  5.2129414865052448
                         }
     },
     {
@@ -3317,7 +3439,8 @@
                       },
         "operational":  {
                             "storage":  12.654280741341276,
-                            "handling":  15.81
+                            "handling":  15.81,
+                            "transfer":  11.639941374429478
                         }
     },
     {
@@ -3344,7 +3467,8 @@
                       },
         "operational":  {
                             "storage":  18.471167856312668,
-                            "handling":  23.0775
+                            "handling":  23.0775,
+                            "transfer":  16.990559586868834
                         }
     },
     {
@@ -3371,7 +3495,8 @@
                       },
         "operational":  {
                             "storage":  0,
-                            "handling":  0
+                            "handling":  0,
+                            "transfer":  0
                         }
     },
     {
@@ -3398,7 +3523,8 @@
                       },
         "operational":  {
                             "storage":  11.395656043949804,
-                            "handling":  14.2375
+                            "handling":  14.2375,
+                            "transfer":  10.482205269983535
                         }
     },
     {
@@ -3425,7 +3551,8 @@
                       },
         "operational":  {
                             "storage":  11.395656043949804,
-                            "handling":  14.2375
+                            "handling":  14.2375,
+                            "transfer":  10.482205269983535
                         }
     },
     {
@@ -3452,7 +3579,8 @@
                       },
         "operational":  {
                             "storage":  14.144220247983071,
-                            "handling":  17.6715
+                            "handling":  17.6715,
+                            "transfer":  13.010450600773593
                         }
     },
     {
@@ -3479,7 +3607,8 @@
                       },
         "operational":  {
                             "storage":  17.484678228627462,
-                            "handling":  21.845000000000002
+                            "handling":  21.845000000000002,
+                            "transfer":  16.083144802303096
                         }
     },
     {
@@ -3506,7 +3635,8 @@
                       },
         "operational":  {
                             "storage":  11.395656043949804,
-                            "handling":  14.2375
+                            "handling":  14.2375,
+                            "transfer":  10.482205269983535
                         }
     },
     {
@@ -3533,7 +3663,8 @@
                       },
         "operational":  {
                             "storage":  28.254423612252861,
-                            "handling":  35.300500000000007
+                            "handling":  35.300500000000007,
+                            "transfer":  25.989611036562163
                         }
     },
     {
@@ -3560,7 +3691,8 @@
                       },
         "operational":  {
                             "storage":  13.382242052805532,
-                            "handling":  16.7195
+                            "handling":  16.7195,
+                            "transfer":  12.309550905109022
                         }
     },
     {
@@ -3587,7 +3719,8 @@
                       },
         "operational":  {
                             "storage":  16.702289903221953,
-                            "handling":  20.867500000000003
+                            "handling":  20.867500000000003,
+                            "transfer":  15.363471007647508
                         }
     },
     {
@@ -3614,7 +3747,8 @@
                       },
         "operational":  {
                             "storage":  15.913098201073788,
-                            "handling":  19.881500000000003
+                            "handling":  19.881500000000003,
+                            "transfer":  14.637539179994917
                         }
     },
     {
@@ -3641,7 +3775,8 @@
                       },
         "operational":  {
                             "storage":  56.67212826632948,
-                            "handling":  70.805
+                            "handling":  70.805,
+                            "transfer":  52.129414865052439
                         }
     },
     {
@@ -3668,7 +3803,8 @@
                       },
         "operational":  {
                             "storage":  129.53629318018167,
-                            "handling":  161.84
+                            "handling":  161.84,
+                            "transfer":  119.152948262977
                         }
     },
     {
@@ -3695,7 +3831,8 @@
                       },
         "operational":  {
                             "storage":  17.280576926347763,
-                            "handling":  21.59
+                            "handling":  21.59,
+                            "transfer":  15.895403812392942
                         }
     },
     {
@@ -3722,7 +3859,8 @@
                       },
         "operational":  {
                             "storage":  43.201442315869407,
-                            "handling":  53.975
+                            "handling":  53.975,
+                            "transfer":  39.738509530982355
                         }
     },
     {
@@ -3730,7 +3868,7 @@
         "nf":  "3214",
         "date":  "2026-04-30",
         "customerId":  "cli-265779762",
-        "customer":  "MERCADO FÊNIX DO RIO LTDA",
+        "customer":  "MERCADO FÃŠNIX DO RIO LTDA",
         "city":  "RIO DE JANEIRO",
         "uf":  "RJ",
         "companyId":  2,
@@ -3749,7 +3887,8 @@
                       },
         "operational":  {
                             "storage":  12.144027485642031,
-                            "handling":  15.172500000000001
+                            "handling":  15.172500000000001,
+                            "transfer":  11.170588899654096
                         }
     },
     {
@@ -3776,7 +3915,8 @@
                       },
         "operational":  {
                             "storage":  25.920865389521644,
-                            "handling":  32.385000000000005
+                            "handling":  32.385000000000005,
+                            "transfer":  23.843105718589413
                         }
     },
     {
@@ -3803,7 +3943,8 @@
                       },
         "operational":  {
                             "storage":  699.495983172981,
-                            "handling":  873.93600000000015
+                            "handling":  873.93600000000015,
+                            "transfer":  643.42592062007589
                         }
     },
     {
@@ -3830,7 +3971,8 @@
                       },
         "operational":  {
                             "storage":  757.78731510406271,
-                            "handling":  946.764
+                            "handling":  946.764,
+                            "transfer":  697.0447473384155
                         }
     },
     {
@@ -3857,7 +3999,8 @@
                       },
         "operational":  {
                             "storage":  48.576109942568124,
-                            "handling":  60.690000000000005
+                            "handling":  60.690000000000005,
+                            "transfer":  44.682355598616383
                         }
     },
     {
@@ -3884,7 +4027,8 @@
                       },
         "operational":  {
                             "storage":  16.192036647522709,
-                            "handling":  20.23
+                            "handling":  20.23,
+                            "transfer":  14.894118532872126
                         }
     },
     {
@@ -3911,7 +4055,8 @@
                       },
         "operational":  {
                             "storage":  12.144027485642031,
-                            "handling":  15.172500000000001
+                            "handling":  15.172500000000001,
+                            "transfer":  11.170588899654096
                         }
     },
     {
@@ -3938,7 +4083,8 @@
                       },
         "operational":  {
                             "storage":  12.144027485642031,
-                            "handling":  15.172500000000001
+                            "handling":  15.172500000000001,
+                            "transfer":  11.170588899654096
                         }
     },
     {
@@ -3965,7 +4111,8 @@
                       },
         "operational":  {
                             "storage":  8.0960183237613546,
-                            "handling":  10.115
+                            "handling":  10.115,
+                            "transfer":  7.4470592664360629
                         }
     },
     {
@@ -3992,7 +4139,8 @@
                       },
         "operational":  {
                             "storage":  12.144027485642031,
-                            "handling":  15.172500000000001
+                            "handling":  15.172500000000001,
+                            "transfer":  11.170588899654096
                         }
     },
     {
@@ -4019,7 +4167,8 @@
                       },
         "operational":  {
                             "storage":  8.0960183237613546,
-                            "handling":  10.115
+                            "handling":  10.115,
+                            "transfer":  7.4470592664360629
                         }
     },
     {
@@ -4046,7 +4195,8 @@
                       },
         "operational":  {
                             "storage":  8.0960183237613546,
-                            "handling":  10.115
+                            "handling":  10.115,
+                            "transfer":  7.4470592664360629
                         }
     },
     {
@@ -4073,7 +4223,8 @@
                       },
         "operational":  {
                             "storage":  12.144027485642031,
-                            "handling":  15.172500000000001
+                            "handling":  15.172500000000001,
+                            "transfer":  11.170588899654096
                         }
     },
     {
@@ -4100,7 +4251,8 @@
                       },
         "operational":  {
                             "storage":  12.144027485642031,
-                            "handling":  15.172500000000001
+                            "handling":  15.172500000000001,
+                            "transfer":  11.170588899654096
                         }
     },
     {
@@ -4127,7 +4279,8 @@
                       },
         "operational":  {
                             "storage":  12.144027485642031,
-                            "handling":  15.172500000000001
+                            "handling":  15.172500000000001,
+                            "transfer":  11.170588899654096
                         }
     },
     {
@@ -4154,7 +4307,8 @@
                       },
         "operational":  {
                             "storage":  12.144027485642031,
-                            "handling":  15.172500000000001
+                            "handling":  15.172500000000001,
+                            "transfer":  11.170588899654096
                         }
     },
     {
@@ -4181,7 +4335,8 @@
                       },
         "operational":  {
                             "storage":  324.33057607592542,
-                            "handling":  405.212
+                            "handling":  405.212,
+                            "transfer":  298.33294903322684
                         }
     },
     {
@@ -4208,7 +4363,8 @@
                       },
         "operational":  {
                             "storage":  17.811240312274979,
-                            "handling":  22.253000000000004
+                            "handling":  22.253000000000004,
+                            "transfer":  16.38353038615934
                         }
     },
     {
@@ -4235,7 +4391,8 @@
                       },
         "operational":  {
                             "storage":  9.7152219885136262,
-                            "handling":  12.138000000000002
+                            "handling":  12.138000000000002,
+                            "transfer":  8.9364711197232776
                         }
     },
     {
@@ -4262,7 +4419,8 @@
                       },
         "operational":  {
                             "storage":  7.2864164913852179,
-                            "handling":  9.1035
+                            "handling":  9.1035,
+                            "transfer":  6.7023533397924568
                         }
     },
     {
@@ -4289,7 +4447,8 @@
                       },
         "operational":  {
                             "storage":  12.144027485642031,
-                            "handling":  15.172500000000001
+                            "handling":  15.172500000000001,
+                            "transfer":  11.170588899654096
                         }
     },
     {
@@ -4316,7 +4475,8 @@
                       },
         "operational":  {
                             "storage":  12.144027485642031,
-                            "handling":  15.172500000000001
+                            "handling":  15.172500000000001,
+                            "transfer":  11.170588899654096
                         }
     },
     {
@@ -4343,7 +4503,8 @@
                       },
         "operational":  {
                             "storage":  9.7152219885136262,
-                            "handling":  12.138000000000002
+                            "handling":  12.138000000000002,
+                            "transfer":  8.9364711197232776
                         }
     },
     {
@@ -4370,7 +4531,8 @@
                       },
         "operational":  {
                             "storage":  21.600721157934704,
-                            "handling":  26.9875
+                            "handling":  26.9875,
+                            "transfer":  19.869254765491178
                         }
     }
 ]
