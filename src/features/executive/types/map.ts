@@ -4,7 +4,6 @@ export interface BrazilUfMapMetric {
   transportCost: number;
   operationalCost: number;
   totalLogisticsCost: number;
-  logisticsResult: number;
   logisticsIndex: number;
   invoiceCount: number;
 }

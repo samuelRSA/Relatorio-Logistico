@@ -1,9 +1,11 @@
+import { useMemo } from 'react';
 import { ChartCard } from '@/components/ChartCard';
 import { useDashboardData } from '@/context/useDashboardData';
 import { useGlobalFilterStore } from '@/store/globalFilterStore';
 import type { EnrichedInvoice, RankingItem } from '@/types/logistics';
 import { groupSum, topCustomersByLogisticsIndex } from '@/utils/aggregations';
 import { formatCurrency, formatDecimal, formatPercent } from '@/utils/formatters';
+import { isTransportChargeableInvoice } from '@/utils/logisticsRules';
 
 const safeDivide = (value: number, divisor: number): number => (divisor === 0 ? 0 : value / divisor);
 
@@ -67,6 +69,19 @@ const metricConfigs: Record<string, OperationalMetricConfig> = {
     ],
     rankingValue: (invoice) => invoice.operational.handling,
   },
+  'transfer-cost': {
+    title: 'Custo TransferÃªncia',
+    formula: 'SUM(C. TransferÃªncia)',
+    value: (invoices) => invoices.reduce((sum, item) => sum + item.operational.transfer, 0),
+    composition: (invoices) => [
+      {
+        label: 'Custo TransferÃªncia',
+        value: invoices.reduce((sum, item) => sum + item.operational.transfer, 0),
+      },
+      { label: 'Quantidade NF', value: invoices.length, mode: 'decimal' },
+    ],
+    rankingValue: (invoice) => invoice.operational.transfer,
+  },
   'total-logistics-cost-per-kg': {
     title: 'Custo Logístico Total/Kg',
     formula: '(Custo Transporte + Custo Operacional) / Peso Bruto',
@@ -110,6 +125,7 @@ export function DrawerContent() {
   const invoice = useGlobalFilterStore((state) => state.selectedInvoice);
   const context = useGlobalFilterStore((state) => state.drilldownContext);
   const { filteredInvoices: invoices } = useDashboardData();
+  const chargeableInvoices = useMemo(() => invoices.filter(isTransportChargeableInvoice), [invoices]);
 
   if (invoice) {
     return (
@@ -131,21 +147,20 @@ export function DrawerContent() {
         <DetailRow label="Frete/Kg líquido" value={formatCurrency(invoice.netFreightPerKg)} />
         <DetailRow label="Custo logístico total/Kg" value={formatCurrency(invoice.totalLogisticsCostPerKg)} />
         <DetailRow label="Índice logístico" value={formatPercent(invoice.logisticsIndex)} />
-        <DetailRow label="Resultado logístico" value={formatCurrency(invoice.logisticsResult)} />
       </div>
     );
   }
 
   if (context && metricConfigs[context]) {
-    return <OperationalIndicatorDrawer config={metricConfigs[context]} invoices={invoices} />;
+    return <OperationalIndicatorDrawer config={metricConfigs[context]} invoices={chargeableInvoices} />;
   }
 
   if (context === 'transport-cost') {
-    const cte1 = invoices.reduce((sum, item) => sum + item.transport.cte1, 0);
-    const cte2 = invoices.reduce((sum, item) => sum + item.transport.cte2, 0);
-    const additional = invoices.reduce((sum, item) => sum + item.transport.additionalValue, 0);
-    const cityRanking = groupSum(invoices, (item) => `${item.city}/${item.uf}`, (item) => item.transportCost).slice(0, 5);
-    const clientRanking = groupSum(invoices, (item) => item.customer, (item) => item.transportCost).slice(0, 5);
+    const cte1 = chargeableInvoices.reduce((sum, item) => sum + item.transport.cte1, 0);
+    const cte2 = chargeableInvoices.reduce((sum, item) => sum + item.transport.cte2, 0);
+    const additional = chargeableInvoices.reduce((sum, item) => sum + item.transport.additionalValue, 0);
+    const cityRanking = groupSum(chargeableInvoices, (item) => `${item.city}/${item.uf}`, (item) => item.transportCost).slice(0, 5);
+    const clientRanking = groupSum(chargeableInvoices, (item) => item.customer, (item) => item.transportCost).slice(0, 5);
 
     return (
       <div className="space-y-5">
@@ -160,20 +175,14 @@ export function DrawerContent() {
     );
   }
 
-  const profitable = groupSum(invoices, (item) => item.customer, (item) => item.logisticsResult).slice(0, 5);
-  const deficit = [...invoices]
-    .filter((item) => item.logisticsResult < 0)
-    .sort((a, b) => a.logisticsResult - b.logisticsResult)
-    .slice(0, 5)
-    .map((item) => ({ label: `${item.customer} - NF ${item.nf}`, value: item.logisticsResult }));
-  const cityRanking = groupSum(invoices, (item) => `${item.city}/${item.uf}`, (item) => item.logisticsResult).slice(0, 5);
+  const totalCostByCustomer = groupSum(invoices, (item) => item.customer, (item) => item.totalLogisticsCost).slice(0, 5);
+  const cityRanking = groupSum(invoices, (item) => `${item.city}/${item.uf}`, (item) => item.totalLogisticsCost).slice(0, 5);
   const costlyCustomers = topCustomersByLogisticsIndex(invoices).slice(0, 5);
 
   return (
     <div className="space-y-5">
-      <Ranking title="Clientes mais rentáveis" rows={profitable} mode="currency" />
-      <Ranking title="Operações deficitárias" rows={deficit} mode="currency" emptyText="Nenhuma operação deficitária no filtro atual." />
-      <Ranking title="Ranking cidades" rows={cityRanking} mode="currency" />
+      <Ranking title="Clientes com maior custo logístico" rows={totalCostByCustomer} mode="currency" />
+      <Ranking title="Ranking cidades por custo logístico" rows={cityRanking} mode="currency" />
       <Ranking title="Clientes críticos por índice" rows={costlyCustomers} mode="percent" />
     </div>
   );
@@ -193,6 +202,14 @@ function OperationalIndicatorDrawer({
   const relatedRecords = [...invoices]
     .sort((a, b) => config.rankingValue(b) - config.rankingValue(a))
     .slice(0, 6);
+  const transferCost = invoices.reduce((sum, invoice) => sum + invoice.operational.transfer, 0);
+  const operationalCost = invoices.reduce((sum, invoice) => sum + invoice.operationalCost, 0);
+  const logisticsCost = invoices.reduce((sum, invoice) => sum + invoice.totalLogisticsCost, 0);
+  const totalGrossWeight = invoices.reduce((sum, invoice) => sum + invoice.grossWeight, 0);
+  const transferCount = invoices.length;
+  const transferOperationalShare = safeDivide(transferCost, operationalCost);
+  const transferLogisticsShare = safeDivide(transferCost, logisticsCost);
+  const transferOperationalPerKg = safeDivide(transferCost, totalGrossWeight);
 
   return (
     <div className="space-y-5">
@@ -208,6 +225,21 @@ function OperationalIndicatorDrawer({
           ))}
         </div>
       </section>
+      {config.title === 'Custo Transferência' ? (
+        <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-4">
+          <h3 className="font-display text-lg font-semibold text-white">Detalhamento da transferência</h3>
+          <div className="mt-4 space-y-2">
+            <DetailRow label="C. Transferência" value={formatCurrency(transferCost)} />
+            <DetailRow label="Custo Operacional" value={formatCurrency(operationalCost)} />
+            <DetailRow label="Custo Logístico Total" value={formatCurrency(logisticsCost)} />
+            <DetailRow label="Quantidade NF" value={formatDecimal(transferCount)} />
+            <DetailRow label="Peso Bruto" value={formatDecimal(totalGrossWeight)} />
+            <DetailRow label="Participação no Custo Operacional" value={formatPercent(transferOperationalShare)} />
+            <DetailRow label="Participação no Custo Logístico Total" value={formatPercent(transferLogisticsShare)} />
+            <DetailRow label="C. Transferência/Kg" value={formatCurrency(transferOperationalPerKg)} />
+          </div>
+        </section>
+      ) : null}
       <Ranking title="Evolução do período" rows={monthly} mode={config.mode ?? 'currency'} />
       <Ranking title="Ranking relacionado por cliente" rows={clientRanking} mode={config.mode ?? 'currency'} />
       <Ranking title="Detalhamento operacional por UF" rows={ufRanking} mode={config.mode ?? 'currency'} />

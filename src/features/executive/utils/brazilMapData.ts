@@ -39,14 +39,21 @@ const emptyMetric = (uf: string): BrazilUfMapMetric => ({
   transportCost: 0,
   operationalCost: 0,
   totalLogisticsCost: 0,
-  logisticsResult: 0,
   logisticsIndex: 0,
   invoiceCount: 0,
 });
 
-export const buildBrazilMapData = (invoices: EnrichedInvoice[], filters: FilterState): BrazilMapDatum[] => {
+export const buildBrazilMapData = (
+  invoices: EnrichedInvoice[],
+  filters: FilterState,
+  excludedClients: string[] = [],
+): BrazilMapDatum[] => {
   const mapFilters = { ...filters, ufs: [] };
-  const invoicesIgnoringUf = applyFilters(invoices, mapFilters);
+  const normallyFilteredInvoices = applyFilters(invoices, mapFilters);
+  const invoicesIgnoringUf =
+    excludedClients.length === 0
+      ? normallyFilteredInvoices
+      : normallyFilteredInvoices.filter((invoice) => !excludedClients.includes(invoice.customer));
   const grouped = invoicesIgnoringUf.reduce<Record<string, EnrichedInvoice[]>>((acc, invoice) => {
     acc[invoice.uf] ??= [];
     acc[invoice.uf].push(invoice);
@@ -81,7 +88,6 @@ export const buildBrazilMapData = (invoices: EnrichedInvoice[], filters: FilterS
       transportCost: indicators.transportCost,
       operationalCost: indicators.operationalCost,
       totalLogisticsCost: indicators.totalLogisticsCost,
-      logisticsResult: indicators.logisticsResult,
       logisticsIndex: indicators.logisticsIndex,
       invoiceCount: counts[uf] ?? 0,
     };

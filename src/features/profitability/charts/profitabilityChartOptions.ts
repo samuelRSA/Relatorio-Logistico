@@ -23,7 +23,7 @@ export const paretoCustomersOption = (data: RankingItem[]): EChartsOption => {
       { type: 'value', axisLabel: { color: textColor, formatter: (value: number) => formatPercent(value) } },
     ],
     series: [
-      { name: 'Resultado', type: 'bar', data: positiveData.map((item) => item.value), itemStyle: { color: '#65b7ff', borderRadius: 8 } },
+      { name: 'Custo logÌstico', type: 'bar', data: positiveData.map((item) => item.value), itemStyle: { color: '#65b7ff', borderRadius: 8 } },
       { name: 'Pareto', type: 'line', yAxisIndex: 1, smooth: true, data: positiveData.map((item) => item.secondary), lineStyle: { color: '#f4b860', width: 3 } },
     ],
   };
@@ -38,7 +38,7 @@ export const profitabilityQuadrantOption = (data: QuadrantPoint[]): EChartsOptio
     tooltip: {
       formatter: (params: unknown) => {
         const value = (params as { value: [number, number, string, number] }).value;
-        return `${value[2]}<br/>Receita: ${formatCurrency(value[0])}<br/>√çndice: ${formatPercent(value[1])}<br/>Resultado: ${formatCurrency(value[3])}`;
+        return `${value[2]}<br/>Receita: ${formatCurrency(value[0])}<br/>√çndice: ${formatPercent(value[1])}<br/>Custo logÌstico: ${formatCurrency(value[3])}`;
       },
     },
     grid: { left: 72, right: 42, top: 36, bottom: 58 },
@@ -64,7 +64,7 @@ export const profitabilityQuadrantOption = (data: QuadrantPoint[]): EChartsOptio
       {
         type: 'scatter',
         symbolSize: (value: unknown) => Math.max(12, Math.min(34, Number((value as number[])[3]) / 5000)),
-        data: data.map((item) => [item.revenue, item.logisticsIndex, item.customer, item.logisticsResult]),
+        data: data.map((item) => [item.revenue, item.logisticsIndex, item.customer, item.totalLogisticsCost]),
         markLine: {
           silent: true,
           lineStyle: { color: 'rgba(255,255,255,0.3)', type: 'dashed' },

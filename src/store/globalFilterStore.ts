@@ -12,6 +12,7 @@ interface GlobalFilterStore {
   invoices: EnrichedInvoice[];
   filterOptions: FilterOptions;
   filters: FilterState;
+  excludedClients: string[];
   selectedInvoice: EnrichedInvoice | null;
   drilldownContext: string | null;
   isDrawerOpen: boolean;
@@ -22,12 +23,18 @@ interface GlobalFilterStore {
   clearFilter: <K extends keyof FilterState>(key: K) => void;
   clearAllFilters: () => void;
   resetFilters: () => void;
+  resetFiltersOnTabChange: () => void;
+  setExcludedClients: (clients: string[]) => void;
+  toggleExcludedClient: (client: string) => void;
+  removeExcludedClient: (client: string) => void;
+  clearExcludedClients: () => void;
   setSelectedInvoice: (invoice: EnrichedInvoice | null) => void;
   openDrilldown: (context: string) => void;
   closeDrawer: () => void;
 }
 const emptyOptions: FilterOptions = {
   companies: [],
+  competences: [],
   ufs: [],
   cities: [],
   customers: [],
@@ -48,6 +55,7 @@ const normalizeFilterValue = <K extends keyof FilterState>(value: FilterState[K]
 const areFiltersEqual = (left: FilterState, right: FilterState): boolean =>
   left.period.start === right.period.start &&
   left.period.end === right.period.end &&
+  areArraysEqual(left.competences ?? [], right.competences ?? []) &&
   areArraysEqual(left.companyIds, right.companyIds) &&
   areArraysEqual(left.ufs, right.ufs) &&
   areArraysEqual(left.cities, right.cities) &&
@@ -64,6 +72,7 @@ export const useGlobalFilterStore = create<GlobalFilterStore>()(
         invoices: [],
         filterOptions: emptyOptions,
         filters: defaultFilters,
+        excludedClients: [],
         selectedInvoice: null,
         drilldownContext: null,
         isDrawerOpen: false,
@@ -72,9 +81,18 @@ export const useGlobalFilterStore = create<GlobalFilterStore>()(
           set({ isLoading: true });
           const invoices = await logisticsService.getInvoices();
           const filterOptions = mapFilterOptions(invoices);
+          const currentFilters = get().filters;
+          const filters =
+            currentFilters.operationTypes.length > 0
+              ? {
+                  ...currentFilters,
+                  operationTypes: [],
+                }
+              : currentFilters;
           set({
             invoices,
             filterOptions,
+            filters,
             isLoading: false,
           });
         },
@@ -138,6 +156,71 @@ export const useGlobalFilterStore = create<GlobalFilterStore>()(
         resetFilters() {
           get().clearAllFilters();
         },
+        resetFiltersOnTabChange() {
+          const current = get();
+          const filters = {
+            ...defaultFilters,
+            period: current.filters.period,
+            competences: current.filters.competences ?? [],
+          };
+
+          if (
+            areFiltersEqual(current.filters, filters) &&
+            !current.isDrawerOpen &&
+            !current.selectedInvoice &&
+            !current.drilldownContext
+          ) {
+            return;
+          }
+
+          set({
+            filters,
+            selectedInvoice: null,
+            drilldownContext: null,
+            isDrawerOpen: false,
+          });
+        },
+        setExcludedClients(clients) {
+          const excludedClients = normalizeArray(clients);
+          const current = get();
+          if (areArraysEqual(current.excludedClients, excludedClients)) {
+            return;
+          }
+
+          if (current.selectedInvoice && excludedClients.includes(current.selectedInvoice.customer)) {
+            set({ excludedClients, selectedInvoice: null, isDrawerOpen: false, drilldownContext: null });
+            return;
+          }
+
+          set({ excludedClients });
+        },
+        toggleExcludedClient(client) {
+          if (!client) {
+            return;
+          }
+
+          const current = get().excludedClients;
+          const excludedClients = current.includes(client)
+            ? current.filter((item) => item !== client)
+            : normalizeArray([...current, client]);
+
+          get().setExcludedClients(excludedClients);
+        },
+        removeExcludedClient(client) {
+          const current = get().excludedClients;
+          if (!current.includes(client)) {
+            return;
+          }
+
+          set({ excludedClients: current.filter((item) => item !== client) });
+        },
+        clearExcludedClients() {
+          if (get().excludedClients.length === 0) {
+            return;
+          }
+
+          set({ excludedClients: [] });
+        },
         setSelectedInvoice(invoice) {
           if (get().selectedInvoice?.id === invoice?.id && get().isDrawerOpen === Boolean(invoice)) {
             return;
@@ -162,7 +245,7 @@ export const useGlobalFilterStore = create<GlobalFilterStore>()(
       }),
       {
         name: 'lic-global-filter-session',
-        partialize: (state) => ({ filters: state.filters }),
+        partialize: (state) => ({ filters: state.filters, excludedClients: state.excludedClients }),
         storage: createJSONStorage(() => sessionStorage),
       },
     ),

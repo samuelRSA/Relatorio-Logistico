@@ -1,5 +1,5 @@
-export type CompanyId = 1 | 2 | 3;
-export type OperationType = 'VENDA' | 'TRANSFERENCIA' | 'BONIFICAÇÃO';
+export type CompanyId = 1 | 2 | 3 | 4;
+export type OperationType = 'VENDA' | 'TRANSFERENCIA' | 'BONIFICAÇÃO' | 'REFATURAMENTO' | 'RETIRADA';
 export type ManagementCategory = 'Comercial' | 'Abastecimento' | 'Incentivo';
 
 export interface Company {
@@ -36,6 +36,7 @@ export interface Invoice {
   id: string;
   nf: string;
   date: string;
+  competence: string;
   customerId: string;
   customer: string;
   city: string;
@@ -59,12 +60,12 @@ export interface LogisticsIndicators {
   transportCost: number;
   operationalCost: number;
   totalLogisticsCost: number;
-  logisticsResult: number;
   logisticsIndex: number;
   grossFreightPerKg: number;
   netFreightPerKg: number;
   totalLogisticsCostPerKg: number;
   accessoryExpenseShare: number;
+  operationalGrossWeight: number;
 }
 
 export interface EnrichedInvoice extends Invoice, LogisticsIndicators {}
@@ -74,6 +75,7 @@ export interface FilterState {
     start: string;
     end: string;
   };
+  competences: string[];
   companyIds: CompanyId[];
   ufs: string[];
   cities: string[];
@@ -85,6 +87,7 @@ export interface FilterState {
 
 export interface FilterOptions {
   companies: Company[];
+  competences: string[];
   ufs: string[];
   cities: string[];
   customers: string[];
@@ -99,6 +102,16 @@ export interface RankingItem {
   secondary?: number;
 }
 
+export interface MonthlyLogisticsTrend {
+  competence: string;
+  label: string;
+  recognizedRevenue: number;
+  totalLogisticsCost: number;
+  logisticsIndex: number;
+  invoiceCount: number;
+  operationalGrossWeight: number;
+}
+
 export interface RouteCost {
   route: string;
   city: string;
@@ -107,9 +120,84 @@ export interface RouteCost {
   freightPerKg: number;
 }
 
+export interface CityTransportCost {
+  city: string;
+  uf: string;
+  cost: number;
+  invoiceCount: number;
+  grossWeight: number;
+  freightPerKg: number;
+}
+
+export interface CityFreightByInvoiceCost {
+  city: string;
+  uf: string;
+  freightPerKgConsolidated: number;
+  freightPerKgAverage: number;
+  transportCost: number;
+  grossWeight: number;
+  averageWeight: number;
+  minWeight: number;
+  invoiceCount: number;
+  participation: number;
+}
+
+export interface WeightFreightBucket {
+  label: string;
+  freightPerKg: number;
+  averageWeight: number;
+  invoiceCount: number;
+  transportCost: number;
+}
+
+export interface UfTransportCost {
+  uf: string;
+  cost: number;
+  grossWeight: number;
+  invoiceCount: number;
+  freightPerKg: number;
+  participation: number;
+}
+
+export interface UfFreightByInvoiceCost {
+  uf: string;
+  freightPerKgAverage: number;
+  freightPerKgConsolidated: number;
+  transportCost: number;
+  grossWeight: number;
+  averageWeight: number;
+  minWeight: number;
+  invoiceCount: number;
+  participation: number;
+}
+
+export interface RouteRankingItem {
+  route: string;
+  origin: string;
+  destination: string;
+  cost: number;
+  freightPerKg: number;
+  grossWeight: number;
+  invoiceCount: number;
+}
+
 export interface QuadrantPoint {
   customer: string;
   revenue: number;
   logisticsIndex: number;
-  logisticsResult: number;
+  totalLogisticsCost: number;
+}
+
+export interface CustomerOperationalCost {
+  customer: string;
+  rank: number;
+  totalOperationalCost: number;
+  storage: number;
+  handling: number;
+  transfer: number;
+  invoiceCount: number;
+  grossWeight: number;
+  operationalGrossWeight: number;
+  operationalCostPerKg: number;
+  participation: number;
 }

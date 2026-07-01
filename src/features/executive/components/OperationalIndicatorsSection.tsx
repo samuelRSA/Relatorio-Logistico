@@ -4,6 +4,7 @@ import { KpiCard } from '@/components/KpiCard';
 import { useGlobalFilterStore } from '@/store/globalFilterStore';
 import type { EnrichedInvoice } from '@/types/logistics';
 import { formatCurrency, formatPercent } from '@/utils/formatters';
+import { isTransportChargeableInvoice } from '@/utils/logisticsRules';
 
 const safeDivide = (value: number, divisor: number): number => (divisor === 0 ? 0 : value / divisor);
 
@@ -16,22 +17,24 @@ type MonthlyGroup = {
   netWeight: number;
   storage: number;
   handling: number;
+  transfer: number;
 };
 
-type MetricKey = 'grossFreightPerKg' | 'netFreightPerKg' | 'storageCost' | 'handlingCost' | 'totalLogisticsCostPerKg';
+type MetricKey = 'grossFreightPerKg' | 'storageCost' | 'handlingCost' | 'transferCost' | 'totalLogisticsCostPerKg';
 
 function OperationalIndicatorsSectionComponent({ invoices }: { invoices: EnrichedInvoice[] }) {
   const openDrilldown = useGlobalFilterStore((state) => state.openDrilldown);
+  const chargeableInvoices = useMemo(() => invoices.filter(isTransportChargeableInvoice), [invoices]);
 
-  const monthlyGroups = useMemo(() => buildMonthlyGroups(invoices), [invoices]);
+  const monthlyGroups = useMemo(() => buildMonthlyGroups(chargeableInvoices), [chargeableInvoices]);
   const months = useMemo(() => Object.keys(monthlyGroups).sort(), [monthlyGroups]);
 
   const metrics = useMemo(() => {
     const values = {
       grossFreightPerKg: months.map((month) => safeDivide(monthlyGroups[month].transportCost, monthlyGroups[month].grossWeight)),
-      netFreightPerKg: months.map((month) => safeDivide(monthlyGroups[month].transportCost, monthlyGroups[month].netWeight)),
       storageCost: months.map((month) => monthlyGroups[month].storage),
       handlingCost: months.map((month) => monthlyGroups[month].handling),
+      transferCost: months.map((month) => monthlyGroups[month].transfer),
       totalLogisticsCostPerKg: months.map((month) => safeDivide(monthlyGroups[month].totalLogisticsCost, monthlyGroups[month].grossWeight)),
     } satisfies Record<MetricKey, number[]>;
 
@@ -39,10 +42,11 @@ function OperationalIndicatorsSectionComponent({ invoices }: { invoices: Enriche
   }, [months, monthlyGroups]);
 
   const totals = useMemo(() => {
-    return invoices.reduce(
+    return chargeableInvoices.reduce(
       (acc, invoice) => ({
         storage: acc.storage + invoice.operational.storage,
         handling: acc.handling + invoice.operational.handling,
+        transfer: acc.transfer + invoice.operational.transfer,
         transport: acc.transport + invoice.transportCost,
         logisticsCost: acc.logisticsCost + invoice.totalLogisticsCost,
         grossWeight: acc.grossWeight + invoice.grossWeight,
@@ -51,18 +55,19 @@ function OperationalIndicatorsSectionComponent({ invoices }: { invoices: Enriche
       {
         storage: 0,
         handling: 0,
+        transfer: 0,
         transport: 0,
         logisticsCost: 0,
         grossWeight: 0,
         netWeight: 0,
       },
     );
-  }, [invoices]);
+  }, [chargeableInvoices]);
 
   const handleGrossDrilldown = useCallback(() => openDrilldown('gross-freight-per-kg'), [openDrilldown]);
-  const handleNetDrilldown = useCallback(() => openDrilldown('net-freight-per-kg'), [openDrilldown]);
   const handleStorageDrilldown = useCallback(() => openDrilldown('storage-cost'), [openDrilldown]);
   const handleHandlingDrilldown = useCallback(() => openDrilldown('handling-cost'), [openDrilldown]);
+  const handleTransferDrilldown = useCallback(() => openDrilldown('transfer-cost'), [openDrilldown]);
   const handleTotalDrilldown = useCallback(() => openDrilldown('total-logistics-cost-per-kg'), [openDrilldown]);
 
   const cards = useMemo(
@@ -77,17 +82,6 @@ function OperationalIndicatorsSectionComponent({ invoices }: { invoices: Enriche
         sparklineValues: metrics.grossFreightPerKg,
         onClick: handleGrossDrilldown,
         tooltip: 'Frete / kg bruto calculado pela fórmula oficial do período filtrado.',
-      },
-      {
-        title: 'FRETE / KG LÍQUIDO',
-        helper: 'Base do transporte por peso líquido',
-        icon: Truck,
-        value: formatCurrency(safeDivide(totals.transport, totals.netWeight)),
-        totalLabel: `Total: ${formatCurrency(totals.transport)}`,
-        trendLabel: buildTrendLabel(metrics.netFreightPerKg),
-        sparklineValues: metrics.netFreightPerKg,
-        onClick: handleNetDrilldown,
-        tooltip: 'Frete / kg líquido calculado pela fórmula oficial do período filtrado.',
       },
       {
         title: 'C. ARMAZENAGEM',
@@ -112,6 +106,17 @@ function OperationalIndicatorsSectionComponent({ invoices }: { invoices: Enriche
         tooltip: 'Custo de movimentação real da base filtrada.',
       },
       {
+        title: 'C. TRANSFERÊNCIA',
+        helper: 'Custo operacional de transferência',
+        icon: Truck,
+        value: formatCurrency(totals.transfer),
+        totalLabel: `Total: ${formatCurrency(totals.transfer)}`,
+        trendLabel: buildTrendLabel(metrics.transferCost),
+        sparklineValues: metrics.transferCost,
+        onClick: handleTransferDrilldown,
+        tooltip: 'Custo de transferência real da base filtrada. Integra o Custo Operacional.',
+      },
+      {
         title: 'CUSTO LOGÍSTICO TOTAL / KG',
         helper: 'Custo total dividido por peso bruto',
         icon: CircleDollarSign,
@@ -126,19 +131,19 @@ function OperationalIndicatorsSectionComponent({ invoices }: { invoices: Enriche
     [
       handleGrossDrilldown,
       handleHandlingDrilldown,
-      handleNetDrilldown,
       handleStorageDrilldown,
+      handleTransferDrilldown,
       handleTotalDrilldown,
       metrics.grossFreightPerKg,
       metrics.handlingCost,
-      metrics.netFreightPerKg,
       metrics.storageCost,
+      metrics.transferCost,
       metrics.totalLogisticsCostPerKg,
       totals.grossWeight,
       totals.handling,
       totals.logisticsCost,
-      totals.netWeight,
       totals.storage,
+      totals.transfer,
       totals.transport,
     ],
   );
@@ -147,10 +152,7 @@ function OperationalIndicatorsSectionComponent({ invoices }: { invoices: Enriche
     <section className="glass-panel flex h-full flex-col rounded-3xl border border-amber-400/20 bg-[linear-gradient(145deg,rgba(28,22,12,.92),rgba(12,14,18,.86))] p-5">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <div className="inline-flex items-center rounded-full border border-amber-400/30 bg-amber-400/10 px-2.5 py-1 text-[10px] font-bold tracking-[0.2em] text-amber-200">
-            NOVO
-          </div>
-          <h2 className="mt-3 font-display text-lg font-semibold text-white">Indicadores Operacionais de Custo Logístico</h2>
+          <h2 className="font-display text-lg font-semibold text-white">Indicadores Operacionais de Custo Logístico</h2>
           <p className="mt-1 text-sm text-slate-400">Métricas operacionais médias do período</p>
         </div>
       </div>
@@ -190,6 +192,7 @@ function buildMonthlyGroups(invoices: EnrichedInvoice[]): Record<string, Monthly
       netWeight: 0,
       storage: 0,
       handling: 0,
+      transfer: 0,
     };
 
     acc[month].revenue += invoice.revenue;
@@ -200,6 +203,7 @@ function buildMonthlyGroups(invoices: EnrichedInvoice[]): Record<string, Monthly
     acc[month].netWeight += invoice.netWeight;
     acc[month].storage += invoice.operational.storage;
     acc[month].handling += invoice.operational.handling;
+    acc[month].transfer += invoice.operational.transfer;
     return acc;
   }, {});
 }
@@ -221,3 +225,4 @@ function buildTrendLabel(values: number[]): string | undefined {
 }
 
 export const OperationalIndicatorsSection = memo(OperationalIndicatorsSectionComponent);
+

@@ -1,8 +1,8 @@
-import { Activity, Database, Moon } from 'lucide-react';
+import { Database, Moon } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { useDashboardData } from '@/context/useDashboardData';
 import type { NavigationItem, PageId } from '@/types/navigation';
-import { formatCurrency, formatPercent } from '@/utils/formatters';
+import { formatPercent } from '@/utils/formatters';
 
 interface HeaderProps {
   activePage: PageId;
@@ -24,9 +24,8 @@ export function Header({ activePage, navigation }: HeaderProps) {
           <h1 className="mt-2 font-display text-3xl font-semibold text-white">{current?.label}</h1>
           <p className="mt-1 text-sm text-slate-400">{current?.description}</p>
         </div>
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-2 gap-3">
           <HeaderMetric icon={Database} label="NFs filtradas" value={String(filteredCount)} />
-          <HeaderMetric icon={Activity} label="Resultado" value={formatCurrency(indicators.logisticsResult)} />
           <HeaderMetric icon={Moon} label="Índice" value={formatPercent(indicators.logisticsIndex)} />
         </div>
       </div>

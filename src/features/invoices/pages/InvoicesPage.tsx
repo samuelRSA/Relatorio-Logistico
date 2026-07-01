@@ -63,7 +63,6 @@ export default function InvoicesPage() {
       columnHelper.accessor('transportCost', { header: 'Custo Transporte', cell: (info) => formatCurrency(info.getValue()) }),
       columnHelper.accessor('operationalCost', { header: 'Custo Operacional', cell: (info) => formatCurrency(info.getValue()) }),
       columnHelper.accessor('logisticsIndex', { header: 'Índice Logístico', cell: (info) => formatPercent(info.getValue()) }),
-      columnHelper.accessor('logisticsResult', { header: 'Resultado Logístico', cell: (info) => formatCurrency(info.getValue()) }),
     ],
     [],
   );
@@ -80,7 +79,7 @@ export default function InvoicesPage() {
     getFilteredRowModel: getFilteredRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
     getExpandedRowModel: getExpandedRowModel(),
-    initialState: { pagination: { pageIndex: 0, pageSize: 8 } },
+    initialState: { pagination: { pageIndex: 0, pageSize: 100 } },
   });
 
   const rows = table.getRowModel().rows;

@@ -11,10 +11,16 @@ export function GlobalFilters() {
   const invoices = useGlobalFilterStore((state) => state.invoices);
   const filters = useGlobalFilterStore((state) => state.filters);
   const options = useGlobalFilterStore((state) => state.filterOptions);
+  const excludedClients = useGlobalFilterStore((state) => state.excludedClients);
   const setFilter = useGlobalFilterStore((state) => state.setFilter);
   const toggleArrayFilter = useGlobalFilterStore((state) => state.toggleArrayFilter);
+  const toggleExcludedClient = useGlobalFilterStore((state) => state.toggleExcludedClient);
+  const clearExcludedClients = useGlobalFilterStore((state) => state.clearExcludedClients);
   const [search, setSearch] = useState('');
+  const [exclusionSearch, setExclusionSearch] = useState('');
   const debouncedSearch = useDebouncedValue(search);
+  const debouncedExclusionSearch = useDebouncedValue(exclusionSearch);
+  const selectedCompetences = filters.competences ?? [];
 
   const availableCities = useMemo(() => {
     const cityBaseFilters = { ...filters, cities: [] };
@@ -39,25 +45,22 @@ export function GlobalFilters() {
     [availableCustomers, debouncedSearch, filters.customers],
   );
 
-  const handlePeriodStartChange = useCallback(
-    (value: string) => setFilter('period', { ...filters.period, start: value }),
-    [filters.period, setFilter],
+  const visibleExcludedCustomerOptions = useMemo(
+    () =>
+      options.customers
+        .filter((customer) => !excludedClients.includes(customer))
+        .filter((customer) => customer.toLowerCase().includes(debouncedExclusionSearch.toLowerCase())),
+    [debouncedExclusionSearch, excludedClients, options.customers],
   );
-  const handlePeriodEndChange = useCallback(
-    (value: string) => setFilter('period', { ...filters.period, end: value }),
-    [filters.period, setFilter],
+
+  const handleClearCompetences = useCallback(() => setFilter('competences', []), [setFilter]);
+  const handleToggleCompetence = useCallback(
+    (value: string) => toggleArrayFilter('competences', value),
+    [toggleArrayFilter],
   );
   const handleToggleCompany = useCallback((value: CompanyId) => toggleArrayFilter('companyIds', value), [toggleArrayFilter]);
   const handleToggleCity = useCallback((value: string) => toggleArrayFilter('cities', value), [toggleArrayFilter]);
   const handleToggleCustomer = useCallback((value: string) => toggleArrayFilter('customers', value), [toggleArrayFilter]);
-  const handleToggleOperationType = useCallback(
-    (value: string) => toggleArrayFilter('operationTypes', value as never),
-    [toggleArrayFilter],
-  );
-  const handleToggleManagementCategory = useCallback(
-    (value: string) => toggleArrayFilter('managementCategories', value as never),
-    [toggleArrayFilter],
-  );
   const handleToggleSeller = useCallback((value: string) => toggleArrayFilter('sellers', value), [toggleArrayFilter]);
   const handleToggleUf = useCallback(
     (uf: string) => {
@@ -68,14 +71,47 @@ export function GlobalFilters() {
     },
     [toggleArrayFilter],
   );
+  const handleToggleExcludedClient = useCallback(
+    (client: string) => {
+      if (!client) return;
+      startTransition(() => {
+        toggleExcludedClient(client);
+      });
+    },
+    [toggleExcludedClient],
+  );
 
   return (
     <div className="mt-4 flex-1 overflow-y-auto pr-1">
       <div className="space-y-4 pb-6">
+        {excludedClients.length > 0 ? (
+          <section className="rounded-2xl border border-signal-amber/20 bg-signal-amber/10 p-3">
+            <div className="text-xs font-semibold text-signal-amber">
+              ExclusÃµes ativas: {formatExclusionSummary(excludedClients)}
+            </div>
+            <button
+              type="button"
+              onClick={clearExcludedClients}
+              className="mt-2 text-xs font-semibold text-slate-300 transition hover:text-white"
+            >
+              Limpar exclusÃµes
+            </button>
+          </section>
+        ) : null}
         <FilterBlock title="Período">
-          <div className="grid grid-cols-2 gap-2">
-            <DateInput label="Início" value={filters.period.start} onChange={handlePeriodStartChange} />
-            <DateInput label="Fim" value={filters.period.end} onChange={handlePeriodEndChange} />
+          <div className="space-y-2">
+            <span className="block text-[10px] uppercase tracking-widest text-slate-500">Competência</span>
+            <div className="grid grid-cols-3 gap-2">
+              <CheckPill label="Todos" active={selectedCompetences.length === 0} onClick={handleClearCompetences} />
+              {options.competences.map((competence) => (
+                <CheckPill
+                  key={competence}
+                  label={formatCompetenceLabel(competence)}
+                  active={selectedCompetences.includes(competence)}
+                  onClick={() => handleToggleCompetence(competence)}
+                />
+              ))}
+            </div>
           </div>
         </FilterBlock>
 
@@ -112,24 +148,62 @@ export function GlobalFilters() {
           <OptionList values={visibleCustomers} selected={filters.customers} onToggle={handleToggleCustomer} />
         </FilterBlock>
 
-        <FilterBlock title="Tipo Operação">
-          <OptionList values={options.operationTypes} selected={filters.operationTypes} onToggle={handleToggleOperationType} />
-        </FilterBlock>
-
-        <FilterBlock title="Categoria Gerencial">
-          <OptionList
-            values={options.managementCategories}
-            selected={filters.managementCategories}
-            onToggle={handleToggleManagementCategory}
-          />
-        </FilterBlock>
-
         <FilterBlock title="Vendedor">
           <OptionList values={options.sellers} selected={filters.sellers} onToggle={handleToggleSeller} />
+        </FilterBlock>
+
+        <FilterBlock title="ExclusÃµes">
+          <div className="space-y-2">
+            <h4 className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">Excluir Cliente</h4>
+            <input
+              value={exclusionSearch}
+              onChange={(event) => setExclusionSearch(event.target.value)}
+              placeholder="Buscar cliente"
+              className="w-full rounded-2xl border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-white outline-none transition placeholder:text-slate-600 focus:border-signal-amber/60"
+            />
+            {excludedClients.length > 0 ? (
+              <div className="space-y-2">
+                {excludedClients.map((client) => (
+                  <CheckPill
+                    key={client}
+                    label={`${client} x`}
+                    active={true}
+                    onClick={() => handleToggleExcludedClient(client)}
+                  />
+                ))}
+              </div>
+            ) : null}
+            <OptionList
+              values={visibleExcludedCustomerOptions}
+              selected={excludedClients}
+              onToggle={handleToggleExcludedClient}
+            />
+          </div>
         </FilterBlock>
       </div>
     </div>
   );
+}
+
+function formatExclusionSummary(excludedClients: string[]): string {
+  if (excludedClients.length === 1) {
+    return excludedClients[0];
+  }
+
+  return `${excludedClients[0]} + ${excludedClients.length - 1} clientes`;
+}
+
+function formatCompetenceLabel(competence: string): string {
+  const [year, month] = competence.split('-').map(Number);
+  if (!year || !month) {
+    return competence;
+  }
+
+  const monthLabel = new Intl.DateTimeFormat('pt-BR', { month: 'short' })
+    .format(new Date(year, month - 1, 1))
+    .replace('.', '');
+
+  return `${monthLabel.charAt(0).toUpperCase()}${monthLabel.slice(1)}/${String(year).slice(-2)}`;
 }
 
 const FilterBlock = memo(function FilterBlock({ title, children }: { title: string; children: ReactNode }) {
@@ -138,28 +212,6 @@ const FilterBlock = memo(function FilterBlock({ title, children }: { title: stri
       <h3 className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-slate-500">{title}</h3>
       <div className="space-y-2">{children}</div>
     </section>
-  );
-});
-
-const DateInput = memo(function DateInput({
-  label,
-  value,
-  onChange,
-}: {
-  label: string;
-  value: string;
-  onChange: (value: string) => void;
-}) {
-  return (
-    <label className="block">
-      <span className="mb-1 block text-[10px] uppercase tracking-widest text-slate-500">{label}</span>
-      <input
-        type="date"
-        value={value}
-        onChange={(event) => onChange(event.target.value)}
-        className="w-full rounded-2xl border border-white/10 bg-white/[0.04] px-2 py-2 text-xs text-white outline-none focus:border-signal-blue/60"
-      />
-    </label>
   );
 });
 

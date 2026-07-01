@@ -9,7 +9,7 @@ import { paretoCustomersOption, profitabilityQuadrantOption } from '@/features/p
 export default function ProfitabilityPage() {
   const { filteredInvoices: invoices } = useDashboardData();
   const paretoData = useMemo(
-    () => groupSum(invoices, (invoice) => invoice.customer, (invoice) => invoice.logisticsResult),
+    () => groupSum(invoices, (invoice) => invoice.customer, (invoice) => invoice.totalLogisticsCost),
     [invoices],
   );
   const quadrants = useMemo(() => quadrantPoints(invoices), [invoices]);
@@ -20,7 +20,7 @@ export default function ProfitabilityPage() {
 
   return (
     <div className="grid grid-cols-2 gap-5">
-      <ChartCard title="Pareto Clientes" description="Concentração do resultado logístico por cliente">
+      <ChartCard title="Pareto Clientes" description="Concentração do custo logístico por cliente">
         <EChart option={paretoCustomersOption(paretoData)} height={420} />
       </ChartCard>
       <ChartCard title="Matriz Quadrante" description="Receita versus índice logístico por cliente">

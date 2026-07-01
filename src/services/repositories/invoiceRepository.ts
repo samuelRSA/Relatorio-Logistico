@@ -1,7 +1,8 @@
 import rawInvoices from '@/mock-data/invoices.json';
 import type { Invoice } from '@/types/logistics';
 
-type RawInvoice = Omit<Invoice, 'transport' | 'operational'> & {
+type RawInvoice = Omit<Invoice, 'competence' | 'transport' | 'operational'> & {
+  competence?: string;
   transport: Invoice['transport'] & {
   };
   operational: Partial<Invoice['operational']> & Record<
@@ -27,9 +28,11 @@ const readTransferValue = (operational: RawInvoice['operational']): unknown =>
 const normalizeInvoice = (invoice: RawInvoice): Invoice => {
   const transport = invoice.transport ?? {};
   const operational = invoice.operational ?? {};
+  const competence = invoice.competence || invoice.date.slice(0, 7);
 
   return {
     ...invoice,
+    competence,
     transport: {
       cte1: toFiniteNumber(transport.cte1),
       cte2: toFiniteNumber(transport.cte2),

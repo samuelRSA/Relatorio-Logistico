@@ -5,6 +5,7 @@ export const defaultFilters: FilterState = {
     start: '2026-01-01',
     end: '2026-12-31',
   },
+  competences: [],
   companyIds: [],
   ufs: [],
   cities: [],
@@ -21,10 +22,12 @@ export const applyFilters = (invoices: EnrichedInvoice[], filters: FilterState):
     const invoiceDate = new Date(invoice.date);
     const start = new Date(filters.period.start);
     const end = new Date(filters.period.end);
+    const competences = filters.competences ?? [];
 
     return (
       invoiceDate >= start &&
       invoiceDate <= end &&
+      (!hasSelection(competences) || competences.includes(invoice.competence)) &&
       (!hasSelection(filters.companyIds) || filters.companyIds.includes(invoice.companyId)) &&
       (!hasSelection(filters.ufs) || filters.ufs.includes(invoice.uf)) &&
       (!hasSelection(filters.cities) || filters.cities.includes(invoice.city)) &&

@@ -3,11 +3,44 @@ import * as echarts from 'echarts';
 import ReactECharts from 'echarts-for-react';
 import type { EChartsOption } from 'echarts';
 import type { BrazilMapDatum } from '@/features/executive/types/map';
+import { publicUrl } from '@/shared/publicUrl';
 import { formatCurrency, formatDecimal, formatPercent } from '@/utils/formatters';
 
 const BRAZIL_MAP_NAME = 'brazil-logistic-states';
-const BRAZIL_GEOJSON_URL = '/data/brazil-states.geojson';
+const BRAZIL_GEOJSON_URL = publicUrl('/data/brazil-states.geojson');
+const VALID_BRAZIL_UFS = new Set([
+  'AC',
+  'AL',
+  'AP',
+  'AM',
+  'BA',
+  'CE',
+  'DF',
+  'ES',
+  'GO',
+  'MA',
+  'MT',
+  'MS',
+  'MG',
+  'PA',
+  'PB',
+  'PR',
+  'PE',
+  'PI',
+  'RJ',
+  'RN',
+  'RS',
+  'RO',
+  'RR',
+  'SC',
+  'SP',
+  'SE',
+  'TO',
+]);
 let isBrazilMapRegistered = false;
+
+const isValidBrazilUf = (value: unknown): value is string =>
+  typeof value === 'string' && VALID_BRAZIL_UFS.has(value.toUpperCase());
 
 const buildTooltip = (datum?: BrazilMapDatum, fallbackName?: string): string => {
   if (!datum || datum.invoiceCount === 0) {
@@ -24,7 +57,6 @@ const buildTooltip = (datum?: BrazilMapDatum, fallbackName?: string): string => 
     ['Custo Transporte', formatCurrency(datum.transportCost)],
     ['Custo Operacional', formatCurrency(datum.operationalCost)],
     ['Custo Logístico Total', formatCurrency(datum.totalLogisticsCost)],
-    ['Resultado Logístico', formatCurrency(datum.logisticsResult)],
     ['Índice Logístico', formatPercent(datum.logisticsIndex)],
     ['Quantidade NF', formatDecimal(datum.invoiceCount)],
   ];
@@ -66,12 +98,25 @@ const buildMapOption = (data: BrazilMapDatum[], activeUfs: string[]): EChartsOpt
       extraCssText: 'border-radius:18px;box-shadow:0 22px 60px rgba(0,0,0,.42);backdrop-filter:blur(18px);',
       formatter: (params: unknown) => {
         const item = Array.isArray(params) ? params[0] : params;
+        if (!item || typeof item !== 'object') {
+          return '';
+        }
+
+        const seriesType = (item as { seriesType?: string }).seriesType;
+        const componentType = (item as { componentType?: string }).componentType;
+        if (componentType !== 'series' || seriesType !== 'map') {
+          return '';
+        }
+
         const datum =
-          item && typeof item === 'object'
-            ? ((item as { data?: BrazilMapDatum }).data ?? undefined)
-            : undefined;
+          ((item as { data?: BrazilMapDatum }).data ?? undefined);
         const name =
-          item && typeof item === 'object' && 'name' in item ? String((item as { name?: unknown }).name ?? '') : '';
+          'name' in item ? String((item as { name?: unknown }).name ?? '') : '';
+
+        if (!isValidBrazilUf(name)) {
+          return '';
+        }
+
         return buildTooltip(datum, name);
       },
     },
@@ -233,7 +278,7 @@ function BrazilLogisticMapComponent({
       if (event.seriesType !== 'map') return;
 
       const uf = event.data?.uf ?? event.name;
-      if (!uf) return;
+      if (!isValidBrazilUf(uf)) return;
       onSelectUf(uf);
     },
     [onSelectUf],
@@ -256,7 +301,11 @@ function BrazilLogisticMapComponent({
     <div className="relative min-h-[390px] overflow-hidden rounded-[1.65rem] border border-white/10 bg-graphite-950/40">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_42%,rgba(101,183,255,.15),transparent_44%),linear-gradient(145deg,rgba(255,255,255,.04),transparent)]" />
       {isMapReady ? (
-        <div className="relative grid min-h-[390px] grid-cols-[minmax(0,1fr)_260px]">
+        <div
+          className={`relative grid min-h-[390px] ${
+            selectedMetrics.length > 0 ? 'grid-cols-[minmax(0,1fr)_260px]' : 'grid-cols-1'
+          }`}
+        >
           <ReactECharts
             option={option}
             notMerge={true}
@@ -265,30 +314,18 @@ function BrazilLogisticMapComponent({
             style={{ height: 390, width: '100%' }}
             opts={{ renderer: 'canvas' }}
           />
-          <UfExecutivePanel metrics={selectedMetrics} />
+          {selectedMetrics.length > 0 ? <UfExecutivePanel metrics={selectedMetrics} /> : null}
         </div>
       ) : (
         <div className="flex h-[390px] items-center justify-center">
           <div className="h-20 w-20 animate-pulse rounded-full border border-signal-blue/40 bg-signal-blue/10 shadow-[0_0_40px_rgba(101,183,255,.18)]" />
         </div>
       )}
-      <div className="pointer-events-none absolute bottom-4 right-5 rounded-2xl border border-white/10 bg-black/20 px-3 py-2 text-[11px] text-slate-400 backdrop-blur">
-        Arraste para pan, scroll para zoom, duplo clique limpa UF.
-      </div>
     </div>
   );
 }
 
 function UfExecutivePanel({ metrics }: { metrics: BrazilMapDatum[] }) {
-  if (metrics.length === 0) {
-    return (
-      <aside className="relative z-10 m-4 rounded-3xl border border-white/10 bg-black/20 p-4 backdrop-blur">
-        <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-500">Painel UF</p>
-        <p className="mt-3 text-sm text-slate-400">Selecione uma UF no mapa para ver o detalhamento executivo.</p>
-      </aside>
-    );
-  }
-
   if (metrics.length === 1) {
     const metric = metrics[0];
     const rows = [
@@ -296,7 +333,6 @@ function UfExecutivePanel({ metrics }: { metrics: BrazilMapDatum[] }) {
       ['Custo Transporte', formatCurrency(metric.transportCost)],
       ['Custo Operacional', formatCurrency(metric.operationalCost)],
       ['Custo Logístico Total', formatCurrency(metric.totalLogisticsCost)],
-      ['Resultado Logístico', formatCurrency(metric.logisticsResult)],
       ['Índice Logístico', formatPercent(metric.logisticsIndex)],
       ['Quantidade NF', formatDecimal(metric.invoiceCount)],
     ];
@@ -323,7 +359,6 @@ function UfExecutivePanel({ metrics }: { metrics: BrazilMapDatum[] }) {
       transportCost: acc.transportCost + metric.transportCost,
       operationalCost: acc.operationalCost + metric.operationalCost,
       totalLogisticsCost: acc.totalLogisticsCost + metric.totalLogisticsCost,
-      logisticsResult: acc.logisticsResult + metric.logisticsResult,
       invoiceCount: acc.invoiceCount + metric.invoiceCount,
     }),
     {
@@ -331,7 +366,6 @@ function UfExecutivePanel({ metrics }: { metrics: BrazilMapDatum[] }) {
       transportCost: 0,
       operationalCost: 0,
       totalLogisticsCost: 0,
-      logisticsResult: 0,
       invoiceCount: 0,
     },
   );
@@ -342,7 +376,6 @@ function UfExecutivePanel({ metrics }: { metrics: BrazilMapDatum[] }) {
     ['Custo Transporte', formatCurrency(consolidated.transportCost)],
     ['Custo Operacional', formatCurrency(consolidated.operationalCost)],
     ['Custo Logístico Total', formatCurrency(consolidated.totalLogisticsCost)],
-    ['Resultado Logístico', formatCurrency(consolidated.logisticsResult)],
     ['Índice Logístico', formatPercent(logisticsIndex)],
     ['Quantidade NF', formatDecimal(consolidated.invoiceCount)],
   ];
