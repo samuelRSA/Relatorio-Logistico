@@ -1,0 +1,12 @@
+[build]
+  command = "npx tsc -b && node scripts/build.mjs"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+  VITE_BASE_URL = "/"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
